@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../assets/styles/article.css" rel="stylesheet" type="text/css" /> 
+    <title>CS 220: Lab 2</title>
+    
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<li><a href="../../index.html" class="material-icons">house</a></li>
+	<li><a href="../../docs/index.html">Docs</a></li>
+	<li><a href="../../exams-quizzes/index.html">Exams &amp; Quizzes</a></li>
+	<li><a href="../../ex/index.html">Exercises</a></li>
+	<li><a href="../../hws/index.html">Homeworks</a></li>
+	<li><a href="../../labs/index.html">Labs</a></li>
+	<li><a href="../../misc/index.html">Misc</a></li>
+	<li><a href="../../projects/index.html">Projects</a></li>
+	<li><a href="../../slides/index.html">Slides</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section data-coord="lab2.umt:1:0"><h1 data-coord="lab2.umt:1:0">Lab 2</h1><p data-coord="lab2.umt:3:0"><strong data-coord="lab2.umt:3:0">Date</strong>: Aug 29, 2019
+</p><p data-coord="lab2.umt:5:0">This document first describes the aims of this lab.  It then provides
+necessary background.  It then describes the exercises which need to be
+performed.
+</p><p data-coord="lab2.umt:9:0">In the listings which follow, comments are any text extending from 
+a <samp data-coord="lab2.umt:9:70">#</samp> character to end-of-line.
+</p><section data-coord="lab2.umt:12:0"><h2 data-coord="lab2.umt:12:0">Aims</h2><p data-coord="lab2.umt:15:0">The aim of this lab is to introduce you to the use of <samp data-coord="lab2.umt:15:54">Makefile</samp>'s under
+Unix.  After completing this lab, you should be familiar with the following
+topics:
+</p><ul data-coord="lab2.umt:19:0"><li data-coord="lab2.umt:19:0"><p data-coord="lab2.umt:19:4">The basic operation of <samp data-coord="lab2.umt:19:27">make</samp> for building C programs.
+</p></li><li data-coord="lab2.umt:21:0"><p data-coord="lab2.umt:21:4">Common problems when using <samp data-coord="lab2.umt:21:31">make</samp>.
+</p></li><li data-coord="lab2.umt:23:0"><p data-coord="lab2.umt:23:4">The use of <samp data-coord="lab2.umt:23:15">make</samp> <em data-coord="lab2.umt:23:22">variables</em>.
+</p></li><li data-coord="lab2.umt:25:0"><p data-coord="lab2.umt:25:4">The presence of <em data-coord="lab2.umt:25:20">implicit commands</em> in <samp data-coord="lab2.umt:25:43">make</samp>.
+</p></li></ul></section><section data-coord="lab2.umt:27:0"><h2 data-coord="lab2.umt:27:0">Background</h2><p data-coord="lab2.umt:30:0">A typical large program consists of multiple sub-systems and libraries.
+Each sub-system or library will contain multiple source files.  Building the
+program entails compiling all sub-systems and libraries with the correct
+options and assembling them together.  This can often be quite complex and
+time consuming.  If any source file changes, it should be possible to
+rebuild the program while redoing as little work as possible.  The <samp data-coord="lab2.umt:30:434">make</samp>
+program allows the automation of such tasks.  The operation of <samp data-coord="lab2.umt:30:504">make</samp> is
+controlled by a file typically named <samp data-coord="lab2.umt:30:551">Makefile</samp> in the directory where
+<samp data-coord="lab2.umt:30:585">make</samp> is invoked.
+</p><p data-coord="lab2.umt:40:0">Note that <samp data-coord="lab2.umt:40:10">make</samp> is an example of a <em data-coord="lab2.umt:40:36">build</em> tool.  The <samp data-coord="lab2.umt:40:55">make</samp> used in this
+lab is typical of that found in Unix systems.  Microsoft's <samp data-coord="lab2.umt:40:134">nmake</samp> is a
+similar program.  Build tools like Java's <samp data-coord="lab2.umt:40:189">ant</samp>, Ruby's <samp data-coord="lab2.umt:40:203">rake</samp> and Python's 
+<samp data-coord="lab2.umt:40:224">scons</samp> have similar functionality.
+</p><section data-coord="lab2.umt:45:0"><h3 data-coord="lab2.umt:45:0">Principles</h3><p data-coord="lab2.umt:48:0">A <samp data-coord="lab2.umt:48:2">Makefile</samp> basically consists of a set of <em data-coord="lab2.umt:48:44">rules</em>.  Each rule describes
+the <em data-coord="lab2.umt:48:78">prerequisite</em> files for building a <em data-coord="lab2.umt:48:114">target</em> file and the <em data-coord="lab2.umt:48:136">recipe</em> which
+needs to be carried out if any of the prerequisite files are newer than the
+target file.
+</p><pre data-coord="lab2.umt:54:0">target:		prequisite ...
+		recipe
+</pre><p data-coord="lab2.umt:58:0">The <em data-coord="lab2.umt:58:4">recipe</em> can consist of multiple Unix shell commands (this can include
+compilation commands), which must be run to make the <em data-coord="lab2.umt:58:128">target</em> from the
+<em data-coord="lab2.umt:58:146">prerequisite</em> files.  
+</p><p data-coord="lab2.umt:62:0">The <em data-coord="lab2.umt:62:4">target</em> for one rule can be a <em data-coord="lab2.umt:62:35">prequisite</em> for another rule.  Hence the
+first rule will not be run until the prerequisite is made up-to-date by its
+rule.  The <samp data-coord="lab2.umt:62:164">make</samp> program (at least the GNU version) tracks these
+dependencies across any number of levels and executes all necessary recipes
+to bring the targets of all relevant rules up-to-date.
+</p><p data-coord="lab2.umt:68:0">To build a particular target, <samp data-coord="lab2.umt:68:30">make</samp> can be invoked with that <samp data-coord="lab2.umt:68:62">target</samp> as
+its command-line argument.  If invoked with no targets, it will attempt to
+build the target for the <strong data-coord="lab2.umt:68:174">first rule</strong> in the <samp data-coord="lab2.umt:68:194">Makefile</samp>.
+</p><p data-coord="lab2.umt:72:0">Consider building an executable <samp data-coord="lab2.umt:72:32">hello</samp> from 3 files: a <samp data-coord="lab2.umt:72:56">hello</samp> module
+consisting of a specification header file <samp data-coord="lab2.umt:72:113">hello.h</samp> and an implementation
+file <samp data-coord="lab2.umt:72:150">hello.c</samp> and a <samp data-coord="lab2.umt:72:166">main.c</samp> which includes the <samp data-coord="lab2.umt:72:194">hello.h</samp> header file.  This
+can be achieved using the following <samp data-coord="lab2.umt:72:259">Makefile</samp>:
+</p><pre data-coord="lab2.umt:78:0">hello:			main.o hello.o
+			#link main.o and hello.o to executable hello
+			gcc main.o hello.o -o hello 
+
+hello.o:		hello.c hello.h
+			#compile hello.c to object file hello.o
+			gcc -g -Wall -c hello.c
+
+main.o:			main.c hello.h
+			#compile main.c to object file main.o
+			gcc -g -Wall -c main.c
+
+clean:
+			rm -f *~ *.o hello
+</pre><p data-coord="lab2.umt:94:0">Note the last target <samp data-coord="lab2.umt:94:21">clean</samp>.  It does not have any prerequisites and
+hence will run its recipe whenever it is invoked (typically invoked
+explicitly as <samp data-coord="lab2.umt:94:152">make clean</samp>). It's recipe runs the shell <samp data-coord="lab2.umt:94:194">rm</samp> command
+which will remove all emacs backup files specified by the wildcard
+pattern <samp data-coord="lab2.umt:94:282">*~</samp>, all object files specified by <samp data-coord="lab2.umt:94:318">*.o</samp> as well as the built
+<samp data-coord="lab2.umt:94:345">hello</samp> executable.  The name <samp data-coord="lab2.umt:94:375">clean</samp> is conventionally used for such
+targets which clean-up files built by <samp data-coord="lab2.umt:94:453">make</samp> as well as any garbage
+files.
+</p></section><section data-coord="lab2.umt:104:0"><h3 data-coord="lab2.umt:104:0">Variables in make</h3><p data-coord="lab2.umt:107:0">Note that in the previous example, both the <samp data-coord="lab2.umt:107:44">hello.o</samp> and <samp data-coord="lab2.umt:107:58">main.o</samp>
+using the compiler options <samp data-coord="lab2.umt:107:94">-g</samp> to turn on debugging and <samp data-coord="lab2.umt:107:124">-Wall</samp> to
+turn on reasonable warnings.  This is a violation of the
+<em data-coord="lab2.umt:107:248"><a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself" data-coord="lab2.umt:107:248">DRY
+principle</a></em>, since the same options were repeated multiple times.  Such
+violations can be avoided by the use of <samp data-coord="lab2.umt:107:364">make</samp> variables.
+</p><p data-coord="lab2.umt:114:0">A <samp data-coord="lab2.umt:114:2">make</samp> variable is defined on a line which consists of an identifier
+<em data-coord="lab2.umt:114:71">VAR</em> followed by an <samp data-coord="lab2.umt:114:92">=</samp> character which may be preceeded/followed by
+linear whitespace (i.e. whitespace within the same line) followed by a
+definition.  If the definition is spread across multiple lines, then
+the last character must be a <samp data-coord="lab2.umt:114:310">\</samp> on all except the last line of the
+definition.
+</p><p data-coord="lab2.umt:121:0">The use of a variable <em data-coord="lab2.umt:121:22">VAR</em> within a rule is indicated by <samp data-coord="lab2.umt:121:58">$(</samp><em data-coord="lab2.umt:121:62">VAR</em><samp data-coord="lab2.umt:121:67">)</samp> and
+is replaced by its definition.  If a <samp data-coord="lab2.umt:121:112">$</samp> is to occur within a rule, then it
+must be quoted by repeating it.
+</p><p data-coord="lab2.umt:125:0">Additionally, within each rule, the special <samp data-coord="lab2.umt:125:44">make</samp> variable <samp data-coord="lab2.umt:125:60">$@</samp>
+stands for the target and the special <samp data-coord="lab2.umt:125:103">make</samp> variable <samp data-coord="lab2.umt:125:119">$&lt;</samp> stands for
+the first prerequisite and <samp data-coord="lab2.umt:125:162">$^</samp> stands for all the prerequisites with
+spaces between them.
+</p><p data-coord="lab2.umt:130:0">With the use of variables, the previous <samp data-coord="lab2.umt:130:40">Makefile</samp> can become:
+</p><pre data-coord="lab2.umt:133:0">TARGET = hello
+OBJS = \
+  main.o \
+  hello.o
+
+CC = gcc
+CFLAGS = -g -Wall
+LDFLAGS =
+
+$(TARGET):		$(OBJS)
+			#link $(OBJS) to executable hello
+			$(CC) $(OBJS) $(LDFLAGS) -o $@
+
+hello.o:		hello.c hello.h
+			#compile hello.c to object file hello.o
+			$(CC) $(CFLAGS) -c $&lt;
+
+main.o:			main.c hello.h
+			#compile main.c to object file main.o
+			$(CC) $(CFLAGS) -c $&lt;
+
+clean:
+			rm -f *~ *.o $(TARGET)
+</pre></section><section data-coord="lab2.umt:159:0"><h3 data-coord="lab2.umt:159:0">Implicit Rules</h3><p data-coord="lab2.umt:162:0">Note that in the previous example, the recipes for building both <samp data-coord="lab2.umt:162:65">hello.o</samp>
+and <samp data-coord="lab2.umt:162:79">main.o</samp> are absolutely identical.  In fact, a little thought will
+reveal that this recipe can always be used for building a <samp data-coord="lab2.umt:162:204">.o</samp> file from a 
+<samp data-coord="lab2.umt:162:222">.c</samp> file.  So <samp data-coord="lab2.umt:162:237">make</samp> contains a set of implicit rule similar to this.
+If there is no recipe given for building a prerequisite file, then <samp data-coord="lab2.umt:162:360">make</samp>
+uses its implicit rules.
+</p><p data-coord="lab2.umt:169:0">With the use of implicit rules, the <samp data-coord="lab2.umt:169:36">Makefile</samp> can be simplified to:
+</p><pre data-coord="lab2.umt:172:0">TARGET = hello
+OBJS = \
+  main.o \
+  hello.o
+
+CC = gcc
+CFLAGS = -g -Wall
+LDFLAGS =
+
+$(TARGET):		$(OBJS)
+			#link $(OBJS) to executable hello
+			$(CC) $(OBJS) $(LDFLAGS) -o $@
+
+clean:
+			rm -f *~ *.o $(TARGET)
+
+hello.o:		hello.c hello.h
+main.o:			main.c hello.h
+</pre><p data-coord="lab2.umt:192:0">Note that the rules specifying the dependencies for the <samp data-coord="lab2.umt:192:56">.o</samp> file have
+been moved to the bottom of the <samp data-coord="lab2.umt:192:103">Makefile</samp> as they are purely
+declarative (using the implicit rules).  If it was not necessary to
+record the fact that both <samp data-coord="lab2.umt:192:227">hello.o</samp> and <samp data-coord="lab2.umt:192:241">main.o</samp> also depended on
+<samp data-coord="lab2.umt:192:267">hello.h</samp>, then the last two lines too could be removed as <samp data-coord="lab2.umt:192:326">make</samp> is
+capable of concluding that <samp data-coord="lab2.umt:192:363">hello.o</samp> depends on <samp data-coord="lab2.umt:192:384">hello.c</samp> and <samp data-coord="lab2.umt:192:398">main.o</samp>
+depends on <samp data-coord="lab2.umt:192:418">main.c</samp>.
+</p></section><section data-coord="lab2.umt:201:0"><h3 data-coord="lab2.umt:201:0">Gotcha's</h3><p data-coord="lab2.umt:204:0">The <samp data-coord="lab2.umt:204:4">make</samp> program evolved in the 1970's when many programming languages
+were line-oriented.  Hence it has a line-oriented syntax with some very
+peculiar syntax rules which can result in extremely painful gotcha's for the
+unwary.
+</p><ul data-coord="lab2.umt:209:0"><li data-coord="lab2.umt:209:0"><p data-coord="lab2.umt:209:4">The lines containing recipes <strong data-coord="lab2.umt:209:33">MUST BEGIN WITH A TAB CHARACTER</strong>.
+Since most text editors do not distinguish between the display of
+tab and space characters, this is a very common problem (the <samp data-coord="lab2.umt:209:203">emacs</samp>
+editor will warn you about <em data-coord="lab2.umt:209:242">suspicious lines</em>).
+</p></li><li data-coord="lab2.umt:214:0"><p data-coord="lab2.umt:214:4">When <samp data-coord="lab2.umt:214:9">make</samp> variable definitions or recipe commands extend over 
+multiple lines, all but the last line must terminate with a <samp data-coord="lab2.umt:214:133">\</samp>
+character.  There <strong data-coord="lab2.umt:214:159">CANNOT BE ANY SPACES</strong> after the <samp data-coord="lab2.umt:214:192">\</samp> character.
+</p></li><li data-coord="lab2.umt:218:0"><p data-coord="lab2.umt:218:4">Each command in a recipe is run in a separate shell.  Hence
+a command cannot affect the state of the shell for a subsequent
+command.
+</p><p data-coord="lab2.umt:222:4">For example, the following rule attempts to delete all <samp data-coord="lab2.umt:222:59">.o</samp> files
+in directory <samp data-coord="lab2.umt:222:87">dir</samp>:
+</p><pre data-coord="lab2.umt:226:0">      clean-dir:	
+      			cd dir
+			rm -f *.o
+</pre><p data-coord="lab2.umt:231:4">This will not work.  The first command runs in a separate shell
+and changes its current directory to <samp data-coord="lab2.umt:231:109">dir</samp>, but then that shell
+terminates.  The second command runs in a new shell and will
+delete all <samp data-coord="lab2.umt:231:216">*.o</samp> in the current directory, not the <samp data-coord="lab2.umt:231:256">dir</samp> directory.
+</p><p data-coord="lab2.umt:236:4">The fix for this is to run both commands within a single shell as
+follows:
+</p><pre data-coord="lab2.umt:240:0">      clean-dir:	
+      			cd dir; \
+			rm -f *.o
+</pre><p data-coord="lab2.umt:245:4">By using the trailing <samp data-coord="lab2.umt:245:26">\</samp> after the first command, only a single
+shell is used to run the sequential shell command <samp data-coord="lab2.umt:245:123">cd dir; rm -f *.o</samp>
+which has the desired effect.
+</p></li></ul></section></section><section data-coord="lab2.umt:250:0"><h2 data-coord="lab2.umt:250:0">Exercises</h2><p data-coord="lab2.umt:253:0">When the exercises mention a new Unix command you are unfamiliar with,
+it is a good idea to do a <samp data-coord="lab2.umt:253:97">man</samp> or google lookup on that command to
+get an idea of its capabilities.  Make sure you have followed the
+<a href="../lab-tips/lab-tips.html" data-coord="lab2.umt:253:234">tips</a> for setting up your environment for
+this lab.  Get a copy of all the lab2 files in your <samp data-coord="lab2.umt:253:327">work/lab2</samp> directory
+by copying the <samp data-coord="lab2.umt:253:364">~/cs220/labs/lab2/files</samp> directory into your newly created
+<samp data-coord="lab2.umt:253:424">lab2</samp> directory:
+</p><pre data-coord="lab2.umt:262:0">$ mkdir work/lab2
+$ cd work/lab2
+$ cp -r ~/cs220/labs/lab2/files/* .
+</pre><section data-coord="lab2.umt:267:0"><h3 data-coord="lab2.umt:267:0">Exercise 1: No Makefile</h3><p data-coord="lab2.umt:270:0">Change over to the <a href="./files/ex1" data-coord="lab2.umt:270:34">ex1</a> directory.
+</p><pre data-coord="lab2.umt:273:0">$ cd ex1
+$ ls -l
+</pre><p data-coord="lab2.umt:277:0">You should see that the directory contains a single <samp data-coord="lab2.umt:277:52">hello.c</samp> file.
+</p><p data-coord="lab2.umt:279:0">Simply type <samp data-coord="lab2.umt:279:12">make</samp> in that directory.  You should get an error
+message.  However, now try <samp data-coord="lab2.umt:279:90">make hello</samp>.  You should see that <samp data-coord="lab2.umt:279:125">make</samp>
+automatically builds the <samp data-coord="lab2.umt:279:157">hello</samp> executable.  Type <samp data-coord="lab2.umt:279:183">ls -l</samp> to see the
+created file, use the command <samp data-coord="lab2.umt:279:232">file hello</samp> to confirm that it is an
+executable, and type <samp data-coord="lab2.umt:279:291">./hello</samp> to execute it.  You should see the
+usual <samp data-coord="lab2.umt:279:342">hello world</samp> message.
+</p><p data-coord="lab2.umt:286:0">How did <samp data-coord="lab2.umt:286:8">make</samp> know how to build <samp data-coord="lab2.umt:286:33">hello</samp> even though there is no <samp data-coord="lab2.umt:286:65">Makefile</samp>
+in the directory?  The answer is by using implicit rules.  
+</p><p data-coord="lab2.umt:289:0">To see the list of implicit rules builtin to <samp data-coord="lab2.umt:289:45">make</samp>, type <samp data-coord="lab2.umt:289:58">make -p |
+less</samp> The <samp data-coord="lab2.umt:289:79">less</samp> command allows you to page back and forth through the
+output using the spacebar and the <samp data-coord="lab2.umt:289:174">b</samp> key respectively).  You will see
+that the set of rules is quite extensive.  To see only the lines which
+contain the letters <samp data-coord="lab2.umt:289:302">CC</samp>, type <samp data-coord="lab2.umt:289:313">make -p | grep CC</samp> (tje <samp data-coord="lab2.umt:289:338">grep</samp> program
+filters out lines which do not match the pattern given by its
+argument).  You will see lines relevant to compiling C programs (but
+you will also see lines related to <samp data-coord="lab2.umt:289:519">YACC</samp> which is a parser-generator
+program.
+</p></section><section data-coord="lab2.umt:299:0"><h3 data-coord="lab2.umt:299:0">Exercise 2: Makefile with Syntax Error</h3><p data-coord="lab2.umt:302:0">Change over to the <a href="./files/ex2" data-coord="lab2.umt:302:34">ex2</a> directory and type <samp data-coord="lab2.umt:302:57">make</samp>.
+You should get an error.  Fix the error and retry.  A greeting should
+be printed on your terminal.
+</p></section><section data-coord="lab2.umt:307:0"><h3 data-coord="lab2.umt:307:0">Exercise 3: Multi-File Compilation</h3><p data-coord="lab2.umt:310:0">Change over to the <a href="./files/ex3" data-coord="lab2.umt:310:34">ex3</a> directory and take a look at the
+files there.  This directory contains a program to solve quadratic
+equations.
+</p><p data-coord="lab2.umt:314:0">Note that this file contains a <samp data-coord="lab2.umt:314:31">README</samp> file.  It is always a very good 
+idea to have a <samp data-coord="lab2.umt:314:88">README</samp> file in the top-level directory of a project
+giving a rough idea of what that project is.
+</p><p data-coord="lab2.umt:318:0">Perform the following steps:
+</p><ol data-coord="lab2.umt:320:0"><li data-coord="lab2.umt:320:0"><p data-coord="lab2.umt:320:4">This directory contains a <samp data-coord="lab2.umt:320:30">Makefile</samp>, but unfortunately it contains an
+error.  
+</p><p data-coord="lab2.umt:323:4">Simply type <samp data-coord="lab2.umt:323:16">make</samp> in an attempt to build the top-level target.
+If you look at the resulting <samp data-coord="lab2.umt:323:101">make</samp> trace you should see that
+<samp data-coord="lab2.umt:323:138">make</samp> successfully built <samp data-coord="lab2.umt:323:164">quadr.o</samp> and <samp data-coord="lab2.umt:323:178">main.o</samp>, but got errors
+regarding a missing <samp data-coord="lab2.umt:323:227">sqrt()</samp> function when attempting to link the
+object files to produce the executable.
+</p><p data-coord="lab2.umt:329:4">The linker needs to be told which libraries to search when
+linking.  By default it always searches the standard C library
+(corresponding to the gcc linker option <samp data-coord="lab2.umt:329:174">-lc</samp>) when linking (which
+is why you do not get link errors for functions like <samp data-coord="lab2.umt:329:258">printf()</samp>
+which are defined there).  However, the default does not include
+the math library which is where the <samp data-coord="lab2.umt:329:378">sqrt()</samp> function is defined.
+Hence to fix the error simply change the definition of the
+<samp data-coord="lab2.umt:329:475">LDFLAGS</samp> <samp data-coord="lab2.umt:329:485">make</samp> variable from empty to <samp data-coord="lab2.umt:329:515">-lm</samp> to include the math
+library.
+</p><p data-coord="lab2.umt:339:4">Retype <samp data-coord="lab2.umt:339:11">make</samp>.  You will still get an error.  The problem is that
+in the line <samp data-coord="lab2.umt:339:86">$(CC) $(LDFLAGS) quadr.o main.o -o $@</samp>, the arguments
+are processed in the order they are mentioned; hence the math
+library specified by <samp data-coord="lab2.umt:339:232">LDFLAGS</samp> is searched before the the linker
+realizes that <samp data-coord="lab2.umt:339:294">quadr.o</samp> has an outstanding reference to the
+<samp data-coord="lab2.umt:339:344">sqrt()</samp> function.  The fix is to search the libraries after
+processing the object files; you can make that happen by moving
+the $(LDFLAGS) after the <samp data-coord="lab2.umt:339:502">quadr.o main.o</samp> object file names.
+</p><p data-coord="lab2.umt:348:4">If you retry <samp data-coord="lab2.umt:348:17">make</samp> after making the above change, you should get
+a successful build of the <samp data-coord="lab2.umt:348:100">quadr</samp> executable.  Test it by
+providing input lines with each line containing
+whitespace-separated coefficient triples (remember to terminate
+your input with a <samp data-coord="lab2.umt:348:274">control-D</samp> character to indicate end-of-file on
+the terminal), or by redirecting standard input from <samp data-coord="lab2.umt:348:380">test.data</samp>.
+</p></li><li data-coord="lab2.umt:355:0"><p data-coord="lab2.umt:355:4">If you look at <samp data-coord="lab2.umt:355:19">main.c</samp> and <samp data-coord="lab2.umt:355:32">quadr.c</samp>, you will see that they both
+depend on <samp data-coord="lab2.umt:355:85">quadr.h</samp>.  Hence if <samp data-coord="lab2.umt:355:106">make</samp> is doing its job, it should
+recompile all files if <samp data-coord="lab2.umt:355:168">quadr.h</samp> changes.
+</p><p data-coord="lab2.umt:359:4">Try this.  Simply <samp data-coord="lab2.umt:359:22">touch quadr.h</samp>.  Using <samp data-coord="lab2.umt:359:46">ls -l</samp> you should see
+that it has a modification time newer than <samp data-coord="lab2.umt:359:116">quadr.o</samp> and <samp data-coord="lab2.umt:359:130">main.o</samp>.
+Now type <samp data-coord="lab2.umt:359:153">make</samp>, you would expect it to recompile all the files.
+Instead it will simply output a message saying <samp data-coord="lab2.umt:359:260">quadr</samp> is
+up-to-date.  What went wrong?
+</p><p data-coord="lab2.umt:365:4">The problem is that though <samp data-coord="lab2.umt:365:31">make</samp> has implicit knowledge that
+<samp data-coord="lab2.umt:365:70">main.o</samp> and <samp data-coord="lab2.umt:365:83">quadr.o</samp> depend on <samp data-coord="lab2.umt:365:103">main.c</samp> and <samp data-coord="lab2.umt:365:116">quadr.c</samp>, it does
+not know that <samp data-coord="lab2.umt:365:153">main.o</samp> and <samp data-coord="lab2.umt:365:166">quadr.o</samp> depend on <samp data-coord="lab2.umt:365:186">quadr.h</samp>.  One
+solution would be to provide the dependencies explicitly in the
+<samp data-coord="lab2.umt:365:274">Makefile</samp> as in the example <samp data-coord="lab2.umt:365:303">Makefile</samp>'s listed in the
+<strong data-coord="lab2.umt:365:334">Background</strong> section.  However, as the project evolves, it is very
+likely that these dependencies will no longer be correct.
+Fortunately, there is a better way.
+</p><p data-coord="lab2.umt:374:4">The C pre-processor used by gcc has a special switch <samp data-coord="lab2.umt:374:57">-MM</samp> which
+will output all the non-system dependencies of its command-line
+arguments.  Simply add the following lines to your <samp data-coord="lab2.umt:374:192">Makefile</samp>
+(make sure that the recipe line starts with a tab character):
+</p><pre data-coord="lab2.umt:380:0">    depend:
+		$(CC) -MM $(CPPFLAGS) *.c
+</pre><p data-coord="lab2.umt:384:4">Now type <samp data-coord="lab2.umt:384:13">make depend</samp>.  The dependencies for all your C files
+should be printed on your terminal.  Cut and paste these
+dependencies at the end of your <samp data-coord="lab2.umt:384:164">Makefile</samp>.  Preceed the
+dependencies by a suitable comment (starting with a <samp data-coord="lab2.umt:384:245">#</samp> character)
+like
+</p><pre data-coord="lab2.umt:391:0">    #automatically generated dependencies produced by make depend
+</pre><p data-coord="lab2.umt:394:4">Now typing <samp data-coord="lab2.umt:394:15">make</samp> should rebuild your entire project.
+</p><p data-coord="lab2.umt:396:4">[This procedure is obviously extremely clumsy.  The references
+(and possibly a future lab) provide better alternatives.]
+</p></li><li data-coord="lab2.umt:399:0"><p data-coord="lab2.umt:399:4">When you complete a project, you may want to create a
+single file archive which contains all the source files used for
+building the project.  This is known as a <em data-coord="lab2.umt:399:173">source distribution</em>.
+In this step, we will modify our <samp data-coord="lab2.umt:399:233">Makefile</samp> to create a source
+distribution.
+</p><p data-coord="lab2.umt:405:4">First we need to list out all the source files in the project.
+This can be done by defining a <samp data-coord="lab2.umt:405:102">make</samp> variable <samp data-coord="lab2.umt:405:118">SRC_FILES</samp> which
+contains a space-separated list of all the source files.  Define
+this variable after the definition of the <samp data-coord="lab2.umt:405:251">PROJECT</samp> variable in
+the <samp data-coord="lab2.umt:405:281">Makefile</samp>.
+</p><p data-coord="lab2.umt:411:4">It is a bad idea to use shell glob-patterns like <samp data-coord="lab2.umt:411:53">*.c</samp> to match
+all <samp data-coord="lab2.umt:411:76">.c</samp> files as advanced projects may generate <samp data-coord="lab2.umt:411:121">.c</samp> and <samp data-coord="lab2.umt:411:130">.h</samp>
+files automatically and those should not be included; instead list
+all files explicitly.  You should include all <em data-coord="lab2.umt:411:256">human-generated</em>
+files in the project, including the <samp data-coord="lab2.umt:411:314">README</samp>, test files like
+<samp data-coord="lab2.umt:411:344">test.data</samp> as well as the <samp data-coord="lab2.umt:411:371">Makefile</samp>.  It is probably a good idea
+to list one file per physical line and combine those physical
+lines into a single logical line by terminating all but the last
+one by a <samp data-coord="lab2.umt:411:559">\</samp>.
+</p><p data-coord="lab2.umt:421:4">Then add the following rule (before the automatically generated
+dependencies section which is conventionally always kept at the
+end):
+</p><pre data-coord="lab2.umt:426:0">    dist:			$(PROJECT).tar.gz
+
+    $(PROJECT).tar.gz:		$(SRC_FILES)
+     				tar -cf $(PROJECT).tar $(SRC_FILES)
+				gzip -f $(PROJECT).tar
+</pre><p data-coord="lab2.umt:433:4">The first command in the recipe creates a <samp data-coord="lab2.umt:433:46">tar</samp> archive of all the
+<samp data-coord="lab2.umt:433:75">SRC_FILES</samp>.  The second command compresses the archive.
+</p><p data-coord="lab2.umt:436:4">Create a source distribution by typing <samp data-coord="lab2.umt:436:43">make dist</samp>.  
+</p><p data-coord="lab2.umt:438:4">Now test your distribution.  Create a temporary directory and <samp data-coord="lab2.umt:438:66">cd</samp>
+to it.  Then type <samp data-coord="lab2.umt:438:93">tar -xzf</samp> <em data-coord="lab2.umt:438:104">DISTR_PATH</em> where <em data-coord="lab2.umt:438:123">DISTR_PATH</em> is
+the path from your temporary directory to the created
+<samp data-coord="lab2.umt:438:201">quadr.tar.gz</samp> distribution file.  You should then be able to
+<samp data-coord="lab2.umt:438:267">make</samp> the project afresh in this temporary directory by simply
+typing <samp data-coord="lab2.umt:438:342">make</samp>.
+</p></li></ol><p data-coord="lab2.umt:445:0">When you have completed this exercise, <samp data-coord="lab2.umt:445:39">cat Makefile</samp> to your terminal so as
+to include it in the script you will show the TA.
+</p></section><section data-coord="lab2.umt:448:0"><h3 data-coord="lab2.umt:448:0">Exercise 4: Makefile from Scratch</h3><p data-coord="lab2.umt:451:0">In this exercise, you will create a <samp data-coord="lab2.umt:451:36">Makefile</samp> from scratch.  Change over to
+the <a href="./files/ex4" data-coord="lab2.umt:451:96">ex4</a> directory.  There you will find a set of files which when
+built into an executable allows addition, lookup and deletion of key/value
+pairs from a table of key/value pairs, for alphanumeric keys and integer
+values.  Look at the <a href="./files/ex4/README" data-coord="lab2.umt:451:349">README</a>  for an example log.
+</p><p data-coord="lab2.umt:457:0">Use the <samp data-coord="lab2.umt:457:8">Makefile</samp> from the previous exercise as a template to create a
+<samp data-coord="lab2.umt:457:72">Makefile</samp> for this directory.  The top-level target should create an
+executable named <samp data-coord="lab2.umt:457:159">key-value</samp>.  You should use automatic dependency
+generation to record all dependencies.  You should also provide a <samp data-coord="lab2.umt:457:275">dist</samp>
+target which will build a source distribution.
+</p><p data-coord="lab2.umt:463:0">When you have the <samp data-coord="lab2.umt:463:18">Makefile</samp> working, <samp data-coord="lab2.umt:463:38">cat</samp> it to your terminal so as to
+include it in the script you will show the TA.
+</p></section></section><section data-coord="lab2.umt:466:0"><h2 data-coord="lab2.umt:466:0">References</h2><p data-coord="lab2.umt:469:0"><em data-coord="lab2.umt:469:44"><a href="http://www.gnu.org/software/make/manual/" data-coord="lab2.umt:469:44">GNU Make Manual</a></em>.
+</p><p data-coord="lab2.umt:471:0"><em data-coord="lab2.umt:471:46"><a href="http://mad-scientist.net/make/autodep.html" data-coord="lab2.umt:471:46">Advanced
+Auto-Dependency Generation</a></em>.  The lab used the <em data-coord="lab2.umt:471:103">traditional method</em>
+with all its drawbacks.
+</p><p data-coord="lab2.umt:475:0">Robert Mecklenburg, <em data-coord="lab2.umt:475:20">Managing Projects with GNU Make</em>, O'Reilly, 2004.
+</p></section></section>
+    </div> <!-- #content -->
+  </body>
+</html>
