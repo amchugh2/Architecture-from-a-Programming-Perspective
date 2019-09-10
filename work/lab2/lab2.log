@@ -1,0 +1,380 @@
+Script started on 2019-09-05 11:36:11-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+amchugh2@g7-06:~/git-repos/i220a/work/lab2$ cd ..
+amchugh2@g7-06:~/git-repos/i220a/work$ cd[K[Kcd[K[Kls
+lab2
+amchugh2@g7-06:~/git-repos/i220a/work$ cd ..
+amchugh2@g7-06:~/git-repos/i220a$ s[Ks[Kls
+submit	work
+amchugh2@g7-06:~/git-repos/i220a$ cd ..
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd i220a
+amchugh2@g7-06:~/git-repos/i220a$ ls
+submit	work
+amchugh2@g7-06:~/git-repos/i220a$ cd ..
+amchugh2@g7-06:~/git-repos$ cd.[K ..
+amchugh2@g7-06:~$ ls
+amchugh2.circ  cs120lab7  git-repos	  lab	     lab5      Templates
+Arduino        cs220	  git-repos_copy  lab2	     lab8      toneMelody
+cs120	       Desktop	  good		  lab2final  Music     Videos
+cs120lab4      Documents  i220a		  lab2good   Pictures
+cs120lab6      Downloads  i220X		  lab3	     Public
+amchugh2@g7-06:~$ cd ggi[K[Kit-repos
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd cs220
+amchugh2@g7-06:~/git-repos/cs220$ ls
+announce.html  bin   exams-quizzes  index.umt  misc	  slides
+announce.umt   docs  hws	    labs       projects
+assets	       ex    index.html     Makefile   README.md
+amchugh2@g7-06:~/git-repos/cs220$ cd labs
+amchugh2@g7-06:~/git-repos/cs220/labs$ git-repos/[K[K[K[K[K[K[K[K[K[Kcd ..
+amchugh2@g7-06:~/git-repos/cs220$ cd[K[Kgit-repos cs/220 p[Kgit pull
+bash: git-repos: command not found
+amchugh2@g7-06:~/git-repos/cs220$ git-repos/cs220 git pull
+bash: git-repos/cs220: No such file or directory
+amchugh2@g7-06:~/git-repos/cs220$ ls
+announce.html  bin   exams-quizzes  index.umt  misc	  slides
+announce.umt   docs  hws	    labs       projects
+assets	       ex    index.html     Makefile   README.md
+amchugh2@g7-06:~/git-repos/cs220$ cd labs
+amchugh2@g7-06:~/git-repos/cs220/labs$ ls
+index.html  index.umt  lab1  lab2  lab-tips  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs$ cd lab2
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ ls
+files  lab2.html  lab2.pdf  lab2.umt  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ ls fi[K[K[K[K[Kcd files
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2/files$ ls
+ex1  ex2  ex3  ex4  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2/files$ cp -r /import/linux/home1/amch ugh2/r[Kgit-repos/cs220/labs/lab2
+cp: missing destination file operand after '/import/linux/home1/amchugh2/git-repos/cs220/labs/lab2'
+Try 'cp --help' for more information.
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2/files$ cpr[K -r /import/linux/home1/amchugh2/git-repos/cs220/labs/lab2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd filesls[Kcd lab2ls[Kcd lab2ls[Kcd filesls[K[K[Kcd[K[Kcd ..
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ cd ..
+amchugh2@g7-06:~/git-repos/cs220/labs$ cd ..
+amchugh2@g7-06:~/git-repos/cs220$ ls
+announce.html  bin   exams-quizzes  index.umt  misc	  slides
+announce.umt   docs  hws	    labs       projects
+assets	       ex    index.html     Makefile   README.md
+amchugh2@g7-06:~/git-repos/cs220$ cd ..
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cs i220a
+bash: cs: command not found
+amchugh2@g7-06:~/git-repos$ cd[K[Kcs i[K[K[Kd i[K[K[K[Kls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd i220a
+amchugh2@g7-06:~/git-repos/i220a$ ls
+submit	work
+amchugh2@g7-06:~/git-repos/i220a$ cd o[Kwork
+amchugh2@g7-06:~/git-repos/i220a/work$ cd
+amchugh2@g7-06:~$ ls
+amchugh2.circ  cs120lab7  git-repos	  lab	     lab5      Templates
+Arduino        cs220	  git-repos_copy  lab2	     lab8      toneMelody
+cs120	       Desktop	  good		  lab2final  Music     Videos
+cs120lab4      Documents  i220a		  lab2good   Pictures
+cs120lab6      Downloads  i220X		  lab3	     Public
+amchugh2@g7-06:~$ cd [K[K[Kcd [K[K[Kd[Kcd git-repos
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd i220a
+amchugh2@g7-06:~/git-repos/i220a$ ls
+submit	work
+amchugh2@g7-06:~/git-repos/i220a$ cd work
+amchugh2@g7-06:~/git-repos/i220a/work$ ls
+lab2
+amchugh2@g7-06:~/git-repos/i220a/work$ cd lab2
+amchugh2@g7-06:~/git-repos/i220a/work/lab2$ ls[K[Kc[Kcd ..
+amchugh2@g7-06:~/git-repos/i220a/work$ ls
+lab2
+amchugh2@g7-06:~/git-repos/i220a/work$ mkdir lab3
+amchugh2@g7-06:~/git-repos/i220a/work$ mk[K[Kc[Kls
+lab2  lab3
+amchugh2@g7-06:~/git-repos/i220a/work$ cd ..
+amchugh2@g7-06:~/git-repos/i220a$ cd ..
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd i2[K[Kcd[Ks220a
+bash: cd: cs220a: No such file or directory
+amchugh2@g7-06:~/git-repos$ cd cs220a[K
+amchugh2@g7-06:~/git-repos/cs220$ ls
+announce.html  bin   exams-quizzes  index.umt  misc	  slides
+announce.umt   docs  hws	    labs       projects
+assets	       ex    index.html     Makefile   README.md
+amchugh2@g7-06:~/git-repos/cs220$ cs [K[Kc[Kd labs
+amchugh2@g7-06:~/git-repos/cs220/labs$ ls
+index.html  index.umt  lab1  lab2  lab-tips  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs$ cd lab2
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ ls
+files  lab2.html  lab2.pdf  lab2.umt  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ cd [K[K[Kls
+files  lab2.html  lab2.pdf  lab2.umt  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ cp -r /git-repos/i220a/work/lab3
+cp: missing destination file operand after '/git-repos/i220a/work/lab3'
+Try 'cp --help' for more information.
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ ls
+files  lab2.html  lab2.pdf  lab2.umt  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ git remote -v\[K
+origin	ssh://amchugh2@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git (fetch)
+origin	ssh://amchugh2@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git (push)
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ git pull
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.206' to the list of known hosts.
+remote: Enumerating objects: 241, done.[K
+remote: Counting objects:   0% (1/241)   [Kremote: Counting objects:   1% (3/241)   [Kremote: Counting objects:   2% (5/241)   [Kremote: Counting objects:   3% (8/241)   [Kremote: Counting objects:   4% (10/241)   [Kremote: Counting objects:   5% (13/241)   [Kremote: Counting objects:   6% (15/241)   [Kremote: Counting objects:   7% (17/241)   [Kremote: Counting objects:   8% (20/241)   [Kremote: Counting objects:   9% (22/241)   [Kremote: Counting objects:  10% (25/241)   [Kremote: Counting objects:  11% (27/241)   [Kremote: Counting objects:  12% (29/241)   [Kremote: Counting objects:  13% (32/241)   [Kremote: Counting objects:  14% (34/241)   [Kremote: Counting objects:  15% (37/241)   [Kremote: Counting objects:  16% (39/241)   [Kremote: Counting objects:  17% (41/241)   [Kremote: Counting objects:  18% (44/241)   [Kremote: Counting objects:  19% (46/241)   [Kremote: Counting objects:  20% (49/241)   [Kremote: Counting objects:  21% (51/241)   [Kremote: Counting objects:  22% (54/241)   [Kremote: Counting objects:  23% (56/241)   [Kremote: Counting objects:  24% (58/241)   [Kremote: Counting objects:  25% (61/241)   [Kremote: Counting objects:  26% (63/241)   [Kremote: Counting objects:  27% (66/241)   [Kremote: Counting objects:  28% (68/241)   [Kremote: Counting objects:  29% (70/241)   [Kremote: Counting objects:  30% (73/241)   [Kremote: Counting objects:  31% (75/241)   [Kremote: Counting objects:  32% (78/241)   [Kremote: Counting objects:  33% (80/241)   [Kremote: Counting objects:  34% (82/241)   [Kremote: Counting objects:  35% (85/241)   [Kremote: Counting objects:  36% (87/241)   [Kremote: Counting objects:  37% (90/241)   [Kremote: Counting objects:  38% (92/241)   [Kremote: Counting objects:  39% (94/241)   [Kremote: Counting objects:  40% (97/241)   [Kremote: Counting objects:  41% (99/241)   [Kremote: Counting objects:  42% (102/241)   [Kremote: Counting objects:  43% (104/241)   [Kremote: Counting objects:  44% (107/241)   [Kremote: Counting objects:  45% (109/241)   [Kremote: Counting objects:  46% (111/241)   [Kremote: Counting objects:  47% (114/241)   [Kremote: Counting objects:  48% (116/241)   [Kremote: Counting objects:  49% (119/241)   [Kremote: Counting objects:  50% (121/241)   [Kremote: Counting objects:  51% (123/241)   [Kremote: Counting objects:  52% (126/241)   [Kremote: Counting objects:  53% (128/241)   [Kremote: Counting objects:  54% (131/241)   [Kremote: Counting objects:  55% (133/241)   [Kremote: Counting objects:  56% (135/241)   [Kremote: Counting objects:  57% (138/241)   [Kremote: Counting objects:  58% (140/241)   [Kremote: Counting objects:  59% (143/241)   [Kremote: Counting objects:  60% (145/241)   [Kremote: Counting objects:  61% (148/241)   [Kremote: Counting objects:  62% (150/241)   [Kremote: Counting objects:  63% (152/241)   [Kremote: Counting objects:  64% (155/241)   [Kremote: Counting objects:  65% (157/241)   [Kremote: Counting objects:  66% (160/241)   [Kremote: Counting objects:  67% (162/241)   [Kremote: Counting objects:  68% (164/241)   [Kremote: Counting objects:  69% (167/241)   [Kremote: Counting objects:  70% (169/241)   [Kremote: Counting objects:  71% (172/241)   [Kremote: Counting objects:  72% (174/241)   [Kremote: Counting objects:  73% (176/241)   [Kremote: Counting objects:  74% (179/241)   [Kremote: Counting objects:  75% (181/241)   [Kremote: Counting objects:  76% (184/241)   [Kremote: Counting objects:  77% (186/241)   [Kremote: Counting objects:  78% (188/241)   [Kremote: Counting objects:  79% (191/241)   [Kremote: Counting objects:  80% (193/241)   [Kremote: Counting objects:  81% (196/241)   [Kremote: Counting objects:  82% (198/241)   [Kremote: Counting objects:  83% (201/241)   [Kremote: Counting objects:  84% (203/241)   [Kremote: Counting objects:  85% (205/241)   [Kremote: Counting objects:  86% (208/241)   [Kremote: Counting objects:  87% (210/241)   [Kremote: Counting objects:  88% (213/241)   [Kremote: Counting objects:  89% (215/241)   [Kremote: Counting objects:  90% (217/241)   [Kremote: Counting objects:  91% (220/241)   [Kremote: Counting objects:  92% (222/241)   [Kremote: Counting objects:  93% (225/241)   [Kremote: Counting objects:  94% (227/241)   [Kremote: Counting objects:  95% (229/241)   [Kremote: Counting objects:  96% (232/241)   [Kremote: Counting objects:  97% (234/241)   [Kremote: Counting objects:  98% (237/241)   [Kremote: Counting objects:  99% (239/241)   [Kremote: Counting objects: 100% (241/241)   [Kremote: Counting objects: 100% (241/241), done.[K
+remote: Compressing objects:   0% (1/120)   [Kremote: Compressing objects:   1% (2/120)   [Kremote: Compressing objects:   2% (3/120)   [Kremote: Compressing objects:   3% (4/120)   [Kremote: Compressing objects:   4% (5/120)   [Kremote: Compressing objects:   5% (6/120)   [Kremote: Compressing objects:   6% (8/120)   [Kremote: Compressing objects:   7% (9/120)   [Kremote: Compressing objects:   8% (10/120)   [Kremote: Compressing objects:   9% (11/120)   [Kremote: Compressing objects:  10% (12/120)   [Kremote: Compressing objects:  11% (14/120)   [Kremote: Compressing objects:  12% (15/120)   [Kremote: Compressing objects:  13% (16/120)   [Kremote: Compressing objects:  14% (17/120)   [Kremote: Compressing objects:  15% (18/120)   [Kremote: Compressing objects:  16% (20/120)   [Kremote: Compressing objects:  17% (21/120)   [Kremote: Compressing objects:  18% (22/120)   [Kremote: Compressing objects:  19% (23/120)   [Kremote: Compressing objects:  20% (24/120)   [Kremote: Compressing objects:  21% (26/120)   [Kremote: Compressing objects:  22% (27/120)   [Kremote: Compressing objects:  23% (28/120)   [Kremote: Compressing objects:  24% (29/120)   [Kremote: Compressing objects:  25% (30/120)   [Kremote: Compressing objects:  26% (32/120)   [Kremote: Compressing objects:  27% (33/120)   [Kremote: Compressing objects:  28% (34/120)   [Kremote: Compressing objects:  29% (35/120)   [Kremote: Compressing objects:  30% (36/120)   [Kremote: Compressing objects:  31% (38/120)   [Kremote: Compressing objects:  32% (39/120)   [Kremote: Compressing objects:  33% (40/120)   [Kremote: Compressing objects:  34% (41/120)   [Kremote: Compressing objects:  35% (42/120)   [Kremote: Compressing objects:  36% (44/120)   [Kremote: Compressing objects:  37% (45/120)   [Kremote: Compressing objects:  38% (46/120)   [Kremote: Compressing objects:  39% (47/120)   [Kremote: Compressing objects:  40% (48/120)   [Kremote: Compressing objects:  41% (50/120)   [Kremote: Compressing objects:  42% (51/120)   [Kremote: Compressing objects:  43% (52/120)   [Kremote: Compressing objects:  44% (53/120)   [Kremote: Compressing objects:  45% (54/120)   [Kremote: Compressing objects:  46% (56/120)   [Kremote: Compressing objects:  47% (57/120)   [Kremote: Compressing objects:  48% (58/120)   [Kremote: Compressing objects:  49% (59/120)   [Kremote: Compressing objects:  50% (60/120)   [Kremote: Compressing objects:  51% (62/120)   [Kremote: Compressing objects:  52% (63/120)   [Kremote: Compressing objects:  53% (64/120)   [Kremote: Compressing objects:  54% (65/120)   [Kremote: Compressing objects:  55% (66/120)   [Kremote: Compressing objects:  56% (68/120)   [Kremote: Compressing objects:  57% (69/120)   [Kremote: Compressing objects:  58% (70/120)   [Kremote: Compressing objects:  59% (71/120)   [Kremote: Compressing objects:  60% (72/120)   [Kremote: Compressing objects:  61% (74/120)   [Kremote: Compressing objects:  62% (75/120)   [Kremote: Compressing objects:  63% (76/120)   [Kremote: Compressing objects:  64% (77/120)   [Kremote: Compressing objects:  65% (78/120)   [Kremote: Compressing objects:  66% (80/120)   [Kremote: Compressing objects:  67% (81/120)   [Kremote: Compressing objects:  68% (82/120)   [Kremote: Compressing objects:  69% (83/120)   [Kremote: Compressing objects:  70% (84/120)   [Kremote: Compressing objects:  71% (86/120)   [Kremote: Compressing objects:  72% (87/120)   [Kremote: Compressing objects:  73% (88/120)   [Kremote: Compressing objects:  74% (89/120)   [Kremote: Compressing objects:  75% (90/120)   [Kremote: Compressing objects:  76% (92/120)   [Kremote: Compressing objects:  77% (93/120)   [Kremote: Compressing objects:  78% (94/120)   [Kremote: Compressing objects:  79% (95/120)   [Kremote: Compressing objects:  80% (96/120)   [Kremote: Compressing objects:  81% (98/120)   [Kremote: Compressing objects:  82% (99/120)   [Kremote: Compressing objects:  83% (100/120)   [Kremote: Compressing objects:  84% (101/120)   [Kremote: Compressing objects:  85% (102/120)   [Kremote: Compressing objects:  86% (104/120)   [Kremote: Compressing objects:  87% (105/120)   [Kremote: Compressing objects:  88% (106/120)   [Kremote: Compressing objects:  89% (107/120)   [Kremote: Compressing objects:  90% (108/120)   [Kremote: Compressing objects:  91% (110/120)   [Kremote: Compressing objects:  92% (111/120)   [Kremote: Compressing objects:  93% (112/120)   [Kremote: Compressing objects:  94% (113/120)   [Kremote: Compressing objects:  95% (114/120)   [Kremote: Compressing objects:  96% (116/120)   [Kremote: Compressing objects:  97% (117/120)   [Kremote: Compressing objects:  98% (118/120)   [Kremote: Compressing objects:  99% (119/120)   [Kremote: Compressing objects: 100% (120/120)   [Kremote: Compressing objects: 100% (120/120), done.[K
+Receiving objects:   0% (1/187)   Receiving objects:   1% (2/187)   Receiving objects:   2% (4/187)   Receiving objects:   3% (6/187)   Receiving objects:   4% (8/187)   Receiving objects:   5% (10/187)   Receiving objects:   6% (12/187)   Receiving objects:   7% (14/187)   Receiving objects:   8% (15/187)   Receiving objects:   9% (17/187)   Receiving objects:  10% (19/187)   Receiving objects:  11% (21/187)   Receiving objects:  12% (23/187)   Receiving objects:  13% (25/187)   Receiving objects:  14% (27/187)   Receiving objects:  15% (29/187)   Receiving objects:  16% (30/187)   Receiving objects:  17% (32/187)   Receiving objects:  18% (34/187)   Receiving objects:  19% (36/187)   Receiving objects:  20% (38/187)   Receiving objects:  21% (40/187)   Receiving objects:  22% (42/187)   Receiving objects:  23% (44/187)   Receiving objects:  24% (45/187)   Receiving objects:  25% (47/187)   Receiving objects:  26% (49/187)   Receiving objects:  27% (51/187)   Receiving objects:  28% (53/187)   Receiving objects:  29% (55/187)   Receiving objects:  30% (57/187)   Receiving objects:  31% (58/187)   Receiving objects:  32% (60/187)   Receiving objects:  33% (62/187)   Receiving objects:  34% (64/187)   Receiving objects:  35% (66/187)   Receiving objects:  36% (68/187)   Receiving objects:  37% (70/187)   Receiving objects:  38% (72/187)   Receiving objects:  39% (73/187)   Receiving objects:  40% (75/187)   Receiving objects:  41% (77/187)   Receiving objects:  42% (79/187)   Receiving objects:  43% (81/187)   Receiving objects:  44% (83/187)   Receiving objects:  45% (85/187)   Receiving objects:  46% (87/187)   Receiving objects:  47% (88/187)   Receiving objects:  48% (90/187)   Receiving objects:  49% (92/187)   Receiving objects:  50% (94/187)   Receiving objects:  51% (96/187)   Receiving objects:  52% (98/187)   Receiving objects:  53% (100/187)   Receiving objects:  54% (101/187)   Receiving objects:  55% (103/187)   Receiving objects:  56% (105/187)   Receiving objects:  57% (107/187)   Receiving objects:  58% (109/187)   Receiving objects:  59% (111/187)   Receiving objects:  60% (113/187)   Receiving objects:  61% (115/187)   Receiving objects:  62% (116/187)   Receiving objects:  63% (118/187)   Receiving objects:  64% (120/187)   Receiving objects:  65% (122/187)   Receiving objects:  66% (124/187)   Receiving objects:  67% (126/187)   Receiving objects:  68% (128/187)   Receiving objects:  69% (130/187)   Receiving objects:  70% (131/187)   Receiving objects:  71% (133/187)   Receiving objects:  72% (135/187)   Receiving objects:  73% (137/187)   Receiving objects:  74% (139/187)   Receiving objects:  75% (141/187)   Receiving objects:  76% (143/187)   Receiving objects:  77% (144/187)   Receiving objects:  78% (146/187)   Receiving objects:  79% (148/187)   Receiving objects:  80% (150/187)   Receiving objects:  81% (152/187)   Receiving objects:  82% (154/187)   Receiving objects:  83% (156/187)   Receiving objects:  84% (158/187)   Receiving objects:  85% (159/187)   Receiving objects:  86% (161/187)   Receiving objects:  87% (163/187)   Receiving objects:  88% (165/187)   Receiving objects:  89% (167/187)   Receiving objects:  90% (169/187)   Receiving objects:  91% (171/187)   Receiving objects:  92% (173/187)   Receiving objects:  93% (174/187)   Receiving objects:  94% (176/187)   Receiving objects:  95% (178/187)   Receiving objects:  96% (180/187)   Receiving objects:  97% (182/187)   Receiving objects:  98% (184/187)   remote: Total 187 (delta 114), reused 108 (delta 62)[K
+Receiving objects:  99% (186/187)   Receiving objects: 100% (187/187)   Receiving objects: 100% (187/187), 274.12 KiB | 8.31 MiB/s, done.
+Resolving deltas:   0% (0/114)   Resolving deltas:   6% (7/114)   Resolving deltas:   7% (8/114)   Resolving deltas:   8% (10/114)   Resolving deltas:  11% (13/114)   Resolving deltas:  12% (14/114)   Resolving deltas:  13% (15/114)   Resolving deltas:  14% (16/114)   Resolving deltas:  16% (19/114)   Resolving deltas:  17% (20/114)   Resolving deltas:  18% (21/114)   Resolving deltas:  19% (22/114)   Resolving deltas:  20% (23/114)   Resolving deltas:  21% (24/114)   Resolving deltas:  22% (26/114)   Resolving deltas:  23% (27/114)   Resolving deltas:  24% (28/114)   Resolving deltas:  25% (29/114)   Resolving deltas:  26% (30/114)   Resolving deltas:  27% (31/114)   Resolving deltas:  28% (32/114)   Resolving deltas:  30% (35/114)   Resolving deltas:  31% (36/114)   Resolving deltas:  32% (37/114)   Resolving deltas:  33% (38/114)   Resolving deltas:  34% (39/114)   Resolving deltas:  35% (40/114)   Resolving deltas:  36% (42/114)   Resolving deltas:  38% (44/114)   Resolving deltas:  40% (46/114)   Resolving deltas:  42% (49/114)   Resolving deltas:  44% (51/114)   Resolving deltas:  46% (53/114)   Resolving deltas:  47% (54/114)   Resolving deltas:  48% (55/114)   Resolving deltas:  49% (56/114)   Resolving deltas:  50% (57/114)   Resolving deltas:  57% (65/114)   Resolving deltas:  58% (67/114)   Resolving deltas:  64% (73/114)   Resolving deltas:  65% (75/114)   Resolving deltas:  66% (76/114)   Resolving deltas:  67% (77/114)   Resolving deltas:  68% (78/114)   Resolving deltas:  72% (83/114)   Resolving deltas:  75% (86/114)   Resolving deltas:  78% (90/114)   Resolving deltas:  81% (93/114)   Resolving deltas:  83% (95/114)   Resolving deltas:  84% (96/114)   Resolving deltas:  85% (97/114)   Resolving deltas:  86% (99/114)   Resolving deltas:  87% (100/114)   Resolving deltas:  88% (101/114)   Resolving deltas:  89% (102/114)   Resolving deltas:  90% (103/114)   Resolving deltas:  91% (104/114)   Resolving deltas:  92% (105/114)   Resolving deltas:  97% (111/114)   Resolving deltas:  98% (112/114)   Resolving deltas: 100% (114/114)   Resolving deltas: 100% (114/114), completed with 44 local objects.
+From ssh://remote.cs.binghamton.edu/~umrigar/git-repos/cs220
+   9868958..9670665  master     -> origin/master
+Updating 9868958..9670665
+Checking out files:  24% (18/75)   Checking out files:  25% (19/75)   Checking out files:  26% (20/75)   Checking out files:  28% (21/75)   Checking out files:  29% (22/75)   Checking out files:  30% (23/75)   Checking out files:  32% (24/75)   Checking out files:  33% (25/75)   Checking out files:  34% (26/75)   Checking out files:  36% (27/75)   Checking out files:  37% (28/75)   Checking out files:  38% (29/75)   Checking out files:  40% (30/75)   Checking out files:  41% (31/75)   Checking out files:  42% (32/75)   Checking out files:  44% (33/75)   Checking out files:  45% (34/75)   Checking out files:  46% (35/75)   Checking out files:  48% (36/75)   Checking out files:  49% (37/75)   Checking out files:  50% (38/75)   Checking out files:  52% (39/75)   Checking out files:  53% (40/75)   Checking out files:  54% (41/75)   Checking out files:  56% (42/75)   Checking out files:  57% (43/75)   Checking out files:  58% (44/75)   Checking out files:  60% (45/75)   Checking out files:  61% (46/75)   Checking out files:  62% (47/75)   Checking out files:  64% (48/75)   Checking out files:  65% (49/75)   Checking out files:  66% (50/75)   Checking out files:  68% (51/75)   Checking out files:  69% (52/75)   Checking out files:  70% (53/75)   Checking out files:  72% (54/75)   Checking out files:  73% (55/75)   Checking out files:  74% (56/75)   Checking out files:  76% (57/75)   Checking out files:  77% (58/75)   Checking out files:  78% (59/75)   Checking out files:  80% (60/75)   Checking out files:  81% (61/75)   Checking out files:  82% (62/75)   Checking out files:  84% (63/75)   Checking out files:  85% (64/75)   Checking out files:  86% (65/75)   Checking out files:  88% (66/75)   Checking out files:  89% (67/75)   Checking out files:  90% (68/75)   Checking out files:  92% (69/75)   Checking out files:  93% (70/75)   Checking out files:  94% (71/75)   Checking out files:  96% (72/75)   Checking out files:  97% (73/75)   Checking out files:  98% (74/75)   Checking out files: 100% (75/75)   Checking out files: 100% (75/75), done.
+Fast-forward
+ announce.html                                      |    2 [32m+[m[31m-[m
+ assets/umt/article-template.html                   |    2 [32m+[m[31m-[m
+ assets/umt/slides-template.html                    |    2 [32m+[m[31m-[m
+ docs/index.html                                    |    2 [32m+[m[31m-[m
+ ex/index.umt                                       |    2 [31m-[m
+ exams-quizzes/index.html                           |    2 [32m+[m[31m-[m
+ {ex => exercises}/Makefile                         |    0
+ exercises/config.json                              |    4 [32m+[m
+ exercises/exercises.umt                            |    0
+ {ex => exercises}/index.html                       |    6 [32m+[m[31m-[m
+ exercises/index.umt                                |    4 [32m+[m
+ exercises/questions/index.js                       |    3 [32m+[m
+ exercises/questions/package-lock.json              |   13 [32m+[m
+ exercises/questions/package.json                   |   18 [32m+[m
+ exercises/questions/src/meta.js                    |   19 [32m+[m
+ exercises/questions/src/programming/arith.js       |  121 [32m+++[m
+ exercises/questions/src/programming/bit-util.js    |   28 [32m+[m
+ .../questions/src/programming/bitwise-operators.js |   70 [32m++[m
+ exercises/questions/src/programming/from-signed.js |  103 [32m++[m
+ .../questions/src/programming/from-unsigned.js     |   83 [32m++[m
+ exercises/questions/src/programming/meta.js        |   18 [32m+[m
+ exercises/questions/src/programming/oct-dec-hex.js |  128 [32m+++[m
+ .../questions/src/programming/signed-overflow.js   |  103 [32m++[m
+ .../questions/src/programming/string-array-size.js |  100 [32m++[m
+ exercises/questions/src/programming/to-signed.js   |  103 [32m++[m
+ exercises/questions/src/programming/to-unsigned.js |   82 [32m++[m
+ .../questions/src/programming/unsigned-overflow.js |   96 [32m++[m
+ exercises/templates/index.html                     |   40 [32m+[m
+ hws/index.html                                     |    2 [32m+[m[31m-[m
+ index.html                                         |   33 [32m+[m[31m-[m
+ index.umt                                          |    9 [32m+[m
+ labs/index.html                                    |   27 [32m+[m[31m-[m
+ labs/index.umt                                     |    3 [32m+[m[31m-[m
+ labs/lab1/lab1.html                                |  148 [32m+[m[31m--[m
+ labs/lab1/lab1.pdf                                 |  Bin [31m89136[m -> [32m89136[m bytes
+ labs/lab2/lab2.html                                |    2 [32m+[m[31m-[m
+ labs/lab2/lab2.pdf                                 |  Bin [31m102661[m -> [32m102661[m bytes
+ labs/lab3/Makefile                                 |   22 [32m+[m
+ labs/lab3/files/.gitignore                         |    1 [32m+[m
+ labs/lab3/files/Makefile                           |    2 [32m+[m
+ labs/lab3/files/ex1/.gitignore                     |    1 [32m+[m
+ labs/lab3/files/ex1/Makefile                       |    3 [32m+[m
+ labs/lab3/files/ex1/README                         |    1 [32m+[m
+ labs/lab3/files/ex1/hello.c                        |   23 [32m+[m
+ labs/lab3/files/ex2/Makefile                       |    3 [32m+[m
+ labs/lab3/files/ex2/README                         |    4 [32m+[m
+ labs/lab3/files/ex2/hello.c                        |   48 [32m+[m
+ labs/lab3/lab3.html                                |  215 [32m++++[m
+ labs/lab3/lab3.pdf                                 |  Bin [31m0[m -> [32m92709[m bytes
+ labs/lab3/lab3.umt                                 |  297 [32m++++++[m
+ labs/lab3/term.gif                                 |  Bin [31m0[m -> [32m11238[m bytes
+ labs/lab3/term.png                                 |  Bin [31m0[m -> [32m8053[m bytes
+ misc/index.html                                    |    2 [32m+[m[31m-[m
+ projects/index.html                                |    2 [32m+[m[31m-[m
+ projects/prj1/aux-files/test1.LOG                  |    2 [32m+[m[31m-[m
+ projects/prj1/prj1-sol/bits-to-ints.c              |    1 [32m+[m
+ projects/prj1/prj1-sol/main.c                      |   12 [32m+[m[31m-[m
+ projects/prj1/prj1.html                            |   32 [32m+[m[31m-[m
+ projects/prj1/prj1.pdf                             |  Bin [31m88917[m -> [32m89276[m bytes
+ projects/prj1/prj1.umt                             |    7 [32m+[m[31m-[m
+ slides/c-intro/c-intro.html                        |  487 [32m++++++++[m[31m-[m
+ slides/c-intro/c-intro.pdf                         |  Bin [31m181922[m -> [32m286549[m bytes
+ slides/c-intro/c-intro.umt                         | 1035 [32m++++++++++[m[31m----------[m
+ slides/c-intro/code/count-1s-1.c                   |    9 [32m+[m[31m-[m
+ slides/c-intro/code/count-1s-2.c                   |    9 [32m+[m[31m-[m
+ slides/c-intro/code/endian.c                       |    7 [32m+[m[31m-[m
+ slides/c-intro/code/integer-sizes.c                |   12 [32m+[m[31m-[m
+ slides/c-intro/code/kilo-powers.c                  |   15 [32m+[m[31m-[m
+ slides/index.html                                  |    2 [32m+[m[31m-[m
+ slides/intro/intro.html                            |    2 [32m+[m[31m-[m
+ slides/intro/intro.pdf                             |  Bin [31m350820[m -> [32m350820[m bytes
+ slides/syllabus/syllabus.html                      |    2 [32m+[m[31m-[m
+ slides/syllabus/syllabus.pdf                       |  Bin [31m114341[m -> [32m114341[m bytes
+ 73 files changed, 2946 insertions(+), 690 deletions(-)
+ delete mode 100644 ex/index.umt
+ rename {ex => exercises}/Makefile (100%)
+ create mode 100644 exercises/config.json
+ create mode 100644 exercises/exercises.umt
+ rename {ex => exercises}/index.html (76%)
+ create mode 100644 exercises/index.umt
+ create mode 100644 exercises/questions/index.js
+ create mode 100644 exercises/questions/package-lock.json
+ create mode 100644 exercises/questions/package.json
+ create mode 100644 exercises/questions/src/meta.js
+ create mode 100644 exercises/questions/src/programming/arith.js
+ create mode 100644 exercises/questions/src/programming/bit-util.js
+ create mode 100644 exercises/questions/src/programming/bitwise-operators.js
+ create mode 100644 exercises/questions/src/programming/from-signed.js
+ create mode 100644 exercises/questions/src/programming/from-unsigned.js
+ create mode 100644 exercises/questions/src/programming/meta.js
+ create mode 100644 exercises/questions/src/programming/oct-dec-hex.js
+ create mode 100644 exercises/questions/src/programming/signed-overflow.js
+ create mode 100644 exercises/questions/src/programming/string-array-size.js
+ create mode 100644 exercises/questions/src/programming/to-signed.js
+ create mode 100644 exercises/questions/src/programming/to-unsigned.js
+ create mode 100644 exercises/questions/src/programming/unsigned-overflow.js
+ create mode 100644 exercises/templates/index.html
+ create mode 100755 labs/lab3/Makefile
+ create mode 100644 labs/lab3/files/.gitignore
+ create mode 100644 labs/lab3/files/Makefile
+ create mode 100644 labs/lab3/files/ex1/.gitignore
+ create mode 100644 labs/lab3/files/ex1/Makefile
+ create mode 100644 labs/lab3/files/ex1/README
+ create mode 100644 labs/lab3/files/ex1/hello.c
+ create mode 100644 labs/lab3/files/ex2/Makefile
+ create mode 100644 labs/lab3/files/ex2/README
+ create mode 100644 labs/lab3/files/ex2/hello.c
+ create mode 100644 labs/lab3/lab3.html
+ create mode 100644 labs/lab3/lab3.pdf
+ create mode 100644 labs/lab3/lab3.umt
+ create mode 100644 labs/lab3/term.gif
+ create mode 100644 labs/lab3/term.png
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ ls
+files  lab2.html  lab2.pdf  lab2.umt  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs/lab2$ cd ..
+amchugh2@g7-06:~/git-repos/cs220/labs$ ls
+index.html  index.umt  lab1  lab2  lab3  lab-tips  Makefile
+amchugh2@g7-06:~/git-repos/cs220/labs$ cd lab3
+amchugh2@g7-06:~/git-repos/cs220/labs/lab3$ cd ..
+amchugh2@g7-06:~/git-repos/cs220/labs$ cd ..
+amchugh2@g7-06:~/git-repos/cs220$ cd ..
+amchugh2@g7-06:~/git-repos$ ls
+cs220  git-repos  i220a
+amchugh2@g7-06:~/git-repos$ cd i220a
+amchugh2@g7-06:~/git-repos/i220a$ ls
+submit	work
+amchugh2@g7-06:~/git-repos/i220a$ cd work
+amchugh2@g7-06:~/git-repos/i220a/work$ ls
+lab2  lab3
+amchugh2@g7-06:~/git-repos/i220a/work$ cd lab3
+amchugh2@g7-06:~/git-repos/i220a/work/lab3$ cp -r /git-e[Krepos/cs220/labs/lab3/[K/fil es
+cp: missing destination file operand after '/git-repos/cs220/labs/lab3/files'
+Try 'cp --help' for more information.
+amchugh2@g7-06:~/git-repos/i220a/work/lab3$ cp -r /git-repos/cs220/labs/lab3/files .
+cp: cannot stat '/git-repos/cs220/labs/lab3/files': No such file or directory
+amchugh2@g7-06:~/git-repos/i220a/work/lab3$ cp -r /git-repos/cs220/labs/lab3/files .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./git-repos/cs220/labs/lab3/fil[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./git-repos/cs220/labs/lab3/fi[1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-repos/cs220/labs/lab3/f[1@i[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./git-repos/cs220/labs/lab3/[1@f[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./git-repos/cs220/labs/lab3[1@/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/f[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/fi[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/fil[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/file[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/files[1P .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/files [1P.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/files .[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/files . [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/cs220/labs/lab3/files . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cs220/labs/lab3/files .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cs220/labs/lab3/files .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+amchugh2@g7-06:~/git-repos/i220a/work/lab3$ ;[Kls
+files
+amchugh2@g7-06:~/git-repos/i220a/work/lab3$ cd files
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ ls
+ex1  ex2  Makefile
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ lscd filesls[Kcp -r ../../../cs220/labs/lab3/files .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-repos/cs220/labs/lab[2@3/[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd lab3[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd workls[Kcd i220als[KGitHub Setup
+bash: lsGitHub: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ We will be using git for lab and project submissions:
+bash: We: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ You will be submitting your course projects using a private git repository on github.com.
+bash: You: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Project submission will be done from a clone of your github repository on the workstation you are using (often one in one of the CS departmental labs, but you could also be accessing remote.cs.binghamton.edu from a remote workstation).
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ This document provides step-by-step directions. A subsequent lab will provide more experience with git, but you can obtain basic familiarity with git by looking at the copious documentation and tutorials available on the web.
+bash: This: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Quick Start
+bash: Quick: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ If you know what you are doing, this tl;dr section should largely suffice:
+bash: If: command not found
+bash: dr: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Set up a personal github account and create a i220a or i220b git repository, depending on the course section you are registered for. Choose the github option to generate a .gitignore for the C programming language.
+bash: Set: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Set up both TAs to have access to your repository:
+bash: Set: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ yli241.
+bash: yli241.: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ RaushanCSBinghamton.
+bash: RaushanCSBinghamton.: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ As there are many similar names and some people may have multiple accounts, make 100% sure that you have the correct github accounts (the above ID's must match).
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Clone your github repository into the ~/git-repos directory on your workstation.
+bash: Clone: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Within the cloned directory, use a work subdirectory for working on labs/projects and a submit subdirectory for submitting them. If submitting late, email the TA for that assignment.
+bash: Within: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ The following sections explain each of the above steps in detail.
+bash: The: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Setting Up A Git Hub Repository
+bash: Setting: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Each student needs to set up a private git project called i220a or i220b (depending on the course you are registered for) on github. It will be referred to as i220X in the sequel. This repository with both CS 220 TAs and will be used for submitting projects and labs for grading.
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Go to github.com.
+bash: Go: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Click on Sign Up, and complete the form. You may choose any appropriate Username, but it is strongly recommended that you use the user-name associated with your binghamton.edu email (if it is available).
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Please ensure that you provide your binghamton.edu email address in the Email address field. This may make it slightly easier for the TA to associate your github account with your BU id.
+bash: Please: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Please complete all necessary steps to complete your registration on github after satisfying their captcha and submitting the form.
+bash: Please: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Set up your account appropriately. On the github page, access your account using the user icon on the top right of the page. Select SSH and GPG keys" from the left hand menu, specify a New SSH key" and then upload the generated public ssh-key from your CS account (default ~/.ssh/id_rsa.pub) to github by copying-and-pasting it into the provided Key box. Submit the form to set up your new key.
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ To set up a project for the course, click on the green New button on your github home page.
+bash: To: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Fill in the project name as i220a or i220b (this is absolutely essential). Make sure that you set up your project as Private. Provide a suitable description for the project. Make sure to select Initialize repository with a README and specify a .gitignore file for C. Hit the Create repository button.
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Go to your project using the link you will now find on your github homepage. Go to Settings->Collaborators from the left-hand side navigation. Add both the TAs as collaborators using their github user-ids:
+bash: Go: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ yli241.
+bash: yli241.: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ RaushanCSBinghamton.
+bash: RaushanCSBinghamton.: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ As there are many similar names and some people may have multiple accounts, make 100% sure that you have the correct github accounts (the above ID's must match).
+bash: syntax error near unexpected token `('
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ They will get access to your repository once they accept your invitation to collaborate.
+bash: They: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ 
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Initializing Your Repository on your Workstation
+bash: Initializing: command not found
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Clone your github repository into your ~/git-repos dir[K[Aamchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Clone your github repository into your ~/git-repos dir[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6PInitializing Your Repository on your WorkstationClone your github repository into your ~/git-repos dir[Kamchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ Clone your github repository into your ~/git-repos dir[Kr[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+Collaborators  ex1  ex2  Makefile
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ ls
+Collaborators  ex1  ex2  Makefile
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files$ cd ex1
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files/ex1$ ls
+hello.c  Makefile  README
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files/ex1$ ls -l
+total 12
+-rw-r--r-- 1 amchugh2 amchugh2 343 Sep  5 11:46 hello.c
+-rw-r--r-- 1 amchugh2 amchugh2  35 Sep  5 11:46 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2  61 Sep  5 11:46 README
+amchugh2@g7-06:~/git-repos/i220a/work/lab3/files/ex1$ cd [K[K[Kvim README
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"README" 1L, 61C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HPrint out a line saying hello to each command-line argument.
+[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                        
