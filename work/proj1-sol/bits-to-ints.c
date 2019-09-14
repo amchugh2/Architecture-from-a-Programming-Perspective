@@ -52,18 +52,19 @@
 */
 
 static int get_bit(FILE *inFile, const char *inName){
-	// fgetc keeps track of location in bitstream
 	char c = fgetc(inFile);
-	if(!isspace(c) && !isalpha(c)){
-		if(c == '0'){
-		return '0';
-		}
-	       else if(c == '1'){
-	       return '1';
-		       }
-		}
-	fprintf(stderr, "Invalid character in file");
-	return 6;
+	if(isspace(c)){
+		c = fgetc(inFile);
+	}
+	if(c == '0'){
+		return 0;
+	}
+	if(c == '1'){
+		return 1;
+	}
+	else{
+		fprintf(stderr, "Invalid character in file");
+		return 6;
 	}
 }
 
@@ -71,7 +72,6 @@ static int get_bytes(FILE *inFile, const char *inName){
 	int byte = 0;
 	int mask = 0x1;
 	for(int i = 0; i < CHAR_BIT; i++){
-		// check pointers
 		int bit = get_bit(inFile, inName);
 		if(bit == 1){
 			byte |= mask;
@@ -82,15 +82,18 @@ static int get_bytes(FILE *inFile, const char *inName){
 }
 
 BitsValue
-bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
-{
+bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof){
   //nBits value should make sense
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
   BitsValue value = 0;
   //@TODO
+  int num_bytes = nBits/CHAR_BIT;
+  for(int i = 0; i < num_bytes; i++){
+	  int byte = get_bytes(inFile, inName);
+	  printf("02%d", byte);
+	  printf("\n");
+  }
+
   *isEof = true;
   return value;
-}
-
-}
-		 			
+}		 			
