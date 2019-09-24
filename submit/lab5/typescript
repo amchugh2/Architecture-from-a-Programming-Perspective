@@ -650,4 +650,191 @@ amchugh2@remote06:~/i220a_new/work/prj-2$ git -r [K[K[Krm "prj[K2-[K
 fatal: pathspec 'prj-2' did not match any files
 amchugh2@remote06:~/i220a_new/work/prj-2$ cd prj2-[K[K-2
 bash: cd: prj-2: No such file or directory
-amchugh2@remote06:~/i220a_new/work/prj-2$ cd
+amchugh2@remote06:~/i220a_new/work/prj-2$ cd[K[Kls
+prj2
+amchugh2@remote06:~/i220a_new/work/prj-2$ git rm -r "prj2[K-2"
+fatal: pathspec 'prj-2' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2$ git rm prj-2
+fatal: pathspec 'prj-2' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2$ git rm ~/i220a_new/work/prj2/[K[K-2/p rj2
+fatal: pathspec '/home/amchugh2/i220a_new/work/prj-2/prj2' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2$ git rm prj2
+fatal: pathspec 'prj2' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2$ git r[K[K[K[K[Kg[Kcd prj2
+amchugh2@remote06:~/i220a_new/work/prj-2/prj2$ git [K[K[K[Kls
+aux-files  Makefile  prj2.html	prj2.pdf  prj2-sol  prj2.umt
+amchugh2@remote06:~/i220a_new/work/prj-2/prj2$ git rm auxfiles
+fatal: pathspec 'auxfiles' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2/prj2$ git rm aux-files
+fatal: pathspec 'aux-files' did not match any files
+amchugh2@remote06:~/i220a_new/work/prj-2/prj2$ cd ..
+amchugh2@remote06:~/i220a_new/work/prj-2$ ls
+prj2
+amchugh2@remote06:~/i220a_new/work/prj-2$ git -rf prj2
+unknown option: -rf
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+amchugh2@remote06:~/i220a_new/work/prj-2$ rm -rf folder
+amchugh2@remote06:~/i220a_new/work/prj-2$ ls
+prj2
+amchugh2@remote06:~/i220a_new/work/prj-2$ rm -rf prj2
+amchugh2@remote06:~/i220a_new/work/prj-2$ ls
+amchugh2@remote06:~/i220a_new/work/prj-2$ git add .
+amchugh2@remote06:~/i220a_new/work/prj-2$ git commit -a -m "removed folde r"
+[master 6f2a983] removed folder
+ 1 file changed, 177 insertions(+), 1 deletion(-)
+amchugh2@remote06:~/i220a_new/work/prj-2$ git push
+aUsername for 'https://github.com': mchugh2       amchugh2
+Password for 'https://aamchugh2@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/amchugh2/i220a_new/'
+amchugh2@remote06:~/i220a_new/work/prj-2$ git push
+Username for 'https://github.com': amchugh2
+Password for 'https://amchugh2@github.com': 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 3.72 KiB | 953.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/amchugh2/i220a_new
+   ad42fd4..6f2a983  master -> master
+amchugh2@remote06:~/i220a_new/work/prj-2$ cd[K[Kcd ..
+amchugh2@remote06:~/i220a_new/work$ cp[Kp -pr !/[K[K~/cs220/projects/prj2/prj2-sol [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kl
+cp: missing destination file operand after '/home/amchugh2/cs220/projects/prj2/prj2-sol'
+Try 'cp --help' for more information.
+amchugh2@remote06:~/i220a_new/work$ cp pr [K[K[Kpr[K[K-pr !/c[K[K[K![K![K~/cs220/projects/prj2-prj2-sol  .
+cp: cannot stat '/home/amchugh2/cs220/projects/prj2-prj2-sol': No such file or directory
+amchugh2@remote06:~/i220a_new/work$ cp -pr ~/cs220/projects/prj2-prj2-sol .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/prj2-sol [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp -pr ~/cs220/projects/prj2/prj2-sol [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ .
+amchugh2@remote06:~/i220a_new/work$ ls
+lab2  prj-2  prj2-sol
+amchugh2@remote06:~/i220a_new/work$ git rm ls[K[K[Krm -rf prj2
+amchugh2@remote06:~/i220a_new/work$ g[Krm r[K-rf prj[Kj-2
+amchugh2@remote06:~/i220a_new/work$ cd[K[Kcd prj2-sol
+amchugh2@remote06:~/i220a_new/work/prj2-sol$ ls
+big-bits.c  errors.c  hex-util.c  main.c    README   stack.h
+big-bits.h  errors.h  hex-util.h  Makefile  stack.c
+amchugh2@remote06:~/i220a_new/work/prj2-sol$ cd[K[Kvim README
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"README" 6L, 64C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HName:[11CXXX
+B-Number:[7CXXX
+Email:[10CXXX
+
+Add text here as needed.
+
+[1m[34m~                                                                        [8;1H~                                                                        [9;1H~                                                                        [10;1H~                                                                        [11;1H~                                                                        [12;1H~                                                                        [13;1H~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1HName:[11CXXX
+B-Number:[7CXXX
+Email:[10CXXX
+
+Add text here as needed.
+
+[1m[34m~                                                                        [8;1H~                                                                        [9;1H~                                                                        [10;1H~                                                                        [11;1H~                                                                        [12;1H~                                                                        [13;1H~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[30m[47m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;59H0-19[1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;18H[36;58H9-18 [1;18H[?25h[?25l[36;46H~@k[1;18H[36;46H   [1;17H[36;58H8-17[1;17H[?25h[?25l[36;46H~@k[1;17H[36;46H   [1;17H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H1,8-17[8CAll[1;17H[?25h[?25l[36;58H11-20[1;20H[?25h[?25l[1;19H[K[36;59H0-19[1;19H[?25h[?25l[1;18H[K[36;58H9-18 [1;18H[?25h[?25l[1;17H[K[36;58H8-17[1;17H[?25h[?25lA[36;58H9-18[1;18H[?25h[?25lb[36;58H10-19[1;19H[?25h[?25li[36;59H1-20[1;20H[?25h[?25lg[36;59H2-21[1;21H[?25h[?25la[36;59H3-22[1;22H[?25h[?25li[36;59H4-23[1;23H[?25h[?25ll[36;59H5-24[1;24H[?25h[?25l[36;59H6-25[1;25H[?25h[?25lM[36;59H7-26[1;26H[?25h[?25lc[36;59H8-27[1;27H[?25h[?25lH[36;59H9-28[1;28H[?25h[?25lu[36;58H20-29[1;29H[?25h[?25lg[36;59H1-30[1;30H[?25h[?25lh[36;59H2-31[1;31H[?25h[?25l[36;56H2,14-20[2;20H[?25h[?25l[2;19H[K[36;59H3-19[2;19H[?25h[?25l[2;18H[K[36;59H2-18[2;18H[?25h[?25l[2;17H[K[36;59H1-17[2;17H[?25h[?25lB[36;59H2-18[2;18H[?25h[?25l0[36;59H3-19[2;19H[?25h[?25l0[36;59H4-20[2;20H[?25h[?25l6[36;59H5-21[2;21H[?25h[?25l8[36;59H6-22[2;22H[?25h[?25l2[36;59H7-23[2;23H[?25h[?25l1[36;59H8-24[2;24H[?25h[?25l3[36;59H9-25[2;25H[?25h[?25l1[36;58H20-26[2;26H[?25h[?25l[36;56H3,12-20[3;20H[?25h[?25l[3;19H[K[36;59H1-19[3;19H[?25h[?25l[3;18H[K[36;59H0-18[3;18H[?25h[?25l[3;17H[K[36;58H9-17 [3;17H[?25h[?25la[36;58H10-18[3;18H[?25h[?25lm[36;59H1-19[3;19H[?25h[?25lc[36;59H2-20[3;20H[?25h[?25lh[36;59H3-21[3;21H[?25h[?25lu[36;59H4-22[3;22H[?25h[?25lg[36;59H5-23[3;23H[?25h[?25lh[36;59H6-24[3;24H[?25h[?25l2[36;59H7-25[3;25H[?25h[?25l@[36;59H8-26[3;26H[?25h[?25lb[36;59H9-27[3;27H[?25h[?25li[36;58H20-28[3;28H[?25h[?25ln[36;59H1-29[3;29H[?25h[?25lg[36;59H2-30[3;30H[?25h[?25lh[36;59H3-31[3;31H[?25h[?25la[36;59H4-32[3;32H[?25h[?25lm[36;59H5-33[3;33H[?25h[?25lt[36;59H6-34[3;34H[?25h[?25lo[36;59H7-35[3;35H[?25h[?25ln[36;59H8-36[3;36H[?25h[?25l.[36;59H9-37[3;37H[?25h[?25le[36;58H30-38[3;38H[?25h[?25ld[36;59H1-39[3;39H[?25h[?25lu[36;59H2-40[3;40H[?25h[36;1H[K[3;39H[?25l[36;46H^[[3;39H[36;46H  [3;40H[36;56H3,31-39[7CAll[3;39H[?25h[?25l[36;46H:[3;39H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"README" 6L, 101C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote06:~/i220a_new/work/prj2-sol$ vim [K[K[K[Kvim bit[Kg-bits.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"big-bits.c" 87L, 2009C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m"big-bits.h"[m
+[35m#include [m[31m"hex-util.h"[m
+
+[35m#include [m[31m<assert.h>[m
+[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<limits.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[34m/** Provide concrete definition for struct BigBits to flesh out
+ *  abstract BigBits data type.
+ */[m
+[32mstruct[m BigBits {
+  [34m//@[m[30m[43mTODO[m
+};[19;1H[34m/** Return a pointer to a representation of a big integer with value
+ *  corresponding to the non-empty hexadecimal string hex.  Note that
+ *  hex will only contain hexadecimal characters [m[31m'0'[m[34m - [m[31m'9'[m[34m, [m[31m'a'[m[34m - [m[31m'f'[m
+[34m *  and [m[31m'A'[m[34m - [m[31m'F'[m[34m terminated by a NUL '\[m[31m0[m[34m' char.
+ *
+ *  The string hex may not remain valid after this function returns.
+ *
+ *  Returns NULL on error with errno set [m[31m"appropriately"[m[34m.
+ */[m
+[32mconst[m BigBits *
+newBigBits([32mconst[m [32mchar[m *hex)
+{
+  assert([31mCHAR_BIT[m == [31m8[m);
+  [34m//@[m[30m[43mTODO[m
+  [33mreturn[m [31mNULL[m;
+}[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m"big-bits.h"[m[30m[47m
+[35m#include [m[30m[47m[31m"hex-util.h"[m[30m[47m
+
+[35m#include [m[30m[47m[31m<assert.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<limits.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[34m/** Provide concrete definition for struct BigBits to flesh out
+ *  abstract BigBits data type.
+ */[m[30m[47m
+[32mstruct[m[30m[47m BigBits {
+  [34m//@[m[30m[47m[30m[43mTODO[m[30m[47m
+};[19;1H[34m/** Return a pointer to a representation of a big integer with value
+ *  corresponding to the non-empty hexadecimal string hex.  Note that
+ *  hex will only contain hexadecimal characters [m[30m[47m[31m'0'[m[30m[47m[34m - [m[30m[47m[31m'9'[m[30m[47m[34m, [m[30m[47m[31m'a'[m[30m[47m[34m - [m[30m[47m[31m'f'[m[30m[47m
+[34m *  and [m[30m[47m[31m'A'[m[30m[47m[34m - [m[30m[47m[31m'F'[m[30m[47m[34m terminated by a NUL '\[m[30m[47m[31m0[m[30m[47m[34m' char.
+ *
+ *  The string hex may not remain valid after this function returns.
+ *
+ *  Returns NULL on error with errno set [m[30m[47m[31m"appropriately"[m[30m[47m[34m.
+ */[m[30m[47m
+[32mconst[m[30m[47m BigBits *
+newBigBits([32mconst[m[30m[47m [32mchar[m[30m[47m *hex)
+{
+  assert([31mCHAR_BIT[m[30m[47m == [31m8[m[30m[47m);
+  [34m//@[m[30m[47m[30m[43mTODO[m[30m[47m
+  [33mreturn[m[30m[47m [31mNULL[m[30m[47m;
+}[36;56H1,1[11CTop[1;1H[?25h[?25l[1;35r[1;1H[4M[1;36r[26;1H[46m{[30;1H}[m[30m[47m
+
+[34m/** Frees all resources used by currently valid bigBits.  bigBits
+ *  is not valid after this function returns.
+ */[m[30m[47m
+[32mvoid[m[30m[47m[36;56H[K[36;56H34,1[11C7%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [29;14H[26;1H{[30;1H}[36;57H3,14[29;14H[?25h[?25l[36;46H~@k[29;14H[36;46H   [28;9H[36;57H2,9 [28;9H[?25h[?25l[36;46H~@k[28;9H[36;46H   [27;24H[36;57H1,24[27;24H[?25h[?25l[36;46H~@k[27;24H[36;46H   [26;1H[46m{[30;1H}[m[30m[47m[36;57H0,1 [26;1H[?25h[?25l[36;46H~@k[26;1H[36;46H   [25;26H
+{[30;1H}[36;56H29,26[25;26H[?25h[?25l[36;46H~@k[25;26H[36;46H   [24;15H[36;57H8,15[24;15H[?25h[?25l[36;46H~@k[24;15H[36;46H   [23;3H[36;57H7,3 [23;3H[?25h[?25l[36;46H~@k[23;3H[36;46H   [22;26H[36;57H6,26[22;26H[?25h[?25l[36;46H~@k[22;26H[36;46H   [21;2H[36;57H5,2 [21;2H[?25h[?25l[36;46H~@k[21;2H[36;46H   [20;26H[36;57H4,26[20;26H[?25h[?25l[36;46H~@k[20;26H[36;46H   [19;2H[36;57H3,2 [19;2H[?25h[?25l[36;46H~@k[19;2H[36;46H   [18;26H[36;57H2,26[18;26H[?25h[?25l[36;46H~@k[18;26H[36;46H   [17;26H[36;57H1[17;26H[?25h[?25l[36;46H~@k[17;26H[36;46H   [16;26H[36;57H0[16;26H[?25h[?25l[36;46H~@k[16;26H[36;46H   [15;26H[36;56H19[15;26H[?25h[?25l[36;46H~@k[15;26H[36;46H   [14;1H[36;57H8,0-1[14;1H[?25h[?25l[36;46H~@k[14;1H[36;46H   [13;1H[36;57H7[13;1H[?25h[?25l[36;46H~@k[13;1H[36;46H   [12;1H[36;57H6[12;1H[?25h[?25l[36;46H~@k[12;1H[36;46H   [11;2H[36;57H5,2  [11;2H[?25h[?25l[36;46H~@k[11;2H[36;46H   [10;9H[36;57H4,9[10;9H[?25h[?25l[36;46H~@k[10;9H[36;46H   [9;16H[46m{
+
+}[m[30m[47m[36;57H3,16[9;16H[?25h[?25l[36;46H~@k[9;16H[36;46H   [8;3H[9;16H{
+
+}[36;57H2,3 [8;3H[?25h[?25l[36;46H~@k[8;3H[36;46H   [7;26H[36;57H1,26[7;26H[?25h[?25l[36;46H~@k[7;26H[36;46H   [6;26H[36;57H0[6;26H[?25h[?25l[36;46H~@k[6;26H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<assert.h>[m[30m[47m[36;56H[K[36;56H9,0-1[10C5%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;19H[1;35r[1;1H[L[1;36r[36;56H[K[36;56H8,19[11C3%[6;19H[?25h[?25l[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"hex-util.h"[m[30m[47m[36;56H[K[36;56H7,19[11C1%[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [6;19H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"big-bits.h"[m[30m[47m[36;56H[K[36;56H6,19[10CTop[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [5;18H[36;56H5,18[5;18H[?25h[?25l[36;46H~@k[5;18H[36;46H   [4;19H[36;56H4,19[4;19H[?25h[?25l[36;46H~@k[4;19H[36;46H   [3;1H[36;56H3,0-1[3;1H[?25h[?25l[36;56H2,21 [2;21H[?25h[?25l[36;46H~@k[2;21H[36;46H   [1;21H[36;56H1[1;21H[?25h[?25l[36;46H~@k[1;21H[36;46H   [2;21H[36;56H2[2;21H[?25h[?25l[36;46H~@k[2;21H[36;46H   [3;1H[36;56H3,0-1[3;1H[?25h[?25l[36;46H~@k[3;1H[36;46H   [4;19H[36;56H4,19 [4;19H[?25h[?25l[36;46H~@k[4;19H[36;46H   [5;18H[36;56H5,18[5;18H[?25h[?25l[36;46H~@k[5;18H[36;46H   [6;19H[36;56H6,19[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [7;19H[36;56H7[7;19H[?25h[?25l[36;46H~@k[7;19H[36;46H   [8;19H[36;56H8[8;19H[?25h[?25l[36;46H~@k[8;19H[36;46H   [9;1H[36;56H9,0-1[9;1H[?25h[?25l[36;46H~@k[9;1H[36;46H   [10;26H[36;56H10,26[10;26H[?25h[?25l[36;46H~@k[10;26H[36;46H   [11;26H[36;57H1[11;26H[?25h[?25l[36;46H~@k[11;26H[36;46H   [12;3H[36;57H2,3 [12;3H[?25h[?25l[36;46H~@k[12;3H[36;46H   [13;16H[46m{
+
+}[m[30m[47m[36;57H3,16[13;16H[?25h[?25l[36;46H~@k[13;16H[36;46H   [14;9H[13;16H{
+
+}[36;57H4,9 [14;9H[?25h[?25l[36;46H~@k[14;9H[36;46H   [15;2H[36;57H5,2[15;2H[?25h[?25l[36;46H~@k[15;2H[36;46H   [16;1H[36;57H6,0-1[16;1H[?25h[?25l[36;46H~@k[16;1H[36;46H   [17;1H[36;57H7[17;1H[?25h[?25l[36;46H~@k[17;1H[36;46H   [18;1H[36;57H8[18;1H[?25h[?25l[36;46H~@k[18;1H[36;46H   [19;26H[36;57H9,26 [19;26H[?25h[?25l[36;46H~@k[19;26H[36;46H   [20;26H[36;56H20[20;26H[?25h[?25l[36;46H~@k[20;26H[36;46H   [21;26H[36;57H1[21;26H[?25h[?25l[36;46H~@k[21;26H[36;46H   [22;26H[36;57H2[22;26H[?25h[?25l[36;46H~@k[22;26H[36;46H   [23;2H[36;57H3,2 [23;2H[?25h[?25l[36;46H~@k[23;2H[36;46H   [24;26H[36;57H4,26[24;26H[?25h[?25l[36;46H~@k[24;26H[36;46H   [25;2H[36;57H5,2 [25;2H[?25h[?25l[36;46H~@k[25;2H[36;46H   [26;26H[36;57H6,26[26;26H[?25h[?25l[36;46H~@k[26;26H[36;46H   [27;3H[36;57H7,3 [27;3H[?25h[?25l[36;46H~@k[27;3H[36;46H   [28;15H[36;57H8,15[28;15H[?25h[?25l[36;46H~@k[28;15H[36;46H   [29;26H[36;57H9,26[29;26H[?25h[?25l[36;46H~@k[29;26H[36;46H   [30;1H[46m{[34;1H}[m[30m[47m[36;56H30,1 [30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;24H[1;35r[35;1H
+[1;36r[29;1H{[33;1H}
+
+[34m/** Frees all resources used by currently valid bigBits.  bigBits[m[30m[47m[36;56H[K[36;56H31,24[10C1%[30;24H[?25h[?25l[36;46H~@k[30;24H[36;46H   [30;9H[1;35r[35;1H
+[1;36r[35;1H[34m *  is not valid after this function returns.[m[30m[47m[36;56H[K[36;56H32,9[11C3%[30;9H[?25h[?25l[36;46H~@k[30;9H[36;46H   [30;14H[1;35r[35;1H
+[1;36r[35;1H[34m */[m[30m[47m[36;56H[K[36;56H33,14[10C5%[30;14H[?25h[?25l[36;46H~@k[30;14H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[26;1H[46m{[30;1H}[m[30m[47m[35;1H[32mvoid[m[30m[47m[36;56H[K[36;56H34,1[11C7%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[25;1H{[29;1H}[35;1HfreeBigBits(BigBits *bigBits)[36;56H[K[36;56H35,0-1[9C9%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;26H[1;35r[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H36,26[9C11%[30;26H[?25h[?25l[36;46H~@k[30;26H[36;46H   [30;26H[1;35r[35;1H
+[1;36r[35;3H[34m//@[m[30m[47m[30m[43mTODO[m[30m[47m[36;56H[K[36;56H37,26[9C13%[30;26H[?25h[?25l[36;46H~@k[30;26H[36;46H   [30;3H[1;35r[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H38,3[10C15%[30;3H[?25h[?25l[36;46H~@k[30;3H[36;46H   [30;4H[1;35r[35;1H
+[1;36r[36;56H[K[36;56H39,4[10C17%[30;4H[?25h[?25l[36;46H~@k[30;4H[36;46H   [30;26H[1;35r[35;1H
+[1;36r[36;56H[K[36;56H40,26[9C19%[30;26H[?25h[?25l[1;35r[35;1H
+[1;36r[30;1H[46m{
+
+}[m[30m[47m
+
+
+[34m/** Return a lower-case hex string representing bigBits. Returned[m[30m[47m[36;56H[K[36;56H41,1[10C21%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;9H[1;35r[35;1H
+[1;36r[29;1H{
+
+}[35;1H[34m *  string should not contain any non-significant leading zeros.[m[30m[47m[36;56H[K[36;56H42,9[10C23%[30;9H[?25h[?25l[36;46H~@k[30;9H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[28;1H[46m{
+
+}[m[30m[47m[35;1H[34m *  Returns NULL on error with errno set [m[30m[47m[31m"appropriately"[m[30m[47m[34m.  (Note that[m[30m[47m[36;56H[K[36;56H43,1[10C25%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[27;1H{
+
+}[35;1H[34m *  there is no call to free the corresponding string).[m[30m[47m[36;56H[K[36;56H44,0-1[8C26%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;1H[34m */[m[30m[47m[36;56H[K[36;56H45,0-1[8C28%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;26H[1;35r[35;1H
+[1;36r[35;1H[32mconst[m[30m[47m [32mchar[m[30m[47m *[36;56H[K[36;56H46,26[9C30%[30;26H[?25h
