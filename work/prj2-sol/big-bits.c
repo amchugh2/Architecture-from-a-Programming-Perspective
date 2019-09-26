@@ -45,18 +45,21 @@ newBigBits(const char *hex)
   while(hex[size] != '\0'){
 	  size++;
   }
+  printf("after getting size of array");
   // using size, go through and break into array
   // Big Endian order
   char bigBit[size];
   for(int j = 0; j < size; j++){
 	  bigBit[j] = hex[j];
   }
+  printf("after breaking into array");
  
  char *pointer = bigBit;
   
   // Make struct object with attributes
   struct BigBits big = {pointer, size};
   BigBits *bigPointer = &big;
+  printf("after making pointer");
 
   printf("Here");
   // return pointer
@@ -76,10 +79,13 @@ freeBigBits(BigBits *bigBits)
 {
   //@TODO
   //STACK:
+  printf("before freeing anything");
   freeStack(bigBits);
+  printf("after freeing stack");
   // HEAP:
   // use malloc (somewhere else) and then call free
   free(bigBits);
+  printf("after freeing heap");
 }
 
 
@@ -93,12 +99,14 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
+  printf("before string conversion");
   int i = 0;
   while(bigBits->c[i] == '0'){
 	  i++;
   }
   // updated pointer to bigBits without leading zeros
  return bigBits + i;
+ printf("after string conversion");
 
   return NULL;
 }
