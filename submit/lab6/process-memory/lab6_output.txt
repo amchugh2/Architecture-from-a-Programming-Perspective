@@ -1,0 +1,15 @@
+Exercize 1:
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ ./process-memory 10&
+[1] 32728
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ 10 MB allocated at 0x7f04f1ec5010
+
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ ps -Fp 32728
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+amchugh2 32728 28418  0  3130   748   3 12:17 pts/1    00:00:00 ./process-memory
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ ./process-memory 100 &
+[2] 334
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ 100 MB allocated at 0x7fb112aeb010
+
+amchugh2@g7-14:~/i220a_new/work/lab6/process-memory$ ps -Fp 334
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+amchugh2   334 28418  0 26170   748   1 12:18 pts/1    00:00:00 ./process-memory
