@@ -1,1 +1,15 @@
+(typed because would not allow me to copy/paste)
+exercize 1:
+./process-memory 10 &
+[1] 27407
+ps -Fp 27407
+UID 	PID	PPID	C 	SZ	RSS PSR STIME TTY	TIME
+amchugh2 27534 26873 	0	3130	744 0	12:13 pts/11	0:00:00
+
+./process memory 100 &
+[4] 27609
+ps -Fp 27609
+UID 	PID	PPID	C 	SZ	RSS PSR STIME TTY	TIME
+amchugh2 27609 26873 	0	26170	684 0	12:13 pts/11	0:00:00
+
 
