@@ -19,8 +19,6 @@ struct BigBits {
   int size;
 };
 
-
-
 /** Return a pointer to a representation of a big integer with value
  *  corresponding to the non-empty hexadecimal string hex.  Note that
  *  hex will only contain hexadecimal characters '0' - '9', 'a' - 'f'
@@ -31,6 +29,7 @@ struct BigBits {
  *  Returns NULL on error with errno set "appropriately".
  */
 // TA: get string in, convert to bigBits according to data types, and then return pointer to that bigBit
+
 const BigBits *
 newBigBits(const char *hex)
 {
@@ -42,14 +41,15 @@ newBigBits(const char *hex)
   // while hex is not ending in null
   // get size of hex
   int size = 0;
+	printf("%s kjhk",hex);
   while(hex[size] != '\0'){
 	  size++;
   }
   printf("after getting size of array");
   // using size, go through and break into array
   // Big Endian order
-  char bigBit[size];
-  for(int j = 0; j < size; j++){
+  char bigBit[size+1];
+  for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
   }
   printf("after breaking into array");
@@ -101,11 +101,12 @@ stringBigBits(const BigBits *bigBits)
   //@TODO
   printf("before string conversion");
   int i = 0;
-  while(bigBits->c[i] == '\0'){
+  while(bigBits->c[i] == '0'){
 	  i++;
   }
   // updated pointer to bigBits without leading zeros
- return bigBits + i;
+ const char* new_bigBits = bigBits->c[i];
+ return new_bigBits;
  printf("after string conversion");
 
   return NULL;
@@ -119,6 +120,7 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
+  return bigBits1 && bigBits2;
   return NULL;
 }
 
