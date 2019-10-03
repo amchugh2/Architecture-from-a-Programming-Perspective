@@ -101,11 +101,12 @@ stringBigBits(const BigBits *bigBits)
   //@TODO
   printf("before string conversion");
   int i = 0;
-  while(bigBits->c[i] == '0'){
+  while(bigBits->c[i] == '0' || bigBits->c[i] == 'x'){
 	  i++;
   }
+  
   // updated pointer to bigBits without leading zeros
- const char* new_bigBits = bigBits->c[i];
+ const char* new_bigBits = &(bigBits->c[i]);
  return new_bigBits;
  printf("after string conversion");
 
