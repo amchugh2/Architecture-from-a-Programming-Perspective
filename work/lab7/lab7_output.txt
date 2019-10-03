@@ -1,0 +1,2 @@
+Ex 3:
+If you also declare y in the f.c file to be a double, it will also change the value of x.

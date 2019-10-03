@@ -1,0 +1,1771 @@
+Script started on 2019-10-03 11:46:04-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd fil[K[K[K[K[K[Kcd files
+amchugh2@g7-14:~/i220a_new/work/lab7/files$ ls
+libgeom  libvec  log10	multiple-defs  multiple-symbols  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7/files$ l[Kcd .. 
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd ..
+amchugh2@g7-14:~/i220a_new/work$ ls
+lab2  lab7
+amchugh2@g7-14:~/i220a_new/work$ lab[K[K[Kcd lab7
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+files	   lab7.pdf  libgeom  log10	multiple-defs	  static-dynamic
+lab7.html  lab7.umt  libvec   Makefile	multiple-symbols  typescript
+amchugh2@g7-14:~/i220a_new/work/lab7$ git rm =[K[K[K[K[K[K[K[Krm -f "files"
+rm: cannot remove 'files': Is a directory
+amchugh2@g7-14:~/i220a_new/work/lab7$ rm -f "files"[C[C[K[1Pfiles
+rm: cannot remove 'files': Is a directory
+amchugh2@g7-14:~/i220a_new/work/lab7$ lsrm -f files[1@r
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+lab7.html  lab7.umt  libvec  Makefile	    multiple-symbols  typescript
+lab7.pdf   libgeom   log10   multiple-defs  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd log10
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ ls
+log10.c  Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ vim log0[K10.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"log10.c" 12L, 185C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<math.h>[m
+[35m#include [m[31m<stdio.h>[m
+
+[32mint[m
+main() {
+  [38;5;130mdo[m {
+    [32mdouble[m d;
+    [38;5;130mif[m (scanf([31m"[m[35m%lg[m[31m"[m, &d) != [31m1[m) [38;5;130mbreak[m;
+    printf([31m"log10([m[35m%g[m[31m) = [m[35m%g\n[m[31m"[m, d, log10(d));
+  } [38;5;130mwhile[m ([31m1[m);
+  [38;5;130mreturn[m [31m0[m;
+}
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;log10.c (~/git-repos/i220a_new/work/lab7/log10) - VIM]1;log10.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<math.h>[m
+[38;5;81m#include [m[95m<stdio.h>[m
+
+[38;5;121mint[m
+main() {
+  [93mdo[m {
+    [38;5;121mdouble[m d;
+    [93mif[m (scanf([95m"[m[38;5;224m%lg[m[95m"[m, &d) != [95m1[m) [93mbreak[m;
+    printf([95m"log10([m[38;5;224m%g[m[95m) = [m[38;5;224m%g\n[m[95m"[m, d, log10(d));
+  } [93mwhile[m ([95m1[m);
+  [93mreturn[m [95m0[m;
+}
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"log10.c" 12L, 185C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<math.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+
+[32mint[m[30m[47m
+main() {
+  [1m[38;5;130mdo[m[30m[47m {
+    [32mdouble[m[30m[47m d;
+    [1m[38;5;130mif[m[30m[47m (scanf([31m"[m[30m[47m[35m%lg[m[30m[47m[31m"[m[30m[47m, &d) != [31m1[m[30m[47m) [1m[38;5;130mbreak[m[30m[47m;
+    printf([31m"log10([m[30m[47m[35m%g[m[30m[47m[31m) = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m, d, log10(d));
+  } [1m[38;5;130mwhile[m[30m[47m ([31m1[m[30m[47m);
+  [1m[38;5;130mreturn[m[30m[47m [31m0[m[30m[47m;
+}
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[30m[47m[24;63H1,1[11CAll[1;1H[?25h[?25l[24;53H:[1;1H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/log10$ make
+cc -g -Wall -std=c11   -c -o log10.o log10.c
+cc   log10.o   -o log10
+/usr/bin/ld: log10.o: in function `main':
+/home/amchugh2/i220a_new/work/lab7/log10/log10.c:9: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: log10] Error 1
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ man log10
+[?1049h[22;0;0t[?1h=LOG10(3)                   Linux Programmer's Manual                  LOG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE || _SVID_SOURCE[m
+[m
+[1mDESCRIPTION[0m[m
+       These functions return the base 10 logarithm of [4mx[24m.[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/log10$ ls
+log10.c  log10.o  Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ cd [K[K[Kvim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 9L, 96C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDLIBS [m=
+
+[36mlog10:[m[10Clog10.o
+
+[38;5;130m.PHONY:[m[9Cclean
+[36mclean:[m
+[31m                rm -f *.o log10[m
+
+[94m~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;Makefile (~/git-repos/i220a_new/work/lab7/log10) - VIM]1;Makefile[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDLIBS [m=
+
+[1m[96mlog10:[m[10Clog10.o
+
+[93m.PHONY:[m[9Cclean
+[1m[96mclean:[m
+[95m                rm -f *.o log10[m
+
+[94m~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"Makefile" 9L, 96C[1;1H[?25h[?25l[24;63H2,9[2;9H[?25h[?25l[24;53H<20>[2;9H[24;53H    [3;1H[24;63H3,0-1[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;9H[24;63H2,9  [2;9H[?25h[?25l[24;53H~@k[2;9H[24;53H   [2;9H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H2,9[11CAll[2;9H[?25h[?25l[24;65H10]2;Makefile + (~/git-repos/i220a_new/work/lab7/log10) - VIM]1;Makefile[2;10H[?25h[?25l-[24;66H1[2;11H[?25h[?25ll[24;66H2[2;12H[?25h[?25lm[24;66H3[2;13H[?25h[24;1H[K[2;12H[?25l[24;53H^[[2;12H[24;53H  [2;13H[24;63H2,12[10CAll[2;12H[?25h[?25l[24;53H:[2;12H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l"Makefile" 9L, 100C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/log10$ make
+cc   log10.o  -lm  -o log10
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ .?[K/log-10
+bash: ./log-10: No such file or directory
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ ./log10
+echo 10 1000 2                ^C
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ 10[K[Kecho 10 1000 2 | ./log10
+log10(10) = 1
+log10(1000) = 3
+log10(2) = 0.30103
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ ls [K[K[Kls -l /user[K[Kr/lib/x86_64-linux-gnu/libm .*
+-rw-r--r-- 1 root root 132 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.a
+-rw-r--r-- 1 root root 186 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.so
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ nm .u[K[K/usr/lib/x86_64.[K/linux-gnu/Li[KIBM_VE RSION >libm.nm 2>/dev/null
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ vim libm.nm
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"libm.nm" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll]2;libm.nm (~/git-repos/i220a_new/work/lab7/log10) - VIM]1;libm.nm[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll"libm.nm" 0L, 0C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/log10$ ls
+libm.nm  log10	log10.c  log10.o  Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/log10$ vim libm.nm[K[K[K[K[K[K[K[K[K[K[Kman nm
+[?1049h[22;0;0t[?1h=NM(1)                        GNU Development Tools                       NM(1)[m
+[m
+[1mNAME[0m[m
+       nm - list symbols from object files[m
+[m
+[1mSYNOPSIS[0m[m
+       nm [[1m-A[0m|[1m-o[0m|[1m--print-file-name[0m] [[1m-a[0m|[1m--debug-syms[0m][m
+          [[1m-B[0m|[1m--format=bsd[0m] [[1m-C[0m|[1m--demangle[0m[=[4mstyle[24m]][m
+          [[1m-D[0m|[1m--dynamic[0m] [[1m-f[0m[4mformat[24m|[1m--format=[0m[4mformat[24m][m
+          [[1m-g[0m|[1m--extern-only[0m] [[1m-h[0m|[1m--help[0m][m
+          [[1m-l[0m|[1m--line-numbers[0m] [[1m--inlines[0m][m
+          [[1m-n[0m|[1m-v[0m|[1m--numeric-sort[0m][m
+          [[1m-P[0m|[1m--portability[0m] [[1m-p[0m|[1m--no-sort[0m][m
+          [[1m-r[0m|[1m--reverse-sort[0m] [[1m-S[0m|[1m--print-size[0m][m
+          [[1m-s[0m|[1m--print-armap[0m] [[1m-t[0m [4mradix[24m|[1m--radix=[0m[4mradix[24m][m
+          [[1m-u[0m|[1m--undefined-only[0m] [[1m-V[0m|[1m--version[0m][m
+          [[1m-X[0m [1m32_64[0m] [[1m--defined-only[0m] [[1m--no-demangle[0m][m
+          [[1m--plugin[0m [4mname[24m] [[1m--size-sort[0m] [[1m--special-syms[0m][m
+          [[1m--synthetic[0m] [[1m--with-symbol-versions[0m] [[1m--target=[0m[4mbfdname[24m][m
+          [[4mobjfile[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       GNU [1mnm[0m lists the symbols from object files [4mobjfile[24m....  If no object[m
+[7m Manual page nm(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       files are listed as arguments, [1mnm[0m assumes the file [4ma.out[24m.[m
+[7m Manual page nm(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMNM(1)                        GNU Development Tools                       NM(1)[m
+[24;1H[K[7m Manual page nm(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/log10$ cd ..
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+lab7.html  lab7.umt  libvec  Makefile	    multiple-symbols  typescript
+lab7.pdf   libgeom   log10   multiple-defs  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+lab7.html  lab7.umt  libvec  Makefile	    multiple-symbols  typescript
+lab7.pdf   libgeom   log10   multiple-defs  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd .[K[K[K[Kcd multiple-symbols
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ ls
+def1.c	def2.c	main.c	Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc -g -Wall -std=c11   -c -o def2.o def2.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc def1.o def2.o main.o  -o multiple-symbols
+/usr/bin/ld: def2.o:/home/amchugh2/i220a_new/work/lab7/multiple-symbols/def2.c:1: multiple definition of `sym'; def1.o:/home/amchugh2/i220a_new/work/lab7/multiple-symbols/def1.c:1: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: multiple-symbols] Error 1
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ vim[K[K[Kls
+def1.c	def1.o	def2.c	def2.o	main.c	main.o	Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ vim def1.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"def1.c" 1L, 14C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mint[m sym = [31m99[m;
+[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;def1.c (~/git-repos/i220a_new/work/lab7/multiple-symbols) - VIM]1;def1.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mint[m sym = [95m99[m;
+[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"def1.c" 1L, 14C[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;2H[24;65H2[1;2H[?25h[?25l[24;53H~@k[1;2H[24;53H   [1;3H[24;65H3[1;3H[?25h[?25l[24;53H~@k[1;3H[24;53H   [1;4H[24;65H4[1;4H[?25h[?25l[24;53H~@k[1;4H[24;53H   [1;5H[24;65H5[1;5H[?25h[?25l[24;53H~@k[1;5H[24;53H   [1;6H[24;65H6[1;6H[?25h[?25l[24;53H~@k[1;6H[24;53H   [1;7H[24;65H7[1;7H[?25h[?25l[24;53H~@k[1;7H[24;53H   [1;8H[24;65H8[1;8H[?25h[?25l[24;53H~@k[1;8H[24;53H   [1;9H[24;65H9[1;9H[?25h[?25l[24;53H~@k[1;9H[24;53H   [1;10H[24;65H10[1;10H[?25h[?25l[24;53H~@k[1;10H[24;53H   [1;11H[24;66H1[1;11H[?25h[?25l[24;53H~@k[1;11H[24;53H   [1;12H[24;66H2[1;12H[?25h[?25l[24;53H~@k[1;12H[24;53H   [1;12H[24;1H[1m-- INSERT --[m[24;14H[K[24;63H1,12[10CAll[1;12H[?25h[?25l[24;66H3[1;13H[?25h[?25l;[1;13H[K[24;66H2]2;def1.c + (~/git-repos/i220a_new/work/lab7/multiple-symbols) - VIM]1;def1.c[1;12H[?25h[?25l;[1;12H[K[24;66H1[1;11H[?25h[?25l;[1;11H[K[24;66H0[1;10H[?25h[?25l;[1;10H[K[24;65H9 [1;9H[?25h[?25l;[1;9H[K[24;65H8[1;8H[?25h[24;1H[K[1;7H[?25l[24;53H^[[1;7H[24;53H  [1;8H[24;63H1,7[11CAll[1;7H[?25h[?25l[24;53H:[1;7H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l"def1.c" 1L, 9C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc def1.o def2.o main.o  -o multiple-symbols
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-symbols$ cd[K[Kcd ..
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+lab7.html  lab7.umt  libvec  Makefile	    multiple-symbols  typescript
+lab7.pdf   libgeom   log10   multiple-defs  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd multiple-defs
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ s[Kls
+f.c  main.c  Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ vim main.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"main.c" 13L, 136C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<stdio.h>[m
+
+[32mvoid[m f([32mvoid[m);
+
+[32mint[m x = [31m2234[m, y = [31m3924[m;
+
+[32mint[m
+main()
+{
+  f();
+  printf([31m"x = 0x[m[35m%x[m[31m, y = 0x[m[35m%x\n[m[31m"[m, x, y);
+  [38;5;130mreturn[m [31m0[m;
+}
+[94m~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;main.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;main.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+
+[38;5;121mvoid[m f([38;5;121mvoid[m);
+
+[38;5;121mint[m x = [95m2234[m, y = [95m3924[m;
+
+[38;5;121mint[m
+main()
+{
+  f();
+  printf([95m"x = 0x[m[38;5;224m%x[m[95m, y = 0x[m[38;5;224m%x\n[m[95m"[m, x, y);
+  [93mreturn[m [95m0[m;
+}
+[94m~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"main.c" 13L, 136C[1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ vim f.c.[K
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"f.c" 5L, 36C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mdouble[m x;
+
+[32mvoid[m f() {
+  x = -[31m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;f.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mdouble[m x;
+
+[38;5;121mvoid[m f() {
+  x = -[95m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"f.c" 5L, 36C[1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ make
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc -g -Wall -std=c11   -c -o f.o f.c
+cc main.o f.o  -o multiple-defs
+/usr/bin/ld: warning: alignment 4 of symbol `x' in main.o is smaller than 8 in f.o
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ ./multiple-defs
+x = 0x0, y = 0x80000000
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ m[Kvim main.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"main.c" 13L, 136C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<stdio.h>[m
+
+[32mvoid[m f([32mvoid[m);
+
+[32mint[m x = [31m2234[m, y = [31m3924[m;
+
+[32mint[m
+main()
+{
+  f();
+  printf([31m"x = 0x[m[35m%x[m[31m, y = 0x[m[35m%x\n[m[31m"[m, x, y);
+  [38;5;130mreturn[m [31m0[m;
+}
+[94m~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;main.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;main.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<stdio.h>[m
+
+[38;5;121mvoid[m f([38;5;121mvoid[m);
+
+[38;5;121mint[m x = [95m2234[m, y = [95m3924[m;
+
+[38;5;121mint[m
+main()
+{
+  f();
+  printf([95m"x = 0x[m[38;5;224m%x[m[95m, y = 0x[m[38;5;224m%x\n[m[95m"[m, x, y);
+  [93mreturn[m [95m0[m;
+}
+[94m~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"main.c" 13L, 136C[1;1H[?25h[?25l[24;53H"[1;1H[?25h[?25l[24;54Hx[1;1H[?25h[?25l[24;55H^M[1;1H[24;53H    [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H"[2;1H[?25h[?25l[24;54H:[2;1H[?25h[?25l[24;55Hx[2;1H[24;56Hdl[2;1H[24;53H     [2;1H[?25h[?25l[24;53H^[[2;1H[24;53H  [2;1H[24;53H^[[2;1H[24;53H  [2;1H[?25h[?25l[24;53H:[2;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ make
+make: 'multiple-defs' is up to date.
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ vim f.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"f.c" 5L, 36C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mdouble[m x;
+
+[32mvoid[m f() {
+  x = -[31m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;f.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mdouble[m x;
+
+[38;5;121mvoid[m f() {
+  x = -[95m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"f.c" 5L, 36C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ vim f.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"f.c" 5L, 36C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mdouble[m x;
+
+[32mvoid[m f() {
+  x = -[31m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;f.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mdouble[m x;
+
+[38;5;121mvoid[m f() {
+  x = -[95m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"f.c" 5L, 36C[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;1H[24;63H3,1  [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [4;2H[24;65H2[4;2H[?25h[?25l[24;53H~@k[4;2H[24;53H   [4;3H[24;65H3[4;3H[?25h[?25l[24;53H~@k[4;3H[24;53H   [4;3H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H4,3[11CAll[4;3H[?25h[?25lyx = -[95m0.0[m;[24;65H4]2;f.c + (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[4;4H[?25h[?25l = -[95m0.0[m;[4;12H[K[4;4H[?25h[24;1H[K[4;3H[?25l[24;53H^[[4;3H[24;53H  [4;4H[24;63H4,3[11CAll[4;3H[?25h[?25l[24;53H:[4;3H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l"f.c" 5L, 36C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ make
+cc -g -Wall -std=c11   -c -o f.o f.c
+[01m[Kf.c:[m[K In function ‘[01m[Kf[m[K’:
+[01m[Kf.c:4:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ undeclared (first use in this function)
+   [01;31m[Ky[m[K = -0.0;
+   [01;31m[K^[m[K
+[01m[Kf.c:4:3:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: f.o] Error 1
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ makevim f.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"f.c" 5L, 36C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mdouble[m x;
+
+[32mvoid[m f() {
+  y = -[31m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H4,3[11CAll]2;f.c (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[4;3H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mdouble[m x;
+
+[38;5;121mvoid[m f() {
+  y = -[95m0.0[m;
+}
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H4,3[11CAll"f.c" 5L, 36C[4;3H[?25h[?25l[24;53H~@k[4;3H[24;53H   [3;3H[24;63H3[3;3H[?25h[?25l[24;53H~@k[3;3H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;3H[24;63H1,3  [1;3H[?25h[?25l[24;53H~@k[1;3H[24;53H   [1;4H[24;65H4[1;4H[?25h[?25l[24;53H~@k[1;4H[24;53H   [1;5H[24;65H5[1;5H[?25h[?25l[24;53H~@k[1;5H[24;53H   [1;6H[24;65H6[1;6H[?25h[?25l[24;53H~@k[1;6H[24;53H   [1;7H[24;65H7[1;7H[?25h[?25l[24;53H~@k[1;7H[24;53H   [1;8H[24;65H8[1;8H[?25h[?25l[24;53H~@k[1;8H[24;53H   [1;9H[24;65H9[1;9H[?25h[?25l[24;53H~@k[1;9H[24;53H   [1;8H[24;65H8[1;8H[?25h[?25l[24;53H~@k[1;8H[24;53H   [1;8H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H1,8[11CAll[1;8H[?25h[?25l[24;4H[1mREPLACE --[m[24;63H[K[24;63H1,8[11CAll[1;8H[?25h[?25ly[24;65H9]2;f.c + (~/git-repos/i220a_new/work/lab7/multiple-defs) - VIM]1;f.c[1;9H[?25h[24;1H[K[1;8H[?25l[24;53H^[[1;8H[24;53H  [1;9H[24;63H1,8[11CAll[1;8H[?25h[?25l[24;53H:[1;8H[24;53H[K[24;1H:[?2004h[?25hX[?25l[?25h[?25l[24;1H[K[24;1HEnter encryption key:[?2004h [?25h[?25l[24;1H[K[1;8H[24;63H1,8[11CAll[1;8H[?25h[?25l[24;53H:[1;8H[24;53H[K[24;1H:[?2004h[?25hX[?25l[?25h[?25l[24;1H[K[24;1HEnter encryption key:[?2004h [?25h[?25l[24;1H[K[1;8H[24;63H1,8[11CAll[1;8H[?25h[?25l[24;53H:[1;8H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l"f.c" 5L, 36C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ make
+cc -g -Wall -std=c11   -c -o f.o f.c
+cc main.o f.o  -o multiple-defs
+/usr/bin/ld: warning: alignment 4 of symbol `y' in main.o is smaller than 8 in f.o
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ makevim f.c[3Pmakevim f.c[3Pmakevim f.c[K[K[K[K[K[K[K./multiple-defs
+x = 0x8ba, y = 0x0
+amchugh2@g7-14:~/i220a_new/work/lab7/multiple-defs$ j[Kcd ..
+amchugh2@g7-14:~/i220a_new/work/lab7$ mkdi[K[K[K[Ktouch lab7_outputtx[K[K.t[Ktxt
+amchugh2@g7-14:~/i220a_new/work/lab7$ l[Kemacs lab7_output.txt
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.741[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.802[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.802[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.802[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.846[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.866[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:46.908[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.004[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.131[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.240[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.240[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.343[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.378[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.519[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.539[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.757[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.776[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.885[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:47.971[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.077[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.108[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.137[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.153[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.167[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:12716): [1;33mWARNING[0m **: [34m12:04:48.167[0m: AT-SPI: Could not obtain desktop path or name
+
+amchugh2@g7-14:~/i220a_new/work/lab7$ ls
+lab7.html	  lab7.pdf  libvec    multiple-defs	typescript
+lab7_output.txt   lab7.umt  log10     multiple-symbols
+lab7_output.txt~  libgeom   Makefile  static-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd lab7[K[K[K[K[K[K[Kvim lab7)[K_output.txt
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"lab7_output.txt" 2L, 96C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HEx 3:
+If you also declare y in the f.c file to be a double, it will also change the vaa[3;1Hlue of x.
+[94m~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;lab7_output.txt (~/git-repos/i220a_new/work/lab7) - VIM]1;lab7_output.txt[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1HEx 3:
+If you also declare y in the f.c file to be a double, it will also change the vaa[3;1Hlue of x.
+[94m~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"lab7_output.txt" 2L, 96C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7$ cd static-[K[K[K[K[K[K[K[K[K[Kcd stat-[Kic-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ ls
+log10.c  Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ vim m[K1[Klog1-[K0.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"log10.c" 12L, 185C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<math.h>[m
+[35m#include [m[31m<stdio.h>[m
+
+[32mint[m
+main() {
+  [38;5;130mdo[m {
+    [32mdouble[m d;
+    [38;5;130mif[m (scanf([31m"[m[35m%lg[m[31m"[m, &d) != [31m1[m) [38;5;130mbreak[m;
+    printf([31m"log10([m[35m%g[m[31m) = [m[35m%g\n[m[31m"[m, d, log10(d));
+  } [38;5;130mwhile[m ([31m1[m);
+  [38;5;130mreturn[m [31m0[m;
+}
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;log10.c (~/git-repos/i220a_new/work/lab7/static-dynamic) - VIM]1;log10.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m<math.h>[m
+[38;5;81m#include [m[95m<stdio.h>[m
+
+[38;5;121mint[m
+main() {
+  [93mdo[m {
+    [38;5;121mdouble[m d;
+    [93mif[m (scanf([95m"[m[38;5;224m%lg[m[95m"[m, &d) != [95m1[m) [93mbreak[m;
+    printf([95m"log10([m[38;5;224m%g[m[95m) = [m[38;5;224m%g\n[m[95m"[m, d, log10(d));
+  } [93mwhile[m ([95m1[m);
+  [93mreturn[m [95m0[m;
+}
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"log10.c" 12L, 185C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ make
+cc -g -Wall  -std=c11   -c -o log10.o log10.c
+cc -static log10.o -lm -o log10-static
+cc log10.o -lm -o log10-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ ls -l
+total 940
+-rw-r--r-- 1 amchugh2 amchugh2    185 Oct  3 11:43 log10.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19248 Oct  3 12:06 log10-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   6048 Oct  3 12:06 log10.o
+-rwxr-xr-x 1 amchugh2 amchugh2 924880 Oct  3 12:06 log10-static
+-rw-r--r-- 1 amchugh2 amchugh2    250 Oct  3 11:43 Makefile
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ nm log10-static >log10-stat ic.nm
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ nm log1--dy[K[K[Kdynamic >log10-dyna mic.nm
+nm: 'log1-dynamic': No such file
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ m[Knm log10-dynamic > l[K[Klog1-[K0-dyn amic.nm
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ ls
+log10.c        log10-dynamic.nm  log10-static	  Makefile
+log10-dynamic  log10.o		 log10-static.nm
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ emacs log10.[K-static.nm
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.636[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.698[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.698[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.699[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.723[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.740[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.782[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.866[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:27.935[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.047[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.047[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.071[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.071[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.071[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.071[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.172[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.199[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.219[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.233[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.458[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.476[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.589[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.664[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.770[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.799[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.835[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:13191): [1;33mWARNING[0m **: [34m12:07:28.835[0m: AT-SPI: Could not obtain desktop path or name
+
+amchugh2@g7-14:~/i220a_new/work/lab7/static-dynamic$ cd ..
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd libvec
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ la[Ks
+addvec.c  Makefile  multvec.c  testvec.c  vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim addvec.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"addvec.c" 7L, 111C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mvoid[m
+addvec([32mint[m a[], [32mint[m b[], [32mint[m z[], [32mint[m n)
+{
+  [38;5;130mfor[m ([32mint[m i = [31m0[m; i < n; i++) {
+    z[i] = a[i] + b[i];
+  }
+}
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;addvec.c (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;addvec.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mvoid[m
+addvec([38;5;121mint[m a[], [38;5;121mint[m b[], [38;5;121mint[m z[], [38;5;121mint[m n)
+{
+  [93mfor[m ([38;5;121mint[m i = [95m0[m; i < n; i++) {
+    z[i] = a[i] + b[i];
+  }
+}
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"addvec.c" 7L, 111C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim multvec.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"multvec.c" 7L, 112C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[32mvoid[m
+multvec([32mint[m a[], [32mint[m b[], [32mint[m z[], [32mint[m n)
+{
+  [38;5;130mfor[m ([32mint[m i = [31m0[m; i < n; i++) {
+    z[i] = a[i] * b[i];
+  }
+}
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;multvec.c (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;multvec.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;121mvoid[m
+multvec([38;5;121mint[m a[], [38;5;121mint[m b[], [38;5;121mint[m z[], [38;5;121mint[m n)
+{
+  [93mfor[m ([38;5;121mint[m i = [95m0[m; i < n; i++) {
+    z[i] = a[i] * b[i];
+  }
+}
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"multvec.c" 7L, 112C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim testvec.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"testvec.c" 31L, 644C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m"vectors.h"[m
+
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+
+[32mstatic[m [32mvoid[m
+outvec([32mFILE[m *out, [32mint[m vec[], [32mint[m n) {
+  [38;5;130mfor[m ([32mint[m i = [31m0[m; i < n; i++) {
+    fprintf(out, [31m"[m[35m%d[m[31m "[m, vec[i]);
+  }
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [38;5;130mif[m (argc == [31m1[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m INT1 ...[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mint[m n = argc - [31m1[m;
+  [32mint[m a[n], b[n];
+  [38;5;130mfor[m ([32mint[m i = [31m0[m; i < n; i++) {
+    a[i] = b[i] = atoi(argv[i + [31m1[m]);[24;63H1,1[11CTop]2;testvec.c (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;testvec.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#include [m[95m"vectors.h"[m
+
+[38;5;81m#include [m[95m<stdio.h>[m
+[38;5;81m#include [m[95m<stdlib.h>[m
+
+[38;5;121mstatic[m [38;5;121mvoid[m
+outvec([38;5;121mFILE[m *out, [38;5;121mint[m vec[], [38;5;121mint[m n) {
+  [93mfor[m ([38;5;121mint[m i = [95m0[m; i < n; i++) {
+    fprintf(out, [95m"[m[38;5;224m%d[m[95m "[m, vec[i]);
+  }
+}
+
+[38;5;121mint[m
+main([38;5;121mint[m argc, [38;5;121mconst[m [38;5;121mchar[m *argv[])
+{
+  [93mif[m (argc == [95m1[m) {
+    fprintf([95mstderr[m, [95m"usage: [m[38;5;224m%s[m[95m INT1 ...[m[38;5;224m\n[m[95m"[m, argv[[95m0[m]);
+    exit([95m1[m);
+  }
+  [38;5;121mint[m n = argc - [95m1[m;
+  [38;5;121mint[m a[n], b[n];
+  [93mfor[m ([38;5;121mint[m i = [95m0[m; i < n; i++) {
+    a[i] = b[i] = atoi(argv[i + [95m1[m]);[24;63H1,1[11CTop"testvec.c" 31L, 644C[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;1H[24;63H3,1  [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [5;1H[24;63H5,0-1[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [6;1H[24;63H6,1  [6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [7;1H[24;63H7[7;1H[?25h[?25l[24;53H~@k[7;1H[24;53H   [8;1H[24;63H8[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [9;1H[24;63H9[9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [10;1H[24;63H10,1[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [11;1H[7;37H[46m{[11;1H}[m[24;64H1[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [12;1H[7;37H{[11;1H}[24;64H2,0-1[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [13;1H[24;64H3,1  [13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [14;1H[24;64H4[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [15;1H[24;64H5[15;1H[?25h[?25l[24;53H~@k[15;1H[24;53H   [16;1H[24;64H6[16;1H[?25h[?25l[24;53H~@k[16;1H[24;53H   [17;1H[24;64H7[17;1H[?25h[?25l[24;53H~@k[17;1H[24;53H   [18;1H[24;64H8[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3H}[24;1H[K[24;63H19,1[10C12%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3H[38;5;121mint[m sum[n], product[n];[24;63H[K[24;63H20,1[10C25%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3Haddvec(a, b, sum, n);[24;63H[K[24;63H21,1[10C37%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3Hmultvec(a, b, product, n);[24;63H[K[24;63H22,1[10C50%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3Hprintf([95m"sum = "[m); outvec([95mstdout[m, sum, n); printf([95m"[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H23,1[10C62%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3Hprintf([95m"product = "[m); outvec([95mstdout[m, product, n); printf([95m"[m[38;5;224m\n[m[95m"[m);[24;63H[K[24;63H24,1[10C75%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;3H[93mreturn[m [95m0[m;[24;63H[K[24;63H25,1[10C87%[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [18;1H[1;23r[23;1H
+[1;24r[23;1H}[24;63H[K[24;63H26,1[10CBot[18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [19;1H[24;64H7[19;1H[?25h[?25l[24;53H~@k[19;1H[24;53H   [20;1H[24;64H8[20;1H[?25h[?25l[24;53H~@k[20;1H[24;53H   [21;1H[24;64H9[21;1H[?25h[?25l[24;53H~@k[21;1H[24;53H   [22;1H[24;63H30[22;1H[?25h[?25l[24;53H~@k[22;1H[24;53H   [23;1H[7;1H[46m{[23;1H}[m[24;64H1[23;1H[?25h[?25l[24;53H~@k[23;1H[24;53H   [23;1H[?25h[?25l[24;53H~@k[23;1H[24;53H   [23;1H[?25h[?25l[24;53H~@k[23;1H[24;53H   [23;1H[?25h[?25l[24;53H:[23;1H[24;53H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ make
+cc -g -Wall -fPIC -std=c11   -c -o addvec.o addvec.c
+cc -g -Wall -fPIC -std=c11   -c -o multvec.o multvec.c
+cc -shared addvec.o multvec.o -o libvec.so
+ar rcs libvec.a addvec.o multvec.o
+cc -g -Wall -fPIC -std=c11   -c -o testvec.o testvec.c
+cc  -static testvec.o -L. -lvec -o testvec-static
+cc testvec.o -L. -lvec -o testvec-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 828
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ./test-ve[K[K[Kvec-static 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ./test-[Kvec-dynamic 1 2 3
+./testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ LD_LIBRARY_AT[K[KPT[KAT [KH = [K. ./testvec-dynami c 1 2 3
+bash: LD_LIBRARY_PATH: command not found
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ LD_LIBRARY-[K_PATH =[K[K=. ./test-[Kvec-dynamic 1 2 3
+bash: ./testvec-dynamic1: No such file or directory
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ LID[K[KD_LIBRARY_PATH=. . /[K[K/testvec-dynamic  1[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc  1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ldd testvec-dynamic
+	linux-vdso.so.1 (0x00007ffee95cc000)
+	libvec.so => not found
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f8b24432000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f8b24631000)
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ nm tes[K[K[K[K[K[Knm testvec-static >testvc[Kec-static.n m
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls[K[Kls
+addvec.c  libvec.so  multvec.o	      testvec.o		 vectors.h
+addvec.o  Makefile   testvec.c	      testvec-static
+libvec.a  multvec.c  testvec-dynamic  testvec-static.nm
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ emacs test-[Kvec-static.nm
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.571[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.632[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.632[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.632[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.658[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.673[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.695[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.734[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.830[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:01.943[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.022[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.023[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.128[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.128[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.128[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:14593): [1;33mWARNING[0m **: [34m12:16:02.128[0m: AT-SPI: Could not obtain desktop path or name
+
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ run [K[K[K[Kg[Kmake
+make: Nothing to be done for 'all'.
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ g[Kgdb ./[K[Klibvec
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+libvec: No such file or directory.
+(gdb) g[Kq
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ li[K[Kgdb ./libvec
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./libvec: No such file or directory.
+(gdb) l[Kq
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ nm testvec-dynamic [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knm testvec-dynaic[K[Kmic >testvec-dynamic .nm
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim testvec-dynamic.nm
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"testvec-dynamic.nm" 42L, 1489C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;18HU addvec[2;18HU atoi@@GLIBC_2.2.5
+0000000000004060 B __bss_start
+0000000000004060 b completed.7325[5;18Hw __cxa_finalize@@GLIBC_2.2.5
+0000000000004050 D __data_start
+0000000000004050 W data_start
+00000000000010e0 t deregister_tm_clones
+0000000000001150 t __do_global_dtors_aux
+0000000000003dd0 t __do_global_dtors_aux_fini_array_entry
+0000000000004058 D __dso_handle
+0000000000003dd8 d _DYNAMIC
+0000000000004060 D _edata
+0000000000004068 B _end[15;18HU exit@@GLIBC_2.2.5
+0000000000001584 T _fini[17;18HU fprintf@@GLIBC_2.2.5
+0000000000001190 t frame_dummy
+0000000000003dc8 t __frame_dummy_init_array_entry
+00000000000021a4 r __FRAME_END__
+0000000000004000 d _GLOBAL_OFFSET_TABLE_[22;18Hw __gmon_start__
+0000000000002030 r __GNU_EH_FRAME_HDR[24;63H1,1[11CTop]2;testvec-dynamic.nm (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;testvec-dynamic.nm[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;18HU addvec[2;18HU atoi@@GLIBC_2.2.5
+0000000000004060 B __bss_start
+0000000000004060 b completed.7325[5;18Hw __cxa_finalize@@GLIBC_2.2.5
+0000000000004050 D __data_start
+0000000000004050 W data_start
+00000000000010e0 t deregister_tm_clones
+0000000000001150 t __do_global_dtors_aux
+0000000000003dd0 t __do_global_dtors_aux_fini_array_entry
+0000000000004058 D __dso_handle
+0000000000003dd8 d _DYNAMIC
+0000000000004060 D _edata
+0000000000004068 B _end[15;18HU exit@@GLIBC_2.2.5
+0000000000001584 T _fini[17;18HU fprintf@@GLIBC_2.2.5
+0000000000001190 t frame_dummy
+0000000000003dc8 t __frame_dummy_init_array_entry
+00000000000021a4 r __FRAME_END__
+0000000000004000 d _GLOBAL_OFFSET_TABLE_[22;18Hw __gmon_start__
+0000000000002030 r __GNU_EH_FRAME_HDR[24;63H1,1[11CTop"testvec-dynamic.nm" 42L, 1489C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hx[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim [K[K[K[Kemacs testv[K[K[Kxtvc[Kec-dynamic.nm
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:12.929[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:12.990[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:12.990[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:12.990[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.016[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.030[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.046[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.085[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.183[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.244[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.363[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.363[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.371[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.371[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.371[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.372[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.372[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.487[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.508[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.524[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.744[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.764[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.875[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:13.942[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:14.048[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:14.079[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15299): [1;33mWARNING[0m **: [34m12:20:14.079[0m: AT-SPI: Could not obtain desktop path or name
+
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ emacs text[K[Kstvec-dynamic.nm
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:27.921[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:27.999[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:27.999[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:27.999[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.015[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.035[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.069[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.156[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.205[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.308[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.308[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.326[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.326[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.326[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.326[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.416[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.439[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.439[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.503[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.525[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.750[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.768[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.887[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:28.955[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:29.061[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:29.091[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:15612): [1;33mWARNING[0m **: [34m12:21:29.091[0m: AT-SPI: Could not obtain desktop path or name
+
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ set L[K[K[K[K[Kst[Ket s[K[Ke[K env LIB_[K[K[K[K[K[K[K[K[K[K[K[Kgdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) set ev LI[KD_LIBRARY_PATH .
+No symbol table is loaded.  Use the "file" command.
+(gdb) tes[Kxtvec-dynamic test
+Undefined command: "textvec-dynamic".  Try "help".
+(gdb) q
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) q
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./[K[K[K[K[K[Kmake
+make: Nothing to be done for 'all'.
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./libvec
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./libvec: No such file or directory.
+(gdb) q
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ cd[K[Kcd .[K[K[K[Kldd testvec-dynamic
+	linux-vdso.so.1 (0x00007ffc155d1000)
+	libvec.so => not found
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f169cf7e000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f169d17d000)
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ man ld
+[?1049h[22;0;0t[?1h=LD(1)                        GNU Development Tools                       LD(1)[m
+[m
+[1mNAME[0m[m
+       ld - The GNU linker[m
+[m
+[1mSYNOPSIS[0m[m
+       ld [[1moptions[0m] [4mobjfile[24m ...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mld[0m combines a number of object and archive files, relocates their data[m
+       and ties up symbol references. Usually the last step in compiling a[m
+       program is to run [1mld[0m.[m
+[m
+       [1mld[0m accepts Linker Command Language files written in a superset of[m
+       AT&T's Link Editor Command Language syntax, to provide explicit and[m
+       total control over the linking process.[m
+[m
+       This man page does not describe the command language; see the [1mld[0m entry[m
+       in "info" for full details on the command language and on other aspects[m
+       of the GNU linker.[m
+[m
+       This version of [1mld[0m uses the general purpose BFD libraries to operate on[m
+       object files. This allows [1mld[0m to read, combine, and write object files[m
+[7m Manual page ld(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       in many different formats---for example, COFF or "a.out".  Different[m
+[7m Manual page ld(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       formats may be linked together to produce any available kind of object[m
+[7m Manual page ld(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       file.[m
+[7m Manual page ld(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Aside from its flexibility, the GNU linker is more helpful than other[m
+[7m Manual page ld(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       linkers in providing diagnostic information.  Many linkers abandon[m
+[7m Manual page ld(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       execution immediately upon encountering an error; whenever possible, [1mld[0m[m
+[7m Manual page ld(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       continues executing, allowing you to identify other errors (or, in some[m
+[7m Manual page ld(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       cases, to get an output file in spite of the error).[m
+[7m Manual page ld(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[24;1H[K[7m Manual page ld(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page ld(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ld [[1moptions[0m] [4mobjfile[24m ...[m
+[24;1H[K[7m Manual page ld(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[24;1H[K[7m Manual page ld(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page ld(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ld - The GNU linker[m
+[24;1H[K[7m Manual page ld(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[24;1H[K[7m Manual page ld(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page ld(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLD(1)                        GNU Development Tools                       LD(1)[m
+[24;1H[K[7m Manual page ld(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ld(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       in many different formats---for example, COFF or "a.out".  Different[m
+[7m Manual page ld(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       formats may be linked together to produce any available kind of object[m
+[7m Manual page ld(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       file.[m
+[7m Manual page ld(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Aside from its flexibility, the GNU linker is more helpful than other[m
+[7m Manual page ld(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       linkers in providing diagnostic information.  Many linkers abandon[m
+[7m Manual page ld(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       execution immediately upon encountering an error; whenever possible, [1mld[0m[m
+[7m Manual page ld(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       continues executing, allowing you to identify other errors (or, in some[m
+[7m Manual page ld(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       cases, to get an output file in spite of the error).[m
+[7m Manual page ld(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The GNU linker [1mld[0m is meant to cover a broad range of situations, and to[m
+[7m Manual page ld(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       be as compatible as possible with other linkers.  As a result, you have[m
+[7m Manual page ld(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       many choices to control its behavior.[m
+[7m Manual page ld(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page ld(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The linker supports a plethora of command-line options, but in actual[m
+[7m Manual page ld(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       practice few of them are used in any particular context.  For instance,[m
+[7m Manual page ld(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       a frequent use of [1mld[0m is to link standard Unix object files on a[m
+[7m Manual page ld(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       standard, supported Unix system.  On such a system, to link a file[m
+[7m Manual page ld(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       "hello.o":[m
+[7m Manual page ld(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               ld -o <output> /lib/crt0.o hello.o -lc[m
+[7m Manual page ld(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This tells [1mld[0m to produce a file called [4moutput[24m as the result of linking[m
+[7m Manual page ld(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the file "/lib/crt0.o" with "hello.o" and the library "libc.a", which[m
+[7m Manual page ld(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       will come from the standard search directories.  (See the discussion of[m
+[7m Manual page ld(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the [1m-l[0m option below.)[m
+[7m Manual page ld(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Some of the command-line options to [1mld[0m may be specified at any point in[m
+[7m Manual page ld(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the command line.  However, options which refer to files, such as [1m-l[0m or[m
+[7m Manual page ld(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-T[0m, cause the file to be read at the point at which the option appears[m
+[7m Manual page ld(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       in the command line, relative to the object files and other file[m
+[7m Manual page ld(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       options.  Repeating non-file options with a different argument will[m
+[7m Manual page ld(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       either have no further effect, or override prior occurrences (those[m
+[7m Manual page ld(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       further to the left on the command line) of that option.  Options which[m
+[7m Manual page ld(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       may be meaningfully specified more than once are noted in the[m
+[7m Manual page ld(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       descriptions below.[m
+[7m Manual page ld(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Non-option arguments are object files or archives which are to be[m
+[7m Manual page ld(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       linked together.  They may follow, precede, or be mixed in with[m
+[7m Manual page ld(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       command-line options, except that an object file argument may not be[m
+[7m Manual page ld(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       placed between an option and its argument.[m
+[7m Manual page ld(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Usually the linker is invoked with at least one object file, but you[m
+[7m Manual page ld(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page ld(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       "hello.o":[m
+[24;1H[K[7m Manual page ld(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Usually the linker is invoked with at least one object file, but you[m
+[7m Manual page ld(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       can specify other forms of binary input files using [1m-l[0m, [1m-R[0m, and the[m
+[7m Manual page ld(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       script command language.  If [4mno[24m binary input files at all are[m
+[7m Manual page ld(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       specified, the linker does not produce any output, and issues the[m
+[7m Manual page ld(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       message [1mNo[0m [1minput[0m [1mfiles[0m.[m
+[7m Manual page ld(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If the linker cannot recognize the format of an object file, it will[m
+[7m Manual page ld(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       assume that it is a linker script.  A script specified in this way[m
+[7m Manual page ld(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       augments the main linker script used for the link (either the default[m
+[7m Manual page ld(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       linker script or the one specified by using [1m-T[0m).  This feature permits[m
+[7m Manual page ld(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the linker to link against a file which appears to be an object or an[m
+[7m Manual page ld(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       archive, but actually merely defines some symbol values, or uses[m
+[7m Manual page ld(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       "INPUT" or "GROUP" to load other objects.  Specifying a script in this[m
+[7m Manual page ld(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       way merely augments the main linker script, with the extra commands[m
+[7m Manual page ld(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       placed after the main script; use the [1m-T[0m option to replace the default[m
+[7m Manual page ld(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       linker script entirely, but note the effect of the "INSERT" command.[m
+[7m Manual page ld(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For options whose names are a single letter, option arguments must[m
+[7m Manual page ld(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       either follow the option letter without intervening whitespace, or be[m
+[7m Manual page ld(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       given as separate arguments immediately following the option that[m
+[7m Manual page ld(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       requires them.[m
+[7m Manual page ld(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For options whose names are multiple letters, either one dash or two[m
+[7m Manual page ld(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       can precede the option name; for example, [1m-trace-symbol[0m and[m
+[7m Manual page ld(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--trace-symbol[0m are equivalent.  Note---there is one exception to this[m
+[7m Manual page ld(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       rule.  Multiple letter options that start with a lower case 'o' can[m
+[7m Manual page ld(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       only be preceded by two dashes.  This is to reduce confusion with the[m
+[7m Manual page ld(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-o[0m option.  So for example [1m-omagic[0m sets the output file name to [1mmagic[0m[m
+[7m Manual page ld(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       whereas [1m--omagic[0m sets the NMAGIC flag on the output.[m
+[7m Manual page ld(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Arguments to multiple-letter options must either be separated from the[m
+[7m Manual page ld(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       option name by an equals sign, or be given as separate arguments[m
+[7m Manual page ld(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       immediately following the option that requires them.  For example,[m
+[7m Manual page ld(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--trace-symbol[0m [1mfoo[0m and [1m--trace-symbol=foo[0m are equivalent.  Unique[m
+[7m Manual page ld(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       abbreviations of the names of multiple-letter options are accepted.[m
+[7m Manual page ld(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Note---if the linker is being invoked indirectly, via a compiler driver[m
+[7m Manual page ld(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (e.g. [1mgcc[0m) then all the linker command line options should be prefixed[m
+[7m Manual page ld(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       by [1m-Wl,[0m (or whatever is appropriate for the particular compiler driver)[m
+[7m Manual page ld(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       like this:[m
+[7m Manual page ld(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 gcc -Wl,--start-group foo.o bar.o -Wl,--end-group[m
+[7m Manual page ld(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is important, because otherwise the compiler driver program may[m
+[7m Manual page ld(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       silently drop the linker options, resulting in a bad link.  Confusion[m
+[7m Manual page ld(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       may also arise when passing options that require values through a[m
+[7m Manual page ld(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       driver, as the use of a space between option and argument acts as a[m
+[7m Manual page ld(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       separator, and causes the driver to pass only the option to the linker[m
+[7m Manual page ld(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and the argument to the compiler.  In this case, it is simplest to use[m
+[7m Manual page ld(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the joined forms of both single- and multiple-letter options, such as:[m
+[7m Manual page ld(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 gcc foo.o bar.o -Wl,-eENTRY -Wl,-Map=a.map[m
+[7m Manual page ld(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Here is a table of the generic command line switches accepted by the[m
+[7m Manual page ld(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU linker:[m
+[7m Manual page ld(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m@[0m[4mfile[24m[m
+[7m Manual page ld(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Read command-line options from [4mfile[24m.  The options read are inserted[m
+[7m Manual page ld(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in place of the original @[4mfile[24m option.  If [4mfile[24m does not exist, or[m
+[7m Manual page ld(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           cannot be read, then the option will be treated literally, and not[m
+[7m Manual page ld(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           removed.[m
+[7m Manual page ld(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Options in [4mfile[24m are separated by whitespace.  A whitespace[m
+[7m Manual page ld(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           character may be included in an option by surrounding the entire[m
+[7m Manual page ld(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           option in either single or double quotes.  Any character (including[m
+[7m Manual page ld(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           a backslash) may be included by prefixing the character to be[m
+[7m Manual page ld(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           included with a backslash.  The [4mfile[24m may itself contain additional[m
+[7m Manual page ld(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           @[4mfile[24m options; any such options will be processed recursively.[m
+[7m Manual page ld(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-a[0m [4mkeyword[24m[m
+[7m Manual page ld(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option is supported for HP/UX compatibility.  The [4mkeyword[24m[m
+[7m Manual page ld(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           argument must be one of the strings [1marchive[0m, [1mshared[0m, or [1mdefault[0m.[m
+[7m Manual page ld(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m-aarchive[0m is functionally equivalent to [1m-Bstatic[0m, and the other two[m
+[7m Manual page ld(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           keywords are functionally equivalent to [1m-Bdynamic[0m.  This option may[m
+[7m Manual page ld(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           be used any number of times.[m
+[7m Manual page ld(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--audit[0m [4mAUDITLIB[24m[m
+[7m Manual page ld(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Adds [4mAUDITLIB[24m to the "DT_AUDIT" entry of the dynamic section.[m
+[7m Manual page ld(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mAUDITLIB[24m is not checked for existence, nor will it use the[m
+[7m Manual page ld(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           DT_SONAME specified in the library.  If specified multiple times[m
+[7m Manual page ld(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "DT_AUDIT" will contain a colon separated list of audit interfaces[m
+[7m Manual page ld(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to use. If the linker finds an object with an audit entry while[m
+[7m Manual page ld(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           searching for shared libraries, it will add a corresponding[m
+[7m Manual page ld(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "DT_DEPAUDIT" entry in the output file.  This option is only[m
+[7m Manual page ld(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           meaningful on ELF platforms supporting the rtld-audit interface.[m
+[7m Manual page ld(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-b[0m [4minput-format[24m[m
+[7m Manual page ld(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--format=[0m[4minput-format[24m[m
+[7m Manual page ld(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mld[0m may be configured to support more than one kind of object file.[m
+[7m Manual page ld(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If your [1mld[0m is configured this way, you can use the [1m-b[0m option to[m
+[7m Manual page ld(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specify the binary format for input object files that follow this[m
+[7m Manual page ld(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           option on the command line.  Even when [1mld[0m is configured to support[m
+[7m Manual page ld(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           alternative object formats, you don't usually need to specify this,[m
+[7m Manual page ld(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           as [1mld[0m should be configured to expect as a default input format the[m
+[7m Manual page ld(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           most usual format on each machine.  [4minput-format[24m is a text string,[m
+[7m Manual page ld(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the name of a particular format supported by the BFD libraries.[m
+[7m Manual page ld(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           (You can list the available binary formats with [1mobjdump[0m [1m-i[0m.)[m
+[7m Manual page ld(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           You may want to use this option if you are linking files with an[m
+[7m Manual page ld(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           unusual binary format.  You can also use [1m-b[0m to switch formats[m
+[7m Manual page ld(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           explicitly (when linking object files of different formats), by[m
+[7m Manual page ld(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           including [1m-b[0m [4minput-format[24m before each group of object files in a[m
+[7m Manual page ld(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           particular format.[m
+[7m Manual page ld(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The default format is taken from the environment variable[m
+[7m Manual page ld(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "GNUTARGET".[m
+[7m Manual page ld(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           You can also define the input format from a script, using the[m
+[7m Manual page ld(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           command "TARGET";[m
+[7m Manual page ld(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m [4mMRI-commandfile[24m[m
+[7m Manual page ld(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--mri-script=[0m[4mMRI-commandfile[24m[m
+[7m Manual page ld(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           For compatibility with linkers produced by MRI, [1mld[0m accepts script[m
+[7m Manual page ld(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           files written in an alternate, restricted command language,[m
+[7m Manual page ld(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           described in the MRI Compatible Script Files section of GNU ld[m
+[7m Manual page ld(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           documentation.  Introduce MRI script files with the option [1m-c[0m; use[m
+[7m Manual page ld(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the [1m-T[0m option to run linker scripts written in the general-purpose[m
+[7m Manual page ld(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mld[0m scripting language.  If [4mMRI-cmdfile[24m does not exist, [1mld[0m looks for[m
+[7m Manual page ld(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           it in the directories specified by any [1m-L[0m options.[m
+[7m Manual page ld(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m[m
+[7m Manual page ld(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-dc[0m[m
+[7m Manual page ld(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-dp[0m These three options are equivalent; multiple forms are supported[m
+[7m Manual page ld(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           for compatibility with other linkers.  They assign space to common[m
+[7m Manual page ld(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           symbols even if a relocatable output file is specified (with [1m-r[0m).[m
+[7m Manual page ld(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The script command "FORCE_COMMON_ALLOCATION" has the same effect.[m
+[7m Manual page ld(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--depaudit[0m [4mAUDITLIB[24m[m
+[7m Manual page ld(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-P[0m [4mAUDITLIB[24m[m
+[7m Manual page ld(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Adds [4mAUDITLIB[24m to the "DT_DEPAUDIT" entry of the dynamic section.[m
+[7m Manual page ld(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mAUDITLIB[24m is not checked for existence, nor will it use the[m
+[7m Manual page ld(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           DT_SONAME specified in the library.  If specified multiple times[m
+[7m Manual page ld(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "DT_DEPAUDIT" will contain a colon separated list of audit[m
+[7m Manual page ld(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           interfaces to use.  This option is only meaningful on ELF platforms[m
+[7m Manual page ld(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           supporting the rtld-audit interface.  The -P option is provided for[m
+[7m Manual page ld(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Solaris compatibility.[m
+[7m Manual page ld(1) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-e[0m [4mentry[24m[m
+[7m Manual page ld(1) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--entry=[0m[4mentry[24m[m
+[7m Manual page ld(1) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Use [4mentry[24m as the explicit symbol for beginning execution of your[m
+[7m Manual page ld(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program, rather than the default entry point.  If there is no[m
+[7m Manual page ld(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           symbol named [4mentry[24m, the linker will try to parse [4mentry[24m as a number,[m
+[7m Manual page ld(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           and use that as the entry address (the number will be interpreted[m
+[7m Manual page ld(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in base 10; you may use a leading [1m0x[0m for base 16, or a leading [1m0[0m[m
+[7m Manual page ld(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           for base 8).[m
+[7m Manual page ld(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--exclude-libs[0m [4mlib[24m[1m,[0m[4mlib[24m[1m,...[0m[m
+[7m Manual page ld(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies a list of archive libraries from which symbols should not[m
+[7m Manual page ld(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           be automatically exported.  The library names may be delimited by[m
+[7m Manual page ld(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           commas or colons.  Specifying "--exclude-libs ALL" excludes symbols[m
+[7m Manual page ld(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in all archive libraries from automatic export.  This option is[m
+[7m Manual page ld(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           available only for the i386 PE targeted port of the linker and for[m
+[7m Manual page ld(1) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ELF targeted ports.  For i386 PE, symbols explicitly listed in a[m
+[7m Manual page ld(1) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           .def file are still exported, regardless of this option.  For ELF[m
+[7m Manual page ld(1) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           targeted ports, symbols affected by this option will be treated as[m
+[7m Manual page ld(1) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           hidden.[m
+[7m Manual page ld(1) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--exclude-modules-for-implib[0m [4mmodule[24m[1m,[0m[4mmodule[24m[1m,...[0m[m
+[7m Manual page ld(1) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies a list of object files or archive members, from which[m
+[7m Manual page ld(1) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           symbols should not be automatically exported, but which should be[m
+[7m Manual page ld(1) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           copied wholesale into the import library being generated during the[m
+[7m Manual page ld(1) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           link.  The module names may be delimited by commas or colons, and[m
+[7m Manual page ld(1) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           must match exactly the filenames used by [1mld[0m to open the files; for[m
+[7m Manual page ld(1) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           archive members, this is simply the member name, but for object[m
+[7m Manual page ld(1) line 208 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           files the name listed must include and match precisely any path[m
+[7m Manual page ld(1) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           used to specify the input file on the linker's command-line.  This[m
+[7m Manual page ld(1) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           option is available only for the i386 PE targeted port of the[m
+[7m Manual page ld(1) line 211 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           linker.  Symbols explicitly listed in a .def file are still[m
+[7m Manual page ld(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exported, regardless of this option.[m
+[7m Manual page ld(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-E[0m[m
+[7m Manual page ld(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--export-dynamic[0m[m
+[7m Manual page ld(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--no-export-dynamic[0m[m
+[7m Manual page ld(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When creating a dynamically linked executable, using the [1m-E[0m option[m
+[7m Manual page ld(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           or the [1m--export-dynamic[0m option causes the linker to add all symbols[m
+[7m Manual page ld(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to the dynamic symbol table.  The dynamic symbol table is the set[m
+[7m Manual page ld(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of symbols which are visible from dynamic objects at run time.[m
+[7m Manual page ld(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If you do not use either of these options (or use the[m
+[7m Manual page ld(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--no-export-dynamic[0m option to restore the default behavior), the[m
+[7m Manual page ld(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           dynamic symbol table will normally contain only those symbols which[m
+[7m Manual page ld(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           are referenced by some dynamic object mentioned in the link.[m
+[7m Manual page ld(1) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ld(1) line 227 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If you use "dlopen" to load a dynamic object which needs to refer[m
+[7m Manual page ld(1) line 228 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           back to the symbols defined by the program, rather than some other[m
+[7m Manual page ld(1) line 229 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           dynamic object, then you will probably need to use this option when[m
+[7m Manual page ld(1) line 230 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ make
+make: Nothing to be done for 'all'.
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ru[K[Kgdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) run [K[K[K libvec
+Starting program:  libvec
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) r[Kfile libvec[K[K[K[K[K[K[K[K[K[K[Krun./[K[K ./libvec
+Starting program:  ./libvec
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) r libv[K[K[K[K./libvec[Kc
+Starting program:  ./libvec
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) ad[K[Kset env LIB[K[KD_LIBRARY_[A[K[KPATH
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) set env LIB[K[KD_LIBRARY_PAT [KH .
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) file libvec
+libvec: No such file or directory.
+(gdb) file ./libvec
+./libvec: No such file or directory.
+(gdb) file [K[K[K[K[Kfile ./libvec[2Plibvec./libvec[C[C[C[C[C[C[Kr
+Starting program:  ./libvec
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) r libvec
+Starting program:  libvec
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) file libvec
+libvec: No such file or directory.
+(gdb) Quit
+(gdb) 
+[1]+  Stopped                 gdb
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 896
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   1489 Oct  3 12:19 testvec-dynamic.nm
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2  61892 Oct  3 12:15 testvec-static.nm
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l[2Pgdbmaken ldldd testvec-dynamicman ld[K[2Pke[1Pgdb ./
+addvec.c            Makefile            testvec-dynamic.nm
+addvec.o            multvec.c           testvec.o
+.gitignore          multvec.o           testvec-static
+libvec.a            testvec.c           testvec-static.nm
+libvec.so           testvec-dynamic     vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./libvec.[K
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./libvec: No such file or directory.
+(gdb) et env LD_LIBRARY_PATH [1@s
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) b main[K[K[K[K[K[Kb main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) fiel [K[K[Kle b main
+b: No such file or directory.
+(gdb) file b main[K[K[K[K[K[Klibvec.a
+"/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/libvec.a": not in executable format: file format not recognized
+(gdb) file libvec.a[Kso
+Reading symbols from libvec.so...done.
+(gdb) file libvec.so[1Pa[2Pb main[C[C[C[C[C[C[5P[C[C[C[C[C[C
+Function "main" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) b main[Kn
+(gdb) file 
+[2]+  Stopped                 gdb ./libvec
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./libvec[K[K[K[K[K[Ktestvec
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./testvec: No such file or directory.
+(gdb) et env LD_LIBRARY_PATH [1@s
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) nfile [K[K[K[K[K[Kn
+(gdb) file testvec
+testvec-dynamic     testvec-static      testvec.c
+testvec-dynamic.nm  testvec-static.nm   testvec.o
+(gdb) file testvec-dynamic
+Reading symbols from testvec-dynamic...done.
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3 [K
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19295) exited with code 0177]
+(gdb) [K(gdb) r
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19324) exited with code 0177]
+(gdb) r 1 2 3
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19340) exited with code 0177]
+(gdb) r 1 2 3[K 1 2 3[K[K[K
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19363) exited with code 0177]
+(gdb) r 1 2 3[K 1 2 3[1Pb mainfile testvec-dynamic[C[C[C[C[C[Cb main[Kset env LD_LIBRARY_PATH 
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) set env LD_LIBRARY_PATH [C[C[C[C[C[Cr 1 [K2 3
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19418) exited with code 0177]
+(gdb) 
+[3]+  Stopped                 gdb ./testvec
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./testvec-
+testvec-dynamic     testvec-static      
+testvec-dynamic.nm  testvec-static.nm   
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./testvec-
+testvec-dynamic     testvec-static      
+testvec-dynamic.nm  testvec-static.nm   
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ gdb ./testvec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./testvec-dynamic...done.
+(gdb) et env LD_LIBRARY_PATH [1@s
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19541) exited with code 0177]
+(gdb) file libvec.so
+Load new symbol table from "libvec.so"? (y or n) y
+Reading symbols from libvec.so...done.
+Error in re-setting breakpoint 1: Function "main" not defined.
+(gdb) bm[K main
+Function "main" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 2 (main) pending.
+(gdb) file testvec-dynamic
+Load new symbol table from "testvec-dynamic"? (y or n) y
+Reading symbols from testvec-dynamic...done.
+(gdb) b main
+Note: breakpoints 1 (disabled) and 2 also set at pc 0x1207.
+Breakpoint 3 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 19737) exited with code 0177]
+(gdb) 
+[4]+  Stopped                 gdb ./testvec-dynamic
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim testvec-dynamic.nm [K[K[Knm [K[K[Kc
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"testvec-dynamic.c" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [m[25;63H0,0-1[9CAll]2;testvec-dynamic.c (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;testvec-dynamic.c[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [m[25;63H0,0-1[9CAll"testvec-dynamic.c" [New File][1;1H[?25h[?25l[25;53HZ[1;1H[?25h[?25l[25;54HZ[1;1H[25;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[25;1H[K[25;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 896
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   1489 Oct  3 12:19 testvec-dynamic.nm
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2  61892 Oct  3 12:15 testvec-static.nm
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -lvim testvec-dynamic.cgdb ./testvec-dynamic[K[K[K[K[K[K[K[K\[K
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./testvec: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) 
+[5]+  Stopped                 gdb ./testvec
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 896
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   1489 Oct  3 12:19 testvec-dynamic.nm
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2  61892 Oct  3 12:15 testvec-static.nm
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -lgdb ./testvec[K[K[K[K[K[Km[K[Kmultvec.[K
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+./multvec: No such file or directory.
+(gdb) et env LD_LIBRARY_PATH [1@s
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) fiole [K[K[K[Kle testvec-dynamic
+testvec-dynamic     testvec-dynamic.nm  
+(gdb) file testvec-dynamic.nm
+"/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic.nm": not in executable format: file format not recognized
+(gdb) file testvec-dynamic.nm[K[K[K
+Reading symbols from testvec-dynamic...done.
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) i[Kr 1
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1
+/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+[Inferior 1 (process 20204) exited with code 0177]
+(gdb) z[K
+[6]+  Stopped                 gdb ./multvec
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 896
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   1489 Oct  3 12:19 testvec-dynamic.nm
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2  61892 Oct  3 12:15 testvec-static.nm
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim testvec-dynamic
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"testvec-dynamic" [noeol][converted] 14L, 20966C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m^?[mELF[34m^B^A^A^@^@^@^@^@^@^@^@^@^C^@[m>[34m^@^A^@^@^@[m°[1;46H[34m^P^@^@^@^@^@^@[m@[34m^@^@^@^@^@^@^@[m@E[34m^@^@@[2;1H^@^@^@^@^@^@^@^@[m@[34m^@[m8[34m^@^K^@[m@[34m^@[m#[34m^@[m"[34m^@^F^@^@^@^D^@^@^@[m@[34m^@^@^@^@^@^@^@[m@[34m^@^@^@^@^@^@^^[3;1H@[m@[34m^@^@^@^@^@^@^@[mh[34m^B^@^@^@^@^@^@[mh[34m^B^@^@^@^@^@^@^H^@^@^@^@^@^@^@^C^@^@^@^D^@^@^@[m¨[3;80H[34m^^[4;1HB^@^@^@^@^@^@[m¨[4;15H[34m^B^@^@^@^@^@^@[m¨[4;30H[34m^B^@^@^@^@^@^@^\^@^@^@^@^@^@^@^\^@^@^@^@^@^@^@^A^@^^[5;1H@^@^@^@^@^@^A^@^@^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m0[34m^G^@@[6;1H^@^@^@^@^@[m0[34m^G^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^E^@^@^@^@^P^@^@^@^@^@^@^@^P^@^^[7;1H@^@^@^@^@^@^P^@^@^@^@^@^@<8d>^E^@^@^@^@^@^@<8d>^E^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^^[8;1H@^@^@^D^@^@^@^@[m [34m^@^@^@^@^@^@^@[m [34m^@^@^@^@^@^@^@[m [34m^@^@^@^@^@^@[m¨[8;60H[34m^A^@^@^@^@^@^@[m¨[8;75H[34m^A^@^@@[9;1H^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^F^@^@^@[mÈ-[34m^@^@^@^@^@^@[mÈ=[34m^@^@^@^@^@^@[mÈ=[34m^@^@^@^@^@@[10;1H^@<98>^B^@^@^@^@^@^@[m [34m^B^@^@^@^@^@^@^@^P^@^@^@^@^@^@^B^@^@^@^F^@^@^@[mØ[10;69H-[34m^@^@^@^@^@^^[11;1H@[mØ[11;3H=[34m^@^@^@^@^@^@[mØ[11;17H=[34m^@^@^@^@^@^@[mð[11;31H[34m^A^@^@^@^@^@^@[mð[11;46H[34m^A^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^^[12;1H@^@^D^@^@^@[mÄ[34m^B^@^@^@^@^@^@[mÄ[34m^B^@^@^@^@^@^@[mÄ[34m^B^@^@^@^@^@^@[mD[34m^@^@^@^@^@^@^@[mD[34m^@^@^@^@@[13;1H^@^@^@^D^@^@^@^@^@^@^@[mPåtd[34m^D^@^@^@[m0 [34m^@^@^@^@^@^@[m0 [34m^@^@^@^@^@^@[m0 [34m^@^@^@^@^@^@[mD[34m^@^^[14;1H@^@^@^@^@^@[mD[34m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[mQåtd[34m^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[15;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@[mRåtd[34m^D^@^@@[16;1H^@[mÈ-[34m^@^@^@^@^@^@[mÈ=[34m^@^@^@^@^@^@[mÈ=[34m^@^@^@^@^@^@[m8[34m^B^@^@^@^@^@^@[m8[34m^B^@^@^@^@^@^@^A^@^@@[17;1H^@^@^@^@^@[m/lib64/ld-linux-x86-64.so.2[34m^@^D^@^@^@^P^@^@^@^A^@^@^@[mGNU[34m^@^@^@^@^@^C^@@[18;1H^@^@^B^@^@^@^@^@^@^@^D^@^@^@^T^@^@^@^C^@^@^@[mGNU[34m^@[ml»ÌB [34m^M[m³[18;58H[34m^E[m$Î[34m^^[mfw[34m^@[m~y6É@ã[34m^B^@^@^^[19;1H@^N^@^@^@^A^@^@^@^F^@^@^@^@^@<81>^@^@^@^@^@^N^@^@^@^@^@^@^@[mÑeÎm[34m^@^@^@^@^@^@^@^@^^[20;1H@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mn[34m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[21;1H^@^@^@^K^@^@^@[m [34m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mv[34m^@^@^@^Q^@^@^@^@^@^@^@^@^@@[22;1H^@^@^@^@^@^@^@^@^@^@<8a>^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mW[34m^@^@^@^R^^[23;1H@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m [34m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[24;1H^@^@[mP[34m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@<89>^@^@^@^R^@^@^@^@^@^@^@^@^[m[25;63H1,1[11CTop]2;testvec-dynamic (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;testvec-dynamic[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m^?[mELF[38;5;81m^B^A^A^@^@^@^@^@^@^@^@^@^C^@[m>[38;5;81m^@^A^@^@^@[m°[1;46H[38;5;81m^P^@^@^@^@^@^@[m@[38;5;81m^@^@^@^@^@^@^@[m@E[38;5;81m^@^@@[2;1H^@^@^@^@^@^@^@^@[m@[38;5;81m^@[m8[38;5;81m^@^K^@[m@[38;5;81m^@[m#[38;5;81m^@[m"[38;5;81m^@^F^@^@^@^D^@^@^@[m@[38;5;81m^@^@^@^@^@^@^@[m@[38;5;81m^@^@^@^@^@^@^^[3;1H@[m@[38;5;81m^@^@^@^@^@^@^@[mh[38;5;81m^B^@^@^@^@^@^@[mh[38;5;81m^B^@^@^@^@^@^@^H^@^@^@^@^@^@^@^C^@^@^@^D^@^@^@[m¨[3;80H[38;5;81m^^[4;1HB^@^@^@^@^@^@[m¨[4;15H[38;5;81m^B^@^@^@^@^@^@[m¨[4;30H[38;5;81m^B^@^@^@^@^@^@^\^@^@^@^@^@^@^@^\^@^@^@^@^@^@^@^A^@^^[5;1H@^@^@^@^@^@^A^@^@^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m0[38;5;81m^G^@@[6;1H^@^@^@^@^@[m0[38;5;81m^G^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^E^@^@^@^@^P^@^@^@^@^@^@^@^P^@^^[7;1H@^@^@^@^@^@^P^@^@^@^@^@^@<8d>^E^@^@^@^@^@^@<8d>^E^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^^[8;1H@^@^@^D^@^@^@^@[m [38;5;81m^@^@^@^@^@^@^@[m [38;5;81m^@^@^@^@^@^@^@[m [38;5;81m^@^@^@^@^@^@[m¨[8;60H[38;5;81m^A^@^@^@^@^@^@[m¨[8;75H[38;5;81m^A^@^@@[9;1H^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^F^@^@^@[mÈ-[38;5;81m^@^@^@^@^@^@[mÈ=[38;5;81m^@^@^@^@^@^@[mÈ=[38;5;81m^@^@^@^@^@@[10;1H^@<98>^B^@^@^@^@^@^@[m [38;5;81m^B^@^@^@^@^@^@^@^P^@^@^@^@^@^@^B^@^@^@^F^@^@^@[mØ[10;69H-[38;5;81m^@^@^@^@^@^^[11;1H@[mØ[11;3H=[38;5;81m^@^@^@^@^@^@[mØ[11;17H=[38;5;81m^@^@^@^@^@^@[mð[11;31H[38;5;81m^A^@^@^@^@^@^@[mð[11;46H[38;5;81m^A^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^^[12;1H@^@^D^@^@^@[mÄ[38;5;81m^B^@^@^@^@^@^@[mÄ[38;5;81m^B^@^@^@^@^@^@[mÄ[38;5;81m^B^@^@^@^@^@^@[mD[38;5;81m^@^@^@^@^@^@^@[mD[38;5;81m^@^@^@^@@[13;1H^@^@^@^D^@^@^@^@^@^@^@[mPåtd[38;5;81m^D^@^@^@[m0 [38;5;81m^@^@^@^@^@^@[m0 [38;5;81m^@^@^@^@^@^@[m0 [38;5;81m^@^@^@^@^@^@[mD[38;5;81m^@^^[14;1H@^@^@^@^@^@[mD[38;5;81m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[mQåtd[38;5;81m^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[15;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@[mRåtd[38;5;81m^D^@^@@[16;1H^@[mÈ-[38;5;81m^@^@^@^@^@^@[mÈ=[38;5;81m^@^@^@^@^@^@[mÈ=[38;5;81m^@^@^@^@^@^@[m8[38;5;81m^B^@^@^@^@^@^@[m8[38;5;81m^B^@^@^@^@^@^@^A^@^@@[17;1H^@^@^@^@^@[m/lib64/ld-linux-x86-64.so.2[38;5;81m^@^D^@^@^@^P^@^@^@^A^@^@^@[mGNU[38;5;81m^@^@^@^@^@^C^@@[18;1H^@^@^B^@^@^@^@^@^@^@^D^@^@^@^T^@^@^@^C^@^@^@[mGNU[38;5;81m^@[ml»ÌB [38;5;81m^M[m³[18;58H[38;5;81m^E[m$Î[38;5;81m^^[mfw[38;5;81m^@[m~y6É@ã[38;5;81m^B^@^@^^[19;1H@^N^@^@^@^A^@^@^@^F^@^@^@^@^@<81>^@^@^@^@^@^N^@^@^@^@^@^@^@[mÑeÎm[38;5;81m^@^@^@^@^@^@^@^@^^[20;1H@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mn[38;5;81m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[21;1H^@^@^@^K^@^@^@[m [38;5;81m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mv[38;5;81m^@^@^@^Q^@^@^@^@^@^@^@^@^@@[22;1H^@^@^@^@^@^@^@^@^@^@<8a>^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[mW[38;5;81m^@^@^@^R^^[23;1H@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m [38;5;81m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[24;1H^@^@[mP[38;5;81m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@<89>^@^@^@^R^@^@^@^@^@^@^@^@^[m[25;63H1,1[11CTop"testvec-dynamic" [noeol][converted] 14L, 20966C[1;1H[?25h[?25l[25;53HZ[1;1H[?25h[?25l[25;54HZ[1;1H[25;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[25;1H[K[25;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ vim testvec-dynamic.nm 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"testvec-dynamic.nm" 42L, 1489C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;18HU addvec[2;18HU atoi@@GLIBC_2.2.5
+0000000000004060 B __bss_start
+0000000000004060 b completed.7325[5;18Hw __cxa_finalize@@GLIBC_2.2.5
+0000000000004050 D __data_start
+0000000000004050 W data_start
+00000000000010e0 t deregister_tm_clones
+0000000000001150 t __do_global_dtors_aux
+0000000000003dd0 t __do_global_dtors_aux_fini_array_entry
+0000000000004058 D __dso_handle
+0000000000003dd8 d _DYNAMIC
+0000000000004060 D _edata
+0000000000004068 B _end[15;18HU exit@@GLIBC_2.2.5
+0000000000001584 T _fini[17;18HU fprintf@@GLIBC_2.2.5
+0000000000001190 t frame_dummy
+0000000000003dc8 t __frame_dummy_init_array_entry
+00000000000021a4 r __FRAME_END__
+0000000000004000 d _GLOBAL_OFFSET_TABLE_[22;18Hw __gmon_start__
+0000000000002030 r __GNU_EH_FRAME_HDR
+0000000000001000 t _init[25;63H1,1[11CTop]2;testvec-dynamic.nm (~/git-repos/i220a_new/work/lab7/libvec) - VIM]1;testvec-dynamic.nm[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;18HU addvec[2;18HU atoi@@GLIBC_2.2.5
+0000000000004060 B __bss_start
+0000000000004060 b completed.7325[5;18Hw __cxa_finalize@@GLIBC_2.2.5
+0000000000004050 D __data_start
+0000000000004050 W data_start
+00000000000010e0 t deregister_tm_clones
+0000000000001150 t __do_global_dtors_aux
+0000000000003dd0 t __do_global_dtors_aux_fini_array_entry
+0000000000004058 D __dso_handle
+0000000000003dd8 d _DYNAMIC
+0000000000004060 D _edata
+0000000000004068 B _end[15;18HU exit@@GLIBC_2.2.5
+0000000000001584 T _fini[17;18HU fprintf@@GLIBC_2.2.5
+0000000000001190 t frame_dummy
+0000000000003dc8 t __frame_dummy_init_array_entry
+00000000000021a4 r __FRAME_END__
+0000000000004000 d _GLOBAL_OFFSET_TABLE_[22;18Hw __gmon_start__
+0000000000002030 r __GNU_EH_FRAME_HDR
+0000000000001000 t _init[25;63H1,1[11CTop"testvec-dynamic.nm" 42L, 1489C[1;1H[?25h[?25l[25;53H~@k[1;1H[25;53H   [2;1H[25;63H2[2;1H[?25h[?25l[25;53H~@k[2;1H[25;53H   [3;1H[25;63H3[3;1H[?25h[?25l[25;53H~@k[3;1H[25;53H   [4;1H[25;63H4[4;1H[?25h[?25l[25;53H~@k[4;1H[25;53H   [5;1H[25;63H5[5;1H[?25h[?25l[25;53H~@k[5;1H[25;53H   [6;1H[25;63H6[6;1H[?25h[?25l[25;53H~@k[6;1H[25;53H   [7;1H[25;63H7[7;1H[?25h[?25l[25;53H~@k[7;1H[25;53H   [8;1H[25;63H8[8;1H[?25h[?25l[25;53H~@k[8;1H[25;53H   [9;1H[25;63H9[9;1H[?25h[?25l[25;53H~@k[9;1H[25;53H   [10;1H[25;63H10,1[10;1H[?25h[?25l[25;53H~@k[10;1H[25;53H   [11;1H[25;64H1[11;1H[?25h[?25l[25;53H~@k[11;1H[25;53H   [12;1H[25;64H2[12;1H[?25h[?25l[25;53H~@k[12;1H[25;53H   [13;1H[25;64H3[13;1H[?25h[?25l[25;53H~@k[13;1H[25;53H   [14;1H[25;64H4[14;1H[?25h[?25l[25;53H~@k[14;1H[25;53H   [15;1H[25;64H5[15;1H[?25h[?25l[25;53H~@k[15;1H[25;53H   [16;1H[25;64H6[16;1H[?25h[?25l[25;53H~@k[16;1H[25;53H   [17;1H[25;64H7[17;1H[?25h[?25l[25;53H~@k[17;1H[25;53H   [18;1H[25;64H8[18;1H[?25h[?25l[25;53H~@k[18;1H[25;53H   [19;1H[25;64H9[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000003dd0 t __init_array_end[25;1H[K[25;63H20,1[11C5%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000003dc8 t __init_array_start[25;63H[K[25;63H21,1[10C11%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000002000 R _IO_stdin_used[25;63H[K[25;63H22,1[10C16%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18Hw _ITM_deregisterTMCloneTable[25;63H[K[25;63H23,1[10C22%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18Hw _ITM_registerTMCloneTable[25;63H[K[25;63H24,1[10C27%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000001580 T __libc_csu_fini[25;63H[K[25;63H25,1[10C33%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000001520 T __libc_csu_init[25;63H[K[25;63H26,1[10C38%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU __libc_start_main@@GLIBC_2.2.5[25;63H[K[25;63H27,1[10C44%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H00000000000011ee T main[25;63H[K[25;63H28,1[10C50%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU multvec[25;63H[K[25;63H29,1[10C55%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000001195 t outvec[25;63H[K[25;63H30,1[10C61%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU printf@@GLIBC_2.2.5[25;63H[K[25;63H31,1[10C66%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU putchar@@GLIBC_2.2.5[25;63H[K[25;63H32,1[10C72%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000001110 t register_tm_clones[25;63H[K[25;63H33,1[10C77%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H00000000000010b0 T _start[25;63H[K[25;63H34,1[10C83%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU stderr@@GLIBC_2.2.5[25;63H[K[25;63H35,1[10C88%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;18HU stdout@@GLIBC_2.2.5[25;63H[K[25;63H36,1[10C94%[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [19;1H[1;24r[24;1H
+[1;25r[24;1H0000000000004060 D __TMC_END__[25;63H[K[25;63H37,1[10CBot[19;1H[?25h[?25l[25;53H~@k[19;1H[25;53H   [20;1H[25;64H8[20;1H[?25h[?25l[25;53H~@k[20;1H[25;53H   [21;1H[25;64H9[21;1H[?25h[?25l[25;53H~@k[21;1H[25;53H   [22;1H[25;63H40[22;1H[?25h[?25l[25;53H~@k[22;1H[25;53H   [23;1H[25;64H1[23;1H[?25h[?25l[25;53H~@k[23;1H[25;53H   [24;1H[25;64H2[24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53H~@k[24;1H[25;53H   [24;1H[?25h[?25l[25;53HZ[24;1H[?25h[?25l[25;54HZ[24;1H
+[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[25;53H[K[25;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -l
+total 896
+-rw-r--r-- 1 amchugh2 amchugh2    111 Oct  3 11:43 addvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 addvec.o
+-rw-r--r-- 1 amchugh2 amchugh2   6008 Oct  3 12:12 libvec.a
+-rwxr-xr-x 1 amchugh2 amchugh2  17352 Oct  3 12:12 libvec.so
+-rw-r--r-- 1 amchugh2 amchugh2    401 Oct  3 11:43 Makefile
+-rw-r--r-- 1 amchugh2 amchugh2    112 Oct  3 11:43 multvec.c
+-rw-r--r-- 1 amchugh2 amchugh2   2896 Oct  3 12:12 multvec.o
+-rw-r--r-- 1 amchugh2 amchugh2    644 Oct  3 11:43 testvec.c
+-rwxr-xr-x 1 amchugh2 amchugh2  19968 Oct  3 12:12 testvec-dynamic
+-rw-r--r-- 1 amchugh2 amchugh2   1489 Oct  3 12:19 testvec-dynamic.nm
+-rw-r--r-- 1 amchugh2 amchugh2   8016 Oct  3 12:12 testvec.o
+-rwxr-xr-x 1 amchugh2 amchugh2 759928 Oct  3 12:12 testvec-static
+-rw-r--r-- 1 amchugh2 amchugh2  61892 Oct  3 12:15 testvec-static.nm
+-rw-r--r-- 1 amchugh2 amchugh2    163 Oct  3 11:43 vectors.h
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ ls -lvim testvec-dynamic.nm [Kls -l[Kgdb ./multvec[K[K[K[K[K[K[K[K[Knm testvec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from nm...(no debugging symbols found)...done.
+"/import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic" is not a core dump: file format not recognized
+(gdb) et env LD_LIBRARY_PATH [1@s
+Setting environment variable "LD_LIBRARY_PATH" to null value.
+(gdb) set env LD_LIBRARY_PATH .
+(gdb) r [K[Kb main
+Function "main" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) file testvec-dynamic
+Reading symbols from testvec-dynamic...done.
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3
+Starting program: /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab7/libvec/testvec-dynamic 1 2 3
+
+Breakpoint 1, main (argc=4, argv=0x7fffffffe738) at testvec.c:15
+15	{
+(gdb) n
+16	  if (argc == 1) {
+(gdb)  p [K[K[Kp &main [K
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca164 <multvec>
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 20557] will be killed.
+
+Quit anyway? (y or n) c[Ky
+amchugh2@g7-14:~/i220a_new/work/lab7/libvec$ cd ..
+amchugh2@g7-14:~/i220a_new/work/lab7$ cd kubgein[K[K[K[K[K[K[Klibgeom
+amchugh2@g7-14:~/i220a_new/work/lab7/libgeom$ ls
+circ.c	geom.h	rect.c	testgeom.c
+amchugh2@g7-14:~/i220a_new/work/lab7/libgeom$ vimM[K[K[K[Km[Kemacs Makefile
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:51.908[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:51.969[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:51.969[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:51.969[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:51.996[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.011[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.051[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.138[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.211[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.319[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.319[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (emacs:21119): [1;33mWARNING[0m **: [34m12:51:52.421[0
