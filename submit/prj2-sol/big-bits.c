@@ -41,27 +41,21 @@ newBigBits(const char *hex)
   // while hex is not ending in null
   // get size of hex
   int size = 0;
-	printf("%s kjhk",hex);
   while(hex[size] != '\0'){
 	  size++;
   }
-  printf("after getting size of array");
+
   // using size, go through and break into array
   // Big Endian order
-  char bigBit[size+1];
+  char * bigBit = (char *) malloc(size+1);
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
   }
-  printf("after breaking into array");
- 
  char *pointer = bigBit;
   
   // Make struct object with attributes
   struct BigBits big = {pointer, size};
   BigBits *bigPointer = &big;
-  printf("after making pointer");
-
-  printf("Here");
   // return pointer
   return  bigPointer;
 
@@ -105,12 +99,10 @@ stringBigBits(const BigBits *bigBits)
 	  i++;
   }
   
-  // updated pointer to bigBits without leading zeros
+ // updated pointer to bigBits without leading zeros
  const char* new_bigBits = &(bigBits->c[i]);
  return new_bigBits;
  printf("after string conversion");
-
-  return NULL;
 }
 
 
@@ -121,7 +113,6 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  return bigBits1 && bigBits2;
   return NULL;
 }
 
