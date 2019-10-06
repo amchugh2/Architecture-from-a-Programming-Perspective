@@ -1,7 +1,7 @@
 CFLAGS = -g -Wall -fPIC -std=c11
 OBJS = \
     circ.o \
-    geom.o
+    rect.o
 
 all: libgeom.so libgeom.a testgeom-static testgeom-dynamic
 
@@ -12,10 +12,10 @@ libgeom.a:	$(OBJS)
 		ar rcs $@ $(OBJS)
 
 testgeom-static: testgeom.o
-		$(CC)	-static testgeom.o -L. -lvec -o $@
+		$(CC)	-static testgeom.o -L. -lgeom -o $@
 
 testgeom-dynamic: testgeom.o
-		  $(CC) testgeom.o -L. -lvec -o $@
+		 $(CC) testgeom.o -L. -lgeom -o $@
 
 .PHONY:		clean
 
