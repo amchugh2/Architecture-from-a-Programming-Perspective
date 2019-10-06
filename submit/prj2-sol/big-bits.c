@@ -44,9 +44,11 @@ newBigBits(const char *hex)
   while(hex[size] != '\0'){
 	  size++;
   }
+  // can i just get the size of above using sizeof() here
 
   // using size, go through and break into array
   // Big Endian order
+
   char * bigBit = (char *) malloc(size+1);
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
@@ -58,9 +60,6 @@ newBigBits(const char *hex)
   BigBits *bigPointer = &big;
   // return pointer
   return  bigPointer;
-
-  // why is this here
-  return NULL;
 }
 
 /** Frees all resources used by currently valid bigBits.  bigBits
