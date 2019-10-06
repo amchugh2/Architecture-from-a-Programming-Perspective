@@ -45,10 +45,10 @@ newBigBits(const char *hex)
 	  size++;
   }
   // can i just get the size of above using sizeof() here
+  // use int size = strlen(hex) + 1;
 
   // using size, go through and break into array
   // Big Endian order
-
   char * bigBit = (char *) malloc(size+1);
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
@@ -56,6 +56,10 @@ newBigBits(const char *hex)
  char *pointer = bigBit;
   
   // Make struct object with attributes
+  // any memory that you use inside a function disappears when the function is done
+  // once you malloc it, it continues to exist once you call free
+  struct * big = (struct *) malloc(size + 1);
+
   struct BigBits big = {pointer, size};
   BigBits *bigPointer = &big;
   // return pointer
