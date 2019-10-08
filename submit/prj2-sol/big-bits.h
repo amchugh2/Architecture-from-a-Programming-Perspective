@@ -58,4 +58,6 @@ const BigBits *orBigBits(const BigBits *bigBits1, const BigBits *bigBits2);
  */
 const BigBits *xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2);
 
+int ifChar(char c);
+char ifNum(int i);
 #endif //ifndef BIG_INT_H_

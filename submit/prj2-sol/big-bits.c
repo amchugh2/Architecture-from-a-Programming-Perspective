@@ -50,6 +50,7 @@ newBigBits(const char *hex)
   // using size, go through and break into array
   // Big Endian order
   char * bigBit = (char *) malloc(size+1);
+
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
   }
@@ -74,11 +75,10 @@ void
 freeBigBits(BigBits *bigBits)
 {
   //@TODO
-  //STACK:
-  //freeStack(bigBits);
   // HEAP:
+  // array
+  free(bigBits->c);
   free(bigBits);
-  // do i need to free all of the stuff i freed in newBigBits?
 }
 
 
@@ -111,13 +111,94 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
   // steps:
-  // 1. determine shorter operand
-  // 2. iterate through array and & each element to eachother
-  // 3. create newBigBits (malloc)
-  // 4. create pointer to newBigBits
-  // can i just bitwise & these two?
-  return NULL;
+  //  determine shorter operand & create a bigBit of that length
+  // malloc for returnBigBits
+  //  iterate through each array and & each element to eachother
+  // create pointer to returnBigBits
+ 
+  // get size of shorter array
+  int returnSize = bigBits1->size;
+  if(bigBits2->size < returnSize) returnSize = bigBits2->size;
+  // malloc for returnBigBits
+  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  // declare an array equal to returnSize (make sure to set = returnBigBits.c
+  char returnArray[returnSize];
+  // iterate through each array and change to numbers to and to eachother
+  for(int i = 0; i < returnSize; i++){
+	bigBits1->c[i] =  ifChar(bigBits1->c[i]);
+  }
+  for(int j = 0; j < returnSize; j++){
+	  bigBits2->c[j] = ifChar(bigBits2->c[j]);
+  }
+  // go through each array and & each one to eachother
+  for(int k = 0; k < returnSize; k++){
+	  returnArray[k] = bigBits1->c[k] & bigBits2->c[k];
+  }
+  // convert all the numbers back to characters
+  for(int t = 0; t < returnSize; t++){
+	  returnArray[t] = ifNum(returnArray[t]);
+  }
+  // create space on heap for pointer
+  char * returnPoint = (char *) malloc(returnSize+1);
+  returnBigBits->c = returnPoint;
+  returnBigBits->size = returnSize;
+  return returnBigBits;
 }
+
+
+int ifChar(char c){
+	// check type 
+	if(c >= '0' && c <= '9'){
+		return c - '0';
+	}
+	// check letter and return appropriate integer
+	else if (c == 'a' || c == 'A'){
+		return 10;
+	}
+	else if (c == 'b' || c == 'B'){
+		return 11;
+	}
+	else if (c == 'c' || c == 'C'){
+		return 12;
+	}
+	else if (c == 'd' || c == 'D'){
+		return 13;
+	}
+	else if (c == 'e' || c == 'E'){
+		return 14;
+	}
+	else if (c == 'f' || c == 'F'){
+		return 15;
+	}
+}
+
+char ifNum(int i){
+	// check type 
+	if(i >= 0 && i <= 9){
+		return i + '0';
+	}
+	// check letter and return appropriate integer
+	else if (i == 10){
+		return 'a';
+	}
+	else if (i == 11){
+		return 'b';
+	}
+	else if (i == 12){
+		return 'c';
+	}
+	else if (i == 13){
+		return 'd';
+	}
+	else if (i == 14){
+		return 'e';
+	}
+	else if (i == 15){
+		return 'f';
+	}
+}
+
+
 
 /** Return a new BigBits which is the bitwise-| of bigBits1 and bigBits2.
  *  Returns NULL on error with errno set "appropriately".
