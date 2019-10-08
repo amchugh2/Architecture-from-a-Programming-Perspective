@@ -54,16 +54,15 @@ newBigBits(const char *hex)
 	  bigBit[j] = hex[j];
   }
  char *pointer = bigBit;
-  
   // Make struct object with attributes
   // any memory that you use inside a function disappears when the function is done
-  // once you malloc it, it continues to exist once you call free
-  struct * big = (struct *) malloc(size + 1);
-
-  struct BigBits big = {pointer, size};
-  BigBits *bigPointer = &big;
-  // return pointer
-  return  bigPointer;
+ // size of struct: fixed -> only consists of a pointer to a char array and an int
+ // 8 bytes + 4 bytes = 12 bytes
+  struct BigBits * big  = (struct BigBits *) malloc(sizeof(struct BigBits));
+  // initializes on the heap
+  big->c = pointer;
+  big->size = size;
+  return  big;
 }
 
 /** Frees all resources used by currently valid bigBits.  bigBits
@@ -76,13 +75,10 @@ freeBigBits(BigBits *bigBits)
 {
   //@TODO
   //STACK:
-  printf("before freeing anything");
-  freeStack(bigBits);
-  printf("after freeing stack");
+  //freeStack(bigBits);
   // HEAP:
-  // use malloc (somewhere else) and then call free
   free(bigBits);
-  printf("after freeing heap");
+  // do i need to free all of the stuff i freed in newBigBits?
 }
 
 
@@ -96,7 +92,6 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
-  printf("before string conversion");
   int i = 0;
   while(bigBits->c[i] == '0' || bigBits->c[i] == 'x'){
 	  i++;
@@ -105,7 +100,6 @@ stringBigBits(const BigBits *bigBits)
  // updated pointer to bigBits without leading zeros
  const char* new_bigBits = &(bigBits->c[i]);
  return new_bigBits;
- printf("after string conversion");
 }
 
 
@@ -116,6 +110,12 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
+  // steps:
+  // 1. determine shorter operand
+  // 2. iterate through array and & each element to eachother
+  // 3. create newBigBits (malloc)
+  // 4. create pointer to newBigBits
+  // can i just bitwise & these two?
   return NULL;
 }
 
