@@ -1,0 +1,17 @@
+Lab 5 Output
+
+ex2:
+is[0] at 0xffcb55e0
+is[1] at 0xffcb55e4
+is[2] at 0xffcb55e8
+is[3] at 0xffcb55ec
+is[4] at 0xffcb55ef
+
+ex6:
+is[1] at 0xff8639a4
+is[2] at 0xff8639a8
+is[4] at 0xff8639bc
+
+cs[1] at 0xff8639cc
+cs[3] at 0xff8639ce
+cs[4] at 0xff8639cf
