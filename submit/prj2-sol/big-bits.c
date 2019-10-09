@@ -76,7 +76,6 @@ freeBigBits(BigBits *bigBits)
 {
   //@TODO
   // HEAP:
-  // array
   free(bigBits->c);
   free(bigBits);
 }
@@ -85,7 +84,7 @@ freeBigBits(BigBits *bigBits)
 /** Return a lower-case hex string representing bigBits. Returned
  *  string should not contain any non-significant leading zeros.
  *  Returns NULL on error with errno set "appropriately".  (Note that
- *  there is no call to free the corresponding string).
+ *  th:c
  */
 // TA: return formatted resulting bigBit
 const char *
@@ -122,7 +121,10 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   // malloc for returnBigBits
   struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
   // declare an array equal to returnSize (make sure to set = returnBigBits.c
-  char returnArray[returnSize];
+ // char returnArray[returnSize];
+  returnBigBits->c = (char *) malloc(returnSize+1);
+ // returnBigBits->c = returnArray;
+
   // iterate through each array and change to numbers to and to eachother
   for(int i = 0; i < returnSize; i++){
 	bigBits1->c[i] =  ifChar(bigBits1->c[i]);
@@ -132,18 +134,14 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   }
   // go through each array and & each one to eachother
   for(int k = 0; k < returnSize; k++){
-	  returnArray[k] = bigBits1->c[k] & bigBits2->c[k];
+	  returnBigBits->c[k] = bigBits1->c[k] & bigBits2->c[k];
   }
   // convert all the numbers back to characters
   for(int t = 0; t < returnSize; t++){
-	  returnArray[t] = ifNum(returnArray[t]);
+	  returnBigBits->c[t] = ifNum(returnBigBits->c[t]);
   }
-  // create space on heap for pointer
-  char * returnPoint = (char *) malloc(returnSize+1);
-  returnPoint = returnArray;
-  returnBigBits->c = returnPoint;
+  // set returnBigBits to returnSize
   returnBigBits->size = returnSize;
-  printf("returnSize: %d\n", returnSize);
   return returnBigBits;
 }
 
@@ -209,7 +207,55 @@ const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  return NULL;
+  //steps:
+  // 1. determine LONGER operand and create bigBit of that lenght
+  // 2. malloc for pointer and struct
+  // find out shorter array and | with zeroes to equal length of other ar	ray
+  // 3. iterate through each array and | each element to eachotehr
+  // 4. translate back to numb
+  
+  _Bool isLarger = bigBits1->size > bigBits2->size;
+  int returnSize = bigBits2->size;
+  int shorterSize = bigBits1->size;
+  if(isLarger){
+ 	returnSize = bigBits1->size;
+       	shorterSize = bigBits2->size;
+  }
+
+  //malloc for return val
+  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  // malloc for returnBigBits->c
+  returnBigBits->c = (char *) malloc(returnSize+1);
+  // find out length of shorter array
+  for(int i = 0; i < returnSize; i++){
+	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
+  }
+  for(int j = 0; j < returnSize; j++){
+	  bigBits2->c[j] = ifChar(bigBits2->c[j]);
+  }
+  // go through all the filled-in numbers and or them
+  if(isLarger){
+	  for(int k = 0; k < (returnSize - shorterSize); k++){
+		  returnBigBits->c[k] = bigBits1->c[k] | 0;
+	  }
+	  for(int a = 0; a < returnSize; a++){
+		  returnBigBits->c[a + (returnSize - shorterSize)] = bigBits1->c[a +(returnSize - shorterSize)] | bigBits2->c[a];
+  }
+  }
+  else if(!isLarger){
+	  for(int h = 0; h < (returnSize - shorterSize); h++){
+		  returnBigBits->c[h] = bigBits2->c[h] | 0;
+	  }
+	  for(int g = 0; g < returnSize; g++){
+		  returnBigBits->c[g + (returnSize - shorterSize)] = bigBits2->c[g + (returnSize - shorterSize)] | bigBits1->c[g];
+  }
+  }
+  for(int n = 0; n < returnSize; n++){
+	  returnBigBits->c[n] = ifNum(returnBigBits->c[n]);
+  }
+  returnBigBits->size = returnSize;
+  return returnBigBits;
+
 }
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
@@ -219,5 +265,47 @@ const BigBits *
 xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  return NULL;
+   _Bool isLarger = bigBits1->size > bigBits2->size;
+  int returnSize = bigBits2->size;
+  int shorterSize = bigBits1->size;
+  if(isLarger){
+ 	returnSize = bigBits1->size;
+       	shorterSize = bigBits2->size;
+  }
+
+  //malloc for return val
+  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  // malloc for returnBigBits->c
+  returnBigBits->c = (char *) malloc(returnSize+1);
+  // find out length of shorter array
+  for(int i = 0; i < returnSize; i++){
+	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
+  }
+  for(int j = 0; j < returnSize; j++){
+	  bigBits2->c[j] = ifChar(bigBits2->c[j]);
+  }
+  // go through all the filled-in numbers and or them
+  if(isLarger){
+	  for(int k = 0; k < (returnSize - shorterSize); k++){
+		  returnBigBits->c[k] = bigBits1->c[k] ^ 0;
+	  }
+	  for(int a = 0; a < returnSize; a++){
+		  returnBigBits->c[a + (returnSize - shorterSize)] = bigBits1->c[a +(returnSize - shorterSize)] ^ bigBits2->c[a];
+  }
+  }
+	else if(!isLarger){
+		  for(int h = 0; h < (returnSize - shorterSize); h++){
+			  returnBigBits->c[h] = bigBits2->c[h] ^ 0;
+	  }
+		  for(int g = 0; g < returnSize; g++){
+			  returnBigBits->c[g + (returnSize - shorterSize)] = bigBits2->c[g + (returnSize - shorterSize)] ^ bigBits1->c[g];
+  	}
+  	}
+  for(int n = 0; n < returnSize; n++){
+	  returnBigBits->c[n] = ifNum(returnBigBits->c[n]);
+  }
+  returnBigBits->size = returnSize;
+  return returnBigBits;
+
+
 }
