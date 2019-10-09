@@ -140,8 +140,10 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   }
   // create space on heap for pointer
   char * returnPoint = (char *) malloc(returnSize+1);
+  returnPoint = returnArray;
   returnBigBits->c = returnPoint;
   returnBigBits->size = returnSize;
+  printf("returnSize: %d\n", returnSize);
   return returnBigBits;
 }
 
@@ -167,7 +169,7 @@ int ifChar(char c){
 	else if (c == 'e' || c == 'E'){
 		return 14;
 	}
-	else if (c == 'f' || c == 'F'){
+	else{ //(if c == 'f'){
 		return 15;
 	}
 }
@@ -193,7 +195,7 @@ char ifNum(int i){
 	else if (i == 14){
 		return 'e';
 	}
-	else if (i == 15){
+	else{// if (i == 15){
 		return 'f';
 	}
 }
