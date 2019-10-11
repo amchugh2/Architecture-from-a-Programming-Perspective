@@ -49,8 +49,8 @@ newBigBits(const char *hex)
 
  // using size, go through and break into array
   // Big Endian order
- char * bigBit =  (char *) calloc(size, sizeof(char));
-
+ char * bigBit =  (char *) malloc(size+1);
+ strcpy(bigBit->hex, hex);
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
   }
@@ -59,7 +59,7 @@ newBigBits(const char *hex)
   // any memory that you use inside a function disappears when the function is done
  // size of struct: fixed -> only consists of a pointer to a char array and an int
  // 8 bytes + 4 bytes = 12 bytes
-  struct BigBits * big  = (struct BigBits *) calloc(1, sizeof(*big));
+  struct BigBits * big  = (struct BigBits *) malloc(sizeof(*big));
   // initializes on the heap
   big->c = pointer;
   big->size = size;
@@ -91,6 +91,7 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
+  /*
   int i = 0;
   while(bigBits->c[i] == '0' || bigBits->c[i] == 'x'){
 	  i++;
@@ -101,6 +102,31 @@ stringBigBits(const BigBits *bigBits)
  new = &(bigBits->c[i]);
 
  return new;
+ */
+ size_t len = strlen(bigBits->c);
+ char *val = malloc(len+1);
+ for(int x =0; x <=len; x++){
+	 val[x] = bigBits->c[x];
+ }
+
+ int numZeroes = 0;
+ for(int x = 0; x <=len; x++){
+	 if(x == len && val[x] == '0'){
+		 break;
+	 }
+	 if(val[x] == '0'){
+		 numZeroes=numZeroes+1;
+	 }
+	 else{
+		 break;
+	 }
+ }
+ int newLen = len - numZeroes;
+ char *retVal = malloc(newLen);
+ for(int i = 0; i < newLen; i++){
+	 retVal[i] = val[i+numZeroes];
+ }
+ return retVal;
 }
 
 
@@ -118,6 +144,7 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   // create pointer to returnBigBits
  
   // get size of shorter array
+  /*
   int returnSize = bigBits1->size;
   if(bigBits2->size < returnSize) returnSize = bigBits2->size;
   // malloc for returnBigBits
@@ -145,6 +172,51 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   // set returnBigBits to returnSize
   returnBigBits->size = returnSize;
   return returnBigBits;
+  */
+ const char *bigB1 = stringBigBits(bigBits1);
+ const char *bigB2 = stringBigBits(bigBits2);
+
+ size_t strLen1 = strlen(bigB1);
+ size_t strLen2 = strlen(bigB2);
+
+ if(strLen1>strLen2){
+	int arr[strLen2];
+       	for(int x = strLen2-1; x >=0; x--){
+		int lenDiff = strLen1- strLen2;
+ 		int first = ifChar(bigB1[x]);
+		int second = ifChar(bigB2[x+lenDiff]);
+		arr[x] = first & second;
+       }
+	char * hexValues = (char *) malloc(strLen2 + 1);
+	for(int x = 0; x < strLen2; x++){
+		hexValues[x] = ifNum(arr[x]);
+	}
+	char *pointer = hexValues;
+	struct BigBits * big = (struct BigBits *)malloc(sizeof(*big));
+	big -> size = strLen2 + 1;
+	big -> c = pointer;
+	return big;
+	       
+}
+else{
+	int arr[strLen1];
+	for(int x = strLen1-1;x>= 0; x--){
+		int lenDiff = strLen2 - strLen1;
+		int first = ifChar(bigB1[x]);
+		int second = ifChar(bigB2[x]);
+		arr[x] = first & second;
+	}
+	char * hexValues = (char *)malloc(strLen1+1);
+	for(int x = 0; x<strLen1; x++){
+		hexValues[x] = ifNum(arr[x]);
+	}
+	char * pointer = hexValues;
+	struct BigBits * big = (struct BigBits *)malloc(sizeof(*big));
+	big -> size = strLen2 + 1;
+	big -> c = pointer;
+	return big;
+}
+return NULL;
 }
 
 
