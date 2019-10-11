@@ -47,9 +47,9 @@ newBigBits(const char *hex)
   // can i just get the size of above using sizeof() here
   // use int size = strlen(hex) + 1;
 
-  // using size, go through and break into array
+ // using size, go through and break into array
   // Big Endian order
-  char * bigBit = (char *) malloc(size+1);
+ char * bigBit =  (char *) calloc(size, sizeof(char));
 
   for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
@@ -59,7 +59,7 @@ newBigBits(const char *hex)
   // any memory that you use inside a function disappears when the function is done
  // size of struct: fixed -> only consists of a pointer to a char array and an int
  // 8 bytes + 4 bytes = 12 bytes
-  struct BigBits * big  = (struct BigBits *) malloc(sizeof(struct BigBits));
+  struct BigBits * big  = (struct BigBits *) calloc(1, sizeof(*big));
   // initializes on the heap
   big->c = pointer;
   big->size = size;
@@ -76,7 +76,7 @@ freeBigBits(BigBits *bigBits)
 {
   //@TODO
   // HEAP:
-  free(bigBits->c);
+ // free(bigBits->c);
   free(bigBits);
 }
 
@@ -97,8 +97,10 @@ stringBigBits(const BigBits *bigBits)
   }
   
  // updated pointer to bigBits without leading zeros
- const char* new_bigBits = &(bigBits->c[i]);
- return new_bigBits;
+ const char* new = calloc(1, sizeof(bigBits->c));
+ new = &(bigBits->c[i]);
+
+ return new;
 }
 
 
@@ -119,10 +121,10 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   int returnSize = bigBits1->size;
   if(bigBits2->size < returnSize) returnSize = bigBits2->size;
   // malloc for returnBigBits
-  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  struct BigBits * returnBigBits = (struct BigBits *) calloc(1, sizeof(*returnBigBits));
   // declare an array equal to returnSize (make sure to set = returnBigBits.c
  // char returnArray[returnSize];
-  returnBigBits->c = (char *) malloc(returnSize+1);
+  returnBigBits->c = (char *) calloc(returnSize, sizeof(char));
  // returnBigBits->c = returnArray;
 
   // iterate through each array and change to numbers to and to eachother
@@ -223,9 +225,9 @@ orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   }
 
   //malloc for return val
-  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  struct BigBits * returnBigBits = (struct BigBits *) calloc(1, sizeof(*returnBigBits));
   // malloc for returnBigBits->c
-  returnBigBits->c = (char *) malloc(returnSize+1);
+  returnBigBits->c = (char *) calloc(returnSize, sizeof(char));
   // find out length of shorter array
   for(int i = 0; i < returnSize; i++){
 	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
@@ -274,9 +276,9 @@ xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   }
 
   //malloc for return val
-  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(struct BigBits));
+  struct BigBits * returnBigBits = (struct BigBits *) calloc(1, sizeof(*returnBigBits));
   // malloc for returnBigBits->c
-  returnBigBits->c = (char *) malloc(returnSize+1);
+  returnBigBits->c = (char *) calloc(returnSize, sizeof(char));
   // find out length of shorter array
   for(int i = 0; i < returnSize; i++){
 	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
