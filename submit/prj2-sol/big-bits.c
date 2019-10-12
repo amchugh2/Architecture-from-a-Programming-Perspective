@@ -40,18 +40,18 @@ newBigBits(const char *hex)
   // tret hex as array (pointer)
   // while hex is not ending in null
   // get size of hex
-  int size = 0;
-  while(hex[size] != '\0'){
-	  size++;
-  }
+  size_t size = strlen(hex) + 1;
   // can i just get the size of above using sizeof() here
   // use int size = strlen(hex) + 1;
 
  // using size, go through and break into array
   // Big Endian order
- char * bigBit =  (char *) malloc(size+1);
- strcpy(bigBit->hex, hex);
-  for(int j = 0; j <= size; j++){
+ char * bigBit =  (char *) malloc(size);
+ if(bigBit == NULL){
+	 fprintf(stderr, "error allocating memory in newBigBits");
+	 return NULL;
+ }
+ for(int j = 0; j <= size; j++){
 	  bigBit[j] = hex[j];
   }
  char *pointer = bigBit;
@@ -60,6 +60,10 @@ newBigBits(const char *hex)
  // size of struct: fixed -> only consists of a pointer to a char array and an int
  // 8 bytes + 4 bytes = 12 bytes
   struct BigBits * big  = (struct BigBits *) malloc(sizeof(*big));
+ if(big == NULL){
+	 fprintf(stderr, "error allocating memory in newBigBits");
+	 return NULL;
+ }
   // initializes on the heap
   big->c = pointer;
   big->size = size;
@@ -105,6 +109,10 @@ stringBigBits(const BigBits *bigBits)
  */
  size_t len = strlen(bigBits->c);
  char *val = malloc(len+1);
+ if(val == NULL){
+	 fprintf(stderr, "error allocating memory in stringBigBits");
+	 return NULL;
+ }
  for(int x =0; x <=len; x++){
 	 val[x] = bigBits->c[x];
  }
@@ -123,6 +131,10 @@ stringBigBits(const BigBits *bigBits)
  }
  int newLen = len - numZeroes;
  char *retVal = malloc(newLen);
+ if(retVal == NULL){
+	 fprintf(stderr, "error allocating memory in stringBigBits");
+	 return NULL;
+ }
  for(int i = 0; i < newLen; i++){
 	 retVal[i] = val[i+numZeroes];
  }
@@ -188,11 +200,19 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 		arr[x] = first & second;
        }
 	char * hexValues = (char *) malloc(strLen2 + 1);
+	if(hexValues == NULL){
+	 fprintf(stderr, "error allocating memory in andBigBits");
+	 return NULL;
+ }
 	for(int x = 0; x < strLen2; x++){
 		hexValues[x] = ifNum(arr[x]);
 	}
 	char *pointer = hexValues;
 	struct BigBits * big = (struct BigBits *)malloc(sizeof(*big));
+	if(big == NULL){
+	 fprintf(stderr, "error allocating memory in andBigBits");
+	 return NULL;
+ }
 	big -> size = strLen2 + 1;
 	big -> c = pointer;
 	return big;
@@ -201,17 +221,25 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 else{
 	int arr[strLen1];
 	for(int x = strLen1-1;x>= 0; x--){
-		int lenDiff = strLen2 - strLen1;
+		//int lenDiff = strLen2 - strLen1;
 		int first = ifChar(bigB1[x]);
 		int second = ifChar(bigB2[x]);
 		arr[x] = first & second;
 	}
 	char * hexValues = (char *)malloc(strLen1+1);
+	if(hexValues == NULL){
+	 fprintf(stderr, "error allocating memory in andBigBits");
+	 return NULL;
+ }
 	for(int x = 0; x<strLen1; x++){
 		hexValues[x] = ifNum(arr[x]);
 	}
 	char * pointer = hexValues;
 	struct BigBits * big = (struct BigBits *)malloc(sizeof(*big));
+	if(big== NULL){
+	 fprintf(stderr, "error allocating memory in andBigBits");
+	 return NULL;
+ }
 	big -> size = strLen2 + 1;
 	big -> c = pointer;
 	return big;
@@ -297,9 +325,14 @@ orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   }
 
   //malloc for return val
-  struct BigBits * returnBigBits = (struct BigBits *) calloc(1, sizeof(*returnBigBits));
+  struct BigBits * returnBigBits = (struct BigBits *) malloc(sizeof(*returnBigBits));
+  if(returnBigBits == NULL){
+	 fprintf(stderr, "error");
+	return NULL;
+  }
+
   // malloc for returnBigBits->c
-  returnBigBits->c = (char *) calloc(returnSize, sizeof(char));
+  returnBigBits->c = (char *) malloc(returnSize);
   // find out length of shorter array
   for(int i = 0; i < returnSize; i++){
 	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
@@ -351,6 +384,10 @@ xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   struct BigBits * returnBigBits = (struct BigBits *) calloc(1, sizeof(*returnBigBits));
   // malloc for returnBigBits->c
   returnBigBits->c = (char *) calloc(returnSize, sizeof(char));
+ if(returnBigBits == NULL){
+	 fprintf(stderr, "error");
+	return NULL;
+  }
   // find out length of shorter array
   for(int i = 0; i < returnSize; i++){
 	  bigBits1->c[i] = ifChar(bigBits1->c[i]);
