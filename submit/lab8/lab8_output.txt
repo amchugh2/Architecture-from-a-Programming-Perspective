@@ -1,0 +1,130 @@
+input: git clone url
+output: warning: appear to have cloned an empty repository
+
+input: git remote -v
+output: origin ...
+
+input: git status
+ouput: on branch master
+
+no commits yet
+
+untracked files:
+	(use "git add <file>..." to include in what will be committed)
+
+		../
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+input: git add README.md
+input: git status --short
+output: A README.md
+
+input: git commit -m "added README"
+output: [master (root-commit) 9d10c07)] added README
+ Commiter: Abigail McHugh <amchugh2@cs.binghamton.edu>
+Your name and email address were commited automatically based on your username and hostname. Please check that they are accurate. You can suppress this message by setting them explicity. Run the following command and follow the instructions in your editor to edit your confirugation file:
+
+	git config --global --edit
+
+	After doing this, you may fix the idenity used for this commit with:
+	git commit --amend --reset-author
+
+	1 file changed, 4 insertions(+)
+	create mode 100644 work/lab8/README.md
+
+Input: git branch -l
+Output: * master
+
+Input: git push --set-upstream origin master
+Output: Enumerating objects, 5 done.
+	Counting objects: 100% (5/5), done.
+	Writing objects: 100%, (5/5), 340 bytes | 170.00 KiB/s, done.
+	Total 5 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/amchugh2/git-repos/lab8.git
+	* [new branch] master -> master
+	Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Input: git status -s
+Output: ?? .gitignore
+?? Makefile
+?? hello.c
+
+Input: git add .
+Input: git status -s
+Output: A .gitignore
+A Makefile
+A hello.c
+
+Input: git commit -m "working with warnings'
+Output: [master (root-commit) 9d10c07)] added working with warnings
+ Commiter: Abigail McHugh <amchugh2@cs.binghamton.edu>
+Your name and email address were commited automatically based on your username and hostname. Please check that they are accurate. You can suppress this message by setting them explicity. Run the following command and follow the instructions in your editor to edit your confirugation file:
+
+	git config --global --edit
+
+	After doing this, you may fix the idenity used for this commit with:
+	git commit --amend --reset-author
+
+	3 file changed, 22 insertions(+)
+	create mode 100644 work/lab8/.gitignore
+	create mode 100644 work/lab8/Makefile
+	create mode 106444 work/lab8/hello.c
+
+Input: git push
+Output: Enumerating objects, 5 done.
+	Counting objects: 100% (5/5), done.
+	Writing objects: 100%, (5/5), 340 bytes | 170.00 KiB/s, done.
+	Total 5 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/amchugh2/git-repos/lab8.git
+	* [new branch] master -> master
+	Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Input: git log
+Output: commit 22bfc7031def8028debfff8d83333b (HEAD -> master, origin/master)
+Author: Abigail McHugh <amchugh2@cs.binghamton.edu>
+Date: Thu Oct 16:33.20 2019 -0400
+
+	working with warnings
+
+Input: git status -s
+Output: M hello.c
+?? lab8_output.txt
+
+Input: git diff
+Output: diff -- a/work/lab8/hello.c b/work/lab8/hello.c
+index 14e73..5115842 100644
+-- a/work/lab8/hello.c
++++ b/work/lab8/hello.c
+
+@@ -5, 7 +5, 7 @@ int
+main(int argc, const char *argv[])
+{
+if(argc !=2){
+- printf("usage: %s NAME\n", argv[0]);
++ fprintf(stderr, "usage: %s NAME\n", argv[0]);
+exit(1);
+}
+printf("hello %s\n", argv[1]):
+
+Input: git push
+Output: Output: Enumerating objects, 5 done.
+	Counting objects: 100% (5/5), done.
+	Writing objects: 100%, (5/5), 340 bytes | 170.00 KiB/s, done.
+	Total 5 (delta 0), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/amchugh2/git-repos/lab8.git
+	* [new branch] master -> master
+	Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Input: git checkout -b hello-multi
+Output: Switched to a new branch "hello-multi"
+
+Input: git push -u origin hello-multi
+Output: Enumerating objects: 9, done ...
+
+Input: git checkout master
+Output: Switched to branch "master"
+Your branch is up to date with 'origin/master'
+
+Input: git merge master
+Output: Auto-merging work/lab8/hello.c
