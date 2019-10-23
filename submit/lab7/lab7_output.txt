@@ -1,2 +1,19 @@
 Ex 3:
 If you also declare y in the f.c file to be a double, it will also change the value of x.
+
+Ex 6:
+testvec-static addresses
+main: 
+0x401bf6
+addvec:
+0x401f1f
+multvec:
+0x401f8e
+
+testvec-dynamic addresses
+main:
+0x555555551ee
+addvec:
+0x7ffff7fca0f5
+multvec:
+0x7ffff7fca164
