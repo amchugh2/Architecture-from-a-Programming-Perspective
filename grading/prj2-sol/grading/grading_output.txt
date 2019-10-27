@@ -1,0 +1,90 @@
+2019 Fall CS 220 - Project 2 Grading Report
+Student Name: McHugh Abigail
+Grader Name: Li Yongheng
+
+----------(40%) 0. compile program-----------
+$ make
+cc -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L   -c -o main.o main.c
+cc -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L   -c -o big-bits.o big-bits.c
+cc -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L   -c -o errors.o errors.c
+cc -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L   -c -o hex-util.o hex-util.c
+cc -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L   -c -o stack.o stack.c
+cc main.o big-bits.o errors.o hex-util.o stack.o  -o big-bits
+>>> output: compilation succeeded.
++++ result: -0
++++ comment: 
+
+----------(8%) 1. good_input_1 -----------
+$ ./big-bits < grading/good_input_1.txt > grading/good_input_generated_output_1.txt
+>>> expect: 
+0xfff_ffff_ffff_ffff
+0x2a2a_2a2a_2a2a_2a2a_2a2a
+0x6666_6666_6666_6666_6666_6666_6666_6666_6666
+0xff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
+>>> output: 
+0xfff_ffff_ffff_ffff
+0x2a2a_2a2a_2a2a_2a2a_2a2a
+0x6666_6666_6666_6666_6666_6666_6666_6666_6666
+0xff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
++++ result: -0
++++ comment: 
+
+----------(8%) 2. good_input_2 -----------
+$ ./big-bits < grading/good_input_2.txt > grading/good_input_generated_output_2.txt
+>>> expect: 
+0xb
+0xb
+0x0
+0xaa_aaaa_aaaa_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb
+>>> output: 
+malloc(): corrupted top size
++++ result: -8
++++ comment: 
+
+----------(8%) 3. good_input_3 -----------
+$ ./big-bits < grading/good_input_3.txt > grading/good_input_generated_output_3.txt
+>>> expect: 
+0x222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2eee_eeee
+0xbb_bbbb_bbbb_b999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9fff_ffff
+0xaaa_aaaa
+0x222_2222
+>>> output: 
+malloc(): corrupted top size
++++ result: -8
++++ comment: 
+
+----------(8%) 4. good_input_4 -----------
+$ ./big-bits < grading/good_input_4.txt > grading/good_input_generated_output_4.txt
+>>> expect: 
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eee0_0011
+0xeee_eeee_e111_1111_1111_1111_1111_1111_1166
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eeee_ee99
+0xffff_ffff_ffff_ffff_ffff_ffff_f111_1111_1eee_eeee_eeee_eeee_eeee_eee0_0077
+>>> output: 
+munmap_chunk(): invalid pointer
++++ result: -8
++++ comment: 
+
+----------(4%) 5. memory check -----------
+$ valgrind --log-file=grading/memory_check.txt ./big-bits < grading/good_input_4.txt
+>>> output:  
++++ result: -4
++++ comment: 
+
+--------------------Summary--------------------
+Grading Time: Fri 25 Oct 2019 04:40:29 PM EDT
+Project Due Date: Fri Oct 11 23:59:59 2019 -0400
+GitHub Submission Info: 
+commit 190d5a8ca84030aeb892696180350efd158f411f
+Author: Abigail McHugh <amchugh2@binghamton.edu>
+Date:   Fri Oct 11 20:20:48 2019 -0400
+
+    submitted prj2
+
+Late Date Used: 
+Late Date Left: 7
+Late Submission Penalty: -0
+
+Coding Style: -0
+
+Total Points: 72 
