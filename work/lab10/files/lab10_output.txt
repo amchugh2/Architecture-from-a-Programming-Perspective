@@ -1,0 +1,4 @@
+Exercize 1:
+rotl() is declared inline so it is in assembly as roll, and uses the destination index, which makes sense because it is rotating to the left
+
+rotl() is declared inline so it is in assembly as rorl, and uses the source index, which makes sense because it is rotating to the right
