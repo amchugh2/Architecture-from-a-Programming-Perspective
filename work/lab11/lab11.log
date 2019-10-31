@@ -1,0 +1,61 @@
+Section 1:
+input: time ls ~/cs220/labs/lab11/files
+output: 
+real	0m0.008s
+user	0m0.002s
+sys	0m0.001s
+
+input: time sleep 5
+output:
+real	0m5.003s
+user	0m0.001s
+sys	0m0.000s
+
+input: time wc -l 'find /etc/>dev/null' 2>/dev/null | tail
+output:
+real	0m0.006s
+user	0m0.002s
+sys	0m0.003s
+
+
+Exercize 2:
+input: ./parity-c -c -d 10
+output:
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+
+input: ./parity-s -d 10
+output:
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+
+input: time ./parity-c 10
+output:
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+
+input: time ./parity-s 10
+output:
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+
+Exercize 3:
+
