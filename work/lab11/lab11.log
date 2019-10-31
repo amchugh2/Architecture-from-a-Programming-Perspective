@@ -70,3 +70,16 @@ amchugh2@remote07:~/i220a_new/work/lab11/matmul-cache$ ./simple-m
 2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18
 4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18
 7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18
+
+Exercize 4:
+amchugh2@remote07:~/i220a_new/work/lab11/int-search$ time ./linear search 2000 2000
+bash: ./linear: No such file or directory
+
+real    0m0.001s
+user    0m0.001s
+sys     0m0.000s
+amchugh2@remote07:~/i220a_new/work/lab11/int-search$ time ./binary-search 2000 2000
+
+real    0m0.467s
+user    0m0.461s
+sys     0m0.004s
