@@ -19,10 +19,12 @@ typedef struct FnsData{
 	//pointer to the array
 	FnInfo * pointer;
 	// keep track of size
-	int size;
-	// index
+	size_t size;
+	// current index
 	int index;
-}
+	// number of elements used
+	size_t used;
+};
 
 
 static inline bool is_call(unsigned op) { return op == CALL_OP; }
@@ -45,24 +47,30 @@ new_fns_data(void *rootFn)
   //@TODO
   // opcode
   unsigned char op = *(unsigned char *)rootFn;
-  while(is_ret(op) != 1){
-	  printf("is_ret: %d\n", is_ret(op));
+  while(!is_ret(op)){
+	  printf("is_ret_status: %d\n", is_ret(op));
 	  // get length of instr
-	  int instr_length = get_op_length((unsigned char *) rootFn);
+	  int instr_length = get_op_length(rootFn);
 	  // print instr_length
 	  printf("length: %d\n", instr_length);
-	  // update temp
-	  rootFn += instr_length;
-	  // get next top
-	  op += 4;
+	  //go to next instruction (this is wrong - how do you increment?)
+	  rootFn = rootFn + 0x4;
+	  // update op
+	  op += instr_length;
+
   }
+  printf("is_ret_status: %d\n", is_ret(op));
+  // create data type
+  /*
   unsigned char * pointer = rootFn;
   struct FnsData * new_FnsData = (struct FnsData *)malloc(sizeof(rootFn));
   if(rootFn == NULL){
 	  fprintf(stderr, "Error in entering FnInfo");
   }
+  */
   return NULL;
 }
+
 
 /** Free all resources occupied by fnsData. fnsData must have been
  *  returned by new_fns_data().  It is not ok to use to fnsData after
