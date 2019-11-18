@@ -50,11 +50,9 @@ new_fns_data(void *rootFn)
   while(!is_ret(op)){
 	  printf("is_ret_status: %d\n", is_ret(op));
 	  // get length of instr
-	  int instr_length = get_op_length(rootFn);
+	  int instr_length = get_op_length(p);
 	  // print instr_length
-	  printf("length: %d\n", instr_length);
-	  //go to next instruction (this is wrong - how do you increment?)
-	  rootFn = rootFn + 0x4;
+	  printf("length: %d\n", op);
 	  // update op
 	  op += instr_length;
 
