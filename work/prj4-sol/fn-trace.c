@@ -15,18 +15,6 @@ enum {
   RET_NEAR_WITH_POP_OP = 0xC2
 };
 
-typedef struct FnsData{
-	//pointer to the array
-	FnInfo * pointer;
-	// keep track of size
-	size_t size;
-	// current index
-	int index;
-	// number of elements used
-	size_t used;
-};
-
-
 static inline bool is_call(unsigned op) { return op == CALL_OP; }
 static inline bool is_ret(unsigned op) {
   return
@@ -45,33 +33,66 @@ new_fns_data(void *rootFn)
   //verify assumption used when decoding call address
   assert(sizeof(int) == 4);
   //@TODO
-  // opcode
-  unsigned char op = *(unsigned char *)rootFn;
-  while(!is_ret(op)){
-	  printf("is_ret_status: %d\n", is_ret(op));
-	  // get length of instr
-	  int instr_length = get_op_length(p);
-	  // print instr_length
-	  printf("length: %d\n", op);
-	  // update op
-	  op += instr_length;
+	typedef struct FnsData{
+		//array (a collection of FnInfos)
+		FnInfo * pointer = NULL;
+		// keep track of size
+		int size = 0;
+		// current index
+		int index = 0;
+		// number of elements used
+		int used = 0;
+		// keep track of next index
+		int next_index = 0;
+	}fnsData;
+  // get rootFn to begin, unsigned op to get first step
+  unsigned char *op = (unsigned char *)rootFn;
+  // initialize first FnsInfo (use malloc here) (maybe do this after fcn - not sure)
+  FnInfo fnInfo; // MALLOC?
+  fnInfo->pointer = &rootFn;
+  // how to initialize size, index, used, next_index etc
+  // while op is not a return
+  while(!is_ret(*op)){
+	  // if op is a call
+	  if(is_call(*op)){
+		  // increment outcall
+		 nOutCall++;
+		  if(nInCall >= 1){
+			  nInCall++;
+			  // increase size of fnInfo
+			  fnInfo->size += get_op_length(*op);
+		  }
+		  // if hasn't been seen before
+		  if(nInCall == 0){
+			  // increment inCall
+			  nInCall++;
+			 // call fn_trace (aux function created by us) to get data
+			 // get address of start fn
+			 void * new_func = FnInfo->address;
+			  fn_trace(new_func, fnsData);
+				  // EVERYTHING BELOW IS OLD
 
+			  }
+		  }
+		}
+	 // get len of instr
+	  int instr_length = get_op_length ((void *)op);
+	  // when scan terminates: enters accumulated length into the FnInfo at the previously saved index in Fnsdata as well as set NOutcalls to number of call instructions 
   }
-  printf("is_ret_status: %d\n", is_ret(op));
+/*
   // create data type
-  /*
   unsigned char * pointer = rootFn;
   struct FnsData * new_FnsData = (struct FnsData *)malloc(sizeof(rootFn));
   if(rootFn == NULL){
 	  fprintf(stderr, "Error in entering FnInfo");
   }
-  */
+*/
   return NULL;
 }
 
 
 /** Free all resources occupied by fnsData. fnsData must have been
- *  returned by new_fns_data().  It is not ok to use to fnsData after
+*  returned by new_fns_data().  It is not ok to use to fnsData after
  *  this call.
  */
 void
