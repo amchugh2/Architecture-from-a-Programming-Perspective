@@ -22,7 +22,38 @@ static inline bool is_ret(unsigned op) {
     op == RET_FAR_OP || op == RET_FAR_WITH_POP_OP;
 }
 
+// Called by new_fns_data
+// Purpose: Add info about function represented by addr (called by rootFn) and all functions called directly or indirectly by the function as long as the functions havent been seen earlier.
+void fn_trace(void * addr, FnsData fnsData){
+	FnInfo fnInfo;
+	fnInfo->address = &addr;
+	fnInfo->nInCalls = 1;
+	unsigned char * op = (unsigned char *)addr;
+	int func_len = 0;
+	while(!is_ret(*op)){
+		if(is_call(*op)){
+			nOutCalls++;
+			int * pointer = op + 0x8;
+			pointer+= &(op + 0x4);
+			// check if pointer is in fnsData
+			if( // POINTER IN FNS DATA){
+				nInCalls++
+		}
+		// not sure about this
+		void * new_func = fnInfo ->address;
+		fn_trace(new_func, fnsData);
+		}
+	// Steps
+	// Add accumulated length to FnInfo at previously saved index in FnsData
+	// Set outCalls to number of call instructions seen during scan of function body (done in while loop)
 
+
+
+	
+
+
+
+}
 /** Return pointer to opaque data structure containing collection of
  *  FnInfo's for functions which are callable directly or indirectly
  *  from the function whose address is rootFn.
@@ -49,14 +80,14 @@ new_fns_data(void *rootFn)
   unsigned char *op = (unsigned char *)rootFn;
   // initialize first FnsInfo (use malloc here) (maybe do this after fcn - not sure)
   FnInfo fnInfo; // MALLOC?
-  fnInfo->pointer = &rootFn;
+  fnInfo->address = &rootFn;
   // how to initialize size, index, used, next_index etc
   // while op is not a return
   while(!is_ret(*op)){
 	  // if op is a call
 	  if(is_call(*op)){
+		  nOutCall++;
 		  // increment outcall
-		 nOutCall++;
 		  if(nInCall >= 1){
 			  nInCall++;
 			  // increase size of fnInfo
@@ -64,29 +95,17 @@ new_fns_data(void *rootFn)
 		  }
 		  // if hasn't been seen before
 		  if(nInCall == 0){
-			  // increment inCall
+			  // increment inCall and outCall
 			  nInCall++;
 			 // call fn_trace (aux function created by us) to get data
 			 // get address of start fn
 			 void * new_func = FnInfo->address;
-			  fn_trace(new_func, fnsData);
-				  // EVERYTHING BELOW IS OLD
-
-			  }
+			 fn_trace(new_func, fnsData);
 		  }
 		}
-	 // get len of instr
-	  int instr_length = get_op_length ((void *)op);
-	  // when scan terminates: enters accumulated length into the FnInfo at the previously saved index in Fnsdata as well as set NOutcalls to number of call instructions 
+          // get len of ins
+	 // when scan terminates: enters accumulated length into the FnInfo at the previously saved index in Fnsdata as well as set NOutcalls to number of call instructions 
   }
-/*
-  // create data type
-  unsigned char * pointer = rootFn;
-  struct FnsData * new_FnsData = (struct FnsData *)malloc(sizeof(rootFn));
-  if(rootFn == NULL){
-	  fprintf(stderr, "Error in entering FnInfo");
-  }
-*/
   return NULL;
 }
 
