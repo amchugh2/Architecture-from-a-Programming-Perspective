@@ -110,6 +110,7 @@ new_fns_data(void *rootFn)
  assert(sizeof(int) == 4);
  //@TODO
  //allocate space
+ //first fnsdata to look at
  FnsData *first = malloc(sizeof(FnsData));
  // initialize
  first->size = 2;
