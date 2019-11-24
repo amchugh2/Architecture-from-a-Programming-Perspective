@@ -1,6 +1,5 @@
 #include "fn-trace.h"
 #include "x86-64_lde.h"
-
 #include "memalloc.h"
 #include <assert.h>
 #include <stdbool.h>
@@ -15,6 +14,8 @@ enum {
   RET_NEAR_WITH_POP_OP = 0xC2
 };
 
+typedef unsigned char Byte;
+
 static inline bool is_call(unsigned op) { return op == CALL_OP; }
 static inline bool is_ret(unsigned op) {
   return
@@ -25,64 +26,56 @@ static inline bool is_ret(unsigned op) {
 struct FnsData{
 	int size;
 	int index;
-	FnInfo * pointer;
+	FnInfo ** pointer;
 };
 
 // Called by new_fns_data
 // Purpose: Add info about function represented by addr (called by rootFn) and all functions called directly or indirectly by the function as long as the functions havent been seen earlier.
-void fn_trace(void * addr, FnsData * fnsData){
-	int curr_index = fnsData->index;
-	if(curr_index >= fnsData->size){
-		reallocChk(fnsData->pointer, curr_index*sizeof(FnInfo));
-		fnsData->size++;
+void fn_trace(void * addr, FnsData *fnsData){
+	int exist = 0;
+	for(int i = 0; i < fnsData->index; i++){
+		if(addr == fnsData->pointer[i]->address){
+			fnsData->pointer[i]->nInCalls+=1;
+			exist=1;
+		}
+		if(exist == 1){
+			return;
+		}
+		FnInfo *new = malloc(sizeof(FnInfo));
+		new->address = addr;
+		new->nInCalls = 1;
+		new->nOutCalls = 0;
+
+		fnsData->pointer[fnsData->index] = new;
 		fnsData->index++;
-	}
-	FnInfo newInfo;
-	// maybe: add *
-	newInfo.address = addr;
-	newInfo.nInCalls = 1;
-	// maybe: add *
-	unsigned char * start = (unsigned char *)addr;
-	int func_length = 0;
-	int nOutCalls = 0;
-	while(!is_ret(*start)){
-		if(is_call(*start)){
-			// *p = byte after opcode
-			// get address of func
-			unsigned char * newAddress = start + 1;
-			int * newAddress1=(int *)newAddress;
-			int offset = *newAddress1;
-			int nextInstruc=*start+get_op_length((void *)start);
-			int callAddress = offset+nextInstruc;
-			// if address is already in FnsData
-			int exist = 0;
-			for(int i = 0; i < fnsData->size; i++){
-				if(callAddress==fnsData->pointer[i].address){
-					fnsData->pointer[i].nInCalls++;
-					exist = 1;
-				}
+
+		if(fnsData->index >= fnsData->size){
+			fnsData->size +=2;
+			fnsData->pointer = reallocChk(fnsData->pointer, fnsData->size * sizeof(FnInfo**));
+		}
+
+		Byte *start = (Byte *)addr;
+		int offset = 0;
+		while(true){
+			if(is_ret(start[offset])){
+				new->length = offset+1;
+				return;
 			}
-			if(exist == 0){
-				fn_trace((void *)callAddress, fnsData);
+			int op_len = get_op_length(start + offset);
+
+			if(is_call(start[offset])){
+				new->nOutCalls++;
+				void *callAddress = start + offset + 5 + *(int *)&(start[offset+1]);
+				fn_trace(callAddress, fnsData);
 			}
-			nOutCalls++;
+			offset += op_len;
+			}
 		}
-		else{
-			// get length of current instruction
-			int instr_len = get_op_length((void *)start);
-			// increment address
-			start+= instr_len;
-			//accumulate total len
-			func_length += instr_len;
-		}
-	}
-			// set accumulated total length
-			newInfo.length=func_length;
-			// set outCall
-			newInfo.nOutCalls = nOutCalls;
-			// put in FnsData
-			fnsData->pointer[curr_index] = newInfo;
-		}
+
+int get_fn(const void *a, const void* b){
+	return (*((FnInfo**)a))->address - (*((FnInfo**)b))->address;
+}
+
 /** Return pointer to opaque data structure containing collection of
  *  FnInfo's for functions which are callable directly or indirectly
  *  from the function whose address is rootFn.
@@ -92,53 +85,20 @@ new_fns_data(void *rootFn)
 {
   //verify assumption used when decoding call address
   assert(sizeof(int) == 4);
-  /*
-	typedef struct FnsData{
-		//array (a collection of FnInfos)
-		struct FnInfo * pointer;
-		// keep track of size
-		int size;
-		// current index
-		int index;
-	};
-  */
-  // initialize fnsData
-  struct FnsData fnsData1;
-  fnsData1.size=0;
-  fnsData1.index=0;
-  fnsData1.pointer=NULL;
-  // get rootFn to begin, unsigned op to get first step
-  unsigned char *op = (unsigned char *)rootFn;
-  FnInfo firstInfo = reallocChk(op,sizeof(FnInfo));
- // call fntrace on rootFn
- fn_trace((void *)op, fnsData1);
-  while(!is_ret(*op)){
-	  if(is_call(*op)){
-		  firstInfo.nOutCalls++;
-		  if(firstInfo.nInCalls >= 1){
-			  firstInfo.nInCalls++;
-			  firstInfo.length += get_op_length((void *)op);
-		  }
-		  // if function hasn't been called before
-		  if((firstInfo.nInCalls) == 0){
-		  	firstInfo.nInCalls++;
-			//firstInfo->nOutCalls++;
-			// use fn_trace to get data of new function
-			 void * new_func = firstInfo.address;
-			 fn_trace((void *)new_func, fnsData1);
-		}
-		}
-		else{
-		// get instr_len
-		int instr_len = get_op_length((void *)op);
-		printf("length: %d\n", instr_len);
-		firstInfo.length += instr_len;
-		// update pointer
-		op+= instr_len;
-  }
-  return NULL;
+  FnsData *first = malloc(sizeof(FnsData));
+  // initialize
+  first->size = 2;
+  first->index = 0;
+  // allocate space
+  first->pointer = mallocChk(sizeof(FnInfo*) * first->size);
+  // call fn_trace
+  fn_trace(rootFn, first);
+  // sort
+  qsort(first->pointer, first->index, sizeof(FnInfo*), &get_fn);
+  // return
+  return first;
 }
-
+  
 
 /** Free all resources occupied by fnsData. fnsData must have been
 *  returned by new_fns_data().  It is not ok to use to fnsData after
@@ -148,12 +108,11 @@ void
 free_fns_data(FnsData *fnsData)
 {
   //@TODO
-  for(unsigned int i = 0; i < fnsData->size; i++){
+  for(int i = 0; i < fnsData->index; i++){
 	  free(fnsData->pointer[i]);
   }
   free(fnsData->pointer);
   free(fnsData);
-  }
 }
 
 /** Iterate over all FnInfo's in fnsData.  Make initial call with NULL
@@ -173,8 +132,14 @@ const FnInfo *
 next_fn_info(const FnsData *fnsData, const FnInfo *lastFnInfo)
 {
   //@TODO
-  for (FnInfo *fnInfoP = next_fn_info(fnsData, NULL); fnInfoP != NULL;       fnInfoP = next_fn_info(fnsData, fnInfoP)) {
-
+  // If at last
+  if(lastFnInfo == NULL){
+	  return fnsData->pointer[0];
+  }
+  for(int i = 0; i < fnsData->index-1; i++){
+	  if(fnsData->pointer[i]->address == lastFnInfo->address)
+		  return fnsData->pointer[i+1];
+  }
   return NULL;
 }
 }
