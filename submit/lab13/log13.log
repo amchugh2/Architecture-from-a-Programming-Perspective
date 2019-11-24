@@ -1,0 +1,1468 @@
+Script started on 2019-11-17 16:33:15-05:00 [TERM="xterm" TTY="/dev/pts/8" COLUMNS="73" LINES="36"]
+amchugh2@remote07:~/i220a_new/work/lab13$ :[Kcp -r ~/cs220[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+log13.log
+amchugh2@remote07:~/i220a_new/work/lab13$ cs[K[Kcp -r ~/cs220[K0/projec[K[K[K[K[K[Ka[Klbs[K[Kabs/lab13/files  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/  *.[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C* [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks/ * .
+amchugh2@remote07:~/i220a_new/work/lab13$ ls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ vim stdin-char-count
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stdin-char-count" is a directory[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m" =======================================================================[2;1H" Netrw Directory Listing                                        [m[36m(netrw v[m[3;1H[34m"   /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab13/stdin-cha[4;1H"   Sorted by[m[33m      name[m
+[34m"   Sort sequence:[m[33m [\/]$[m[34m,[m[33m\<core\%(\.\d\+\)\=\>[m[34m,[m[33m\.h$[m[34m,[m[33m\.c$[m[34m,[m[33m\.cpp$[m[34m,[m[33m\~\=\*$[m[34m,[m[33m*[m[6;1H[34m"   Quick Help: [m[36m<F1>[m[35m:[mhelp  [36m-[m[35m:[mgo up dir  [36mD[m[35m:[mdelete  [36mR[m[35m:[mrename  [36ms[m[35m:[msort-by  [36mx[m[35m:[m[7;1H[34m" =======================================================================[m[8;1H[4m[34m..[m[4m[36m/[m[4m                                                                      [m[9;1H[34m.[m[36m/[m
+stdin-char-count.c
+.gitignore
+Makefile
+[1m[34m~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H8,1[11CAll[8;1H[?25h[?25l[36;46H:[8;1H[36;1H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[?1000h[?2004h[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13$ cd stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ./stdin-char-c ount <stdin-char-count.c
+bash: ./stdin-char-count: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ./stdin-char-count <stdin-char-count.c./stdin-char-count <stdin-char-count.c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K./stdin-char-count <stdin-char-count.c
+bash: ./stdin-char-count: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ls[K[Kcd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ ./stdin-char-count <stdin-char-count.c
+bash: stdin-char-count.c: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13$ c[Kls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ f[Kvim c[Kstdin-char-cout[Knt
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stdin-char-count" is a directory[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m" =======================================================================[2;1H" Netrw Directory Listing                                        [m[36m(netrw v[m[3;1H[34m"   /import/linux/home1/amchugh2/git-repos/i220a_new/work/lab13/stdin-cha[4;1H"   Sorted by[m[33m      name[m
+[34m"   Sort sequence:[m[33m [\/]$[m[34m,[m[33m\<core\%(\.\d\+\)\=\>[m[34m,[m[33m\.h$[m[34m,[m[33m\.c$[m[34m,[m[33m\.cpp$[m[34m,[m[33m\~\=\*$[m[34m,[m[33m*[m[6;1H[34m"   Quick Help: [m[36m<F1>[m[35m:[mhelp  [36m-[m[35m:[mgo up dir  [36mD[m[35m:[mdelete  [36mR[m[35m:[mrename  [36ms[m[35m:[msort-by  [36mx[m[35m:[m[7;1H[34m" =======================================================================[m[8;1H[4m[34m..[m[4m[36m/[m[4m                                                                      [m[9;1H[34m.[m[36m/[m
+stdin-char-count.c
+.gitignore
+Makefile
+[1m[34m~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H8,1[11CAll[8;1H[?25h[?25l[36;58H2[8;2H[?25h[?2004h[?25l[4;15H[33mtime[m[4;19H[K[5;5H[34mQuick Help: [m[36m<F1>[m[35m:[mhelp  [36m-[m[35m:[mgo up dir  [36mD[m[35m:[mdelete  [36mR[m[35m:[mrename  [36ms[m[35m:[msort-by  [36mx[m[35m:[m[6;3H[34m=======================================================================[7;1H..[m[36m/[m[7;4H[K[8;1H[4m.gitignore[m
+Makefile
+
+[34m.[m[36m/[m[11;3H[K[12;1H[1m[34m~                                                                        [8;2H[?25h[?2004h[?25l[m[36;1H<ew/work/lab13/stdin-char-count/.gitignore"[36;56H[K[36;2H/lab13/stdin-char-count/.gitignore" 1L, 17C[1;1Hstdin-char-count[1;17H[K[2;1H[1m[34m~                                                                        [3;1H~                                                                        [4;1H~                                                                        [5;1H~                                                                        [6;1H~                                                                        [7;1H~                                                                        [8;1H~                                                                        [9;1H~                                                                        [10;1H~                                                                        [11;1H~                                                                        [m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[?1000h[?2004h[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13$ vim stdin-char-count[1P stdin-char-count[1P stdin-char-count[1P stdin-char-countc stdin-char-countd stdin-char-count[C stdin-char-count[1Pstdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ls
+Makefile  stdin-char-count.c
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ vim stdin-char c[K-count.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stdin-char-count.c" 12L, 198C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<stdio.h>[m
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  printf([31m"EOF = [m[35m%d\n[m[31m"[m, [31mEOF[m);
+  [32mchar[m c;
+  [32mint[m count = [31m0[m;
+  [33mwhile[m ((c = getchar()) != [31mEOF[m) count++;
+  printf([31m"[m[35m%d\n[m[31m"[m, count);
+  [33mreturn[m [31m0[m;
+}
+[1m[34m~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  printf([31m"EOF = [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, [31mEOF[m[30m[47m);
+  [32mchar[m[30m[47m c;
+  [32mint[m[30m[47m count = [31m0[m[30m[47m;
+  [33mwhile[m[30m[47m ((c = getchar()) != [31mEOF[m[30m[47m) count++;
+  printf([31m"[m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, count);
+  [33mreturn[m[30m[47m [31m0[m[30m[47m;
+}
+[1m[34m~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[30m[47m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;56H7,7[7;7H[?25h[?25l[36;46H~@k[7;7H[36;46H   [7;7H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H7,7[11CAll[7;7H[?25h[?25l  cha c;[7;9H[K[36;58H6[7;6H[?25h[?25l c;[7;8H[K[36;58H5[7;5H[?25h[?25l c;[7;7H[K[36;58H4[7;4H[?25h[?25l c;[7;6H[K[36;58H3[7;3H[?25h[?25li c;[36;58H4[7;4H[?25h[?25ln c;[36;58H5[7;5H[?25h[?25l[32mint[m[30m[47m c;[36;58H6[7;6H[?25h[36;1H[K[7;5H[?25l[36;46H^[[7;5H[36;46H  [7;6H[36;56H7,5[11CAll[7;5H[?25h[?25l[36;46H:[7;5H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"stdin-char-count.c" 12L, 197C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ./stdin-char-count <stdin-char-count.c
+EOF = -1
+197
+amchugh2@remote07:~/i220a_new/work/lab13/stdin-char-count$ ls[K[Kcd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ cd file-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ ls
+file-char-count.c  Makefile
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ valgrind ./file -char-count file-char-count.c
+valgrind: ./file-char-count: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ valgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kvim file-char-c ount.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"file-char-count.c" 27L, 566C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m2[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m FILE_NAME[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mchar[m *fName = argv[[31m1[m];
+  [32mFILE[m *in = fopen(fName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, fName, strerror(errno));
+    exit([31m1[m);
+  }
+  [32mint[m c;
+  [32mint[m count = [31m0[m;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) count++;
+  printf([31m"[m[35m%d\n[m[31m"[m, count);
+  [33mreturn[m [31m0[m;
+}
+[1m[34m~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m[30m[47m
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m2[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m FILE_NAME[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *fName = argv[[31m1[m[30m[47m];
+  [32mFILE[m[30m[47m *in = fopen(fName, [31m"r"[m[30m[47m);
+  [33mif[m[30m[47m (!in) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, fName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }
+  [32mint[m[30m[47m c;
+  [32mint[m[30m[47m count = [31m0[m[30m[47m;
+  [33mwhile[m[30m[47m ((c = fgetc(in)) != [31mEOF[m[30m[47m) count++;
+  printf([31m"[m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, count);
+  [33mreturn[m[30m[47m [31m0[m[30m[47m;
+}
+[1m[34m~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[30m[47m[36;56H1,1[11CAll[1;1H[?25h[?25l[36;46H~@k[1;1H[36;46H   [1;1H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H1,1[11CAll[1;1H[?25h[?25l[36;56H2[2;1H[?25h[?25l[36;56H3[3;1H[?25h[?25l[36;56H4[4;1H[?25h[?25l[36;56H5[5;1H[?25h[?25l[36;56H6[6;1H[?25h[?25l[36;56H7[7;1H[?25h[?25l[36;56H8[8;1H[?25h[?25l[36;56H9[9;1H[?25h[?25l[36;56H10,1[10;1H[?25h[?25l
+[46m{[27;1H}[m[30m[47m[36;57H1[11;1H[?25h[?25l[36;56H[K[36;56H11,1[10CAll[11;1H[?25h[?25l{[27;1H}[36;57H0[10;1H[?25h[?25l[36;56H9,1 [9;1H[?25h[?25l[36;56H8[8;1H[?25h[?25l[36;56H7[7;1H[?25h[?25l[36;56H6[6;1H[?25h[?25l[36;56H5[5;1H[?25h[?25l[36;56H4[4;1H[?25h[?25l[36;56H3[3;1H[?25h[?25l[36;56H2[2;1H[?25h[?25l[36;56H1[1;1H[?25h[?25l[11;1H[46m{[27;1H}[m[30m[47m[36;56H27,2[27;2H[?25h[36;1H[K[27;1H[?25l[36;46H^[[27;1H[36;46H  [27;2H[36;56H27,1[10CAll[27;1H[?25h[?25l[36;46H:[27;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ cd
+amchugh2@remote07:~$ cd[K[Kls
+amchugh2.circ  cs220	       good	  lab2	     Music	 Videos
+Arduino        Desktop	       i220a	  lab2final  Pictures
+cs120	       Documents       i220a.bak  lab2good   Public
+cs120lab4      Downloads       i220a_new  lab3	     Templates
+cs120lab6      git-repos       i220X	  lab5	     tmp
+cs120lab7      git-repos_copy  lab	  lab8	     toneMelody
+amchugh2@remote07:~$ cd i220a_new
+amchugh2@remote07:~/i220a_new$ ls 
+grading  submit  testing  work
+amchugh2@remote07:~/i220a_new$ cd work
+amchugh2@remote07:~/i220a_new/work$ ls
+files  homework3  hw3  lab11  lab13  lab2  lab9  prj4-sol
+amchugh2@remote07:~/i220a_new/work$ cd prj4-sol
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ ls
+do-fn-trace  fn-trace.h  main.o    x86-64_lde.c
+fn-trace     fn-trace.o  Makefile  x86-64_lde.h
+fn-trace.c   main.c	 README    x86-64_lde.o
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ cd[K[Kcd[K[Kvim fn-[K[K[K[K[K[K[Ka[Kmake
+cc -g -Wall -Og -std=c11 -fPIC -I /home/amchugh2/cs220/include  -c -o fn-trace.o fn-trace.c
+[01m[Kfn-trace.c:27:1:[m[K [01;35m[Kwarning: [m[Kuseless storage class specifier in empty declaration
+ [01;35m[K}[m[K;
+ [01;35m[K^[m[K
+cc fn-trace.o main.o x86-64_lde.o  -L $HOME/cs220/lib -l beaengine -ldl -lcs220 -o fn-trace
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ make[2Pls[K[KLD_LIBRARY_PATH=$home/cs[K[K[K[K[K[K[KHOME/cs220/ lib ./fns-[K[K-trace [K ./fns
+usage: ./fn-trace [-r] MODULE FUNCTION
+
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ LD_LIBRARY_PATH=$HOME/cs220/lib ./do-fn-trace ~/cs220/projects/prj4/aux-files/fns testFn
+/home/amchugh2/cs220/projects/prj4/aux-files/fns:testFn() = -889195092
+is_ret_status: 0
+length: 1
+is_ret_status: 0
+length: 5
+is_ret_status: 0
+length: 6
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 5
+is_ret_status: 0
+length: 1
+is_ret_status: 0
+length: 1
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 3
+is_ret_status: 0
+length: 3
+is_ret_status: 0
+length: 6
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 6
+is_ret_status: 0
+length: 1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 2
+is_ret_status: 0
+length: -1
+is_ret_status: 0
+length: 6
+is_ret_status: 0
+length: 5
+is_ret_status: 1
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ VIM [K[K[K[Kvim fn-trace.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"fn-trace.c" 103L, 2456C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;9HFnInfo * pointer;[2;9H[34m// keep track of size[m[3;9H[32msize_t[m size;[4;9H[34m// current index[m[5;9H[32mint[m index;[6;9H[34m// number of elements used[m[7;9H[32msize_t[m used;
+};
+
+
+[32mstatic[m [32minline[m [32mbool[m is_call([32munsigned[m op) { [33mreturn[m op == CALL_OP; }
+[32mstatic[m [32minline[m [32mbool[m is_ret([32munsigned[m op) {
+  [33mreturn[m
+    op == RET_NEAR_OP || op == RET_NEAR_WITH_POP_OP ||
+    op == RET_FAR_OP || op == RET_FAR_WITH_POP_OP;
+}
+
+
+[34m/** Return pointer to opaque data structure containing collection of
+ *  FnInfo's for functions which are callable directly or indirectly
+ *  from the function whose address is rootFn.
+ */[m
+[32mconst[m FnsData *
+new_fns_data([32mvoid[m *rootFn)
+{
+  [34m//verify assumption used when decoding call address[m
+  assert([33msizeof[m([32mint[m) == [31m4[m);
+  [34m//@[m[30m[43mTODO[m
+  [34m// opcode[m
+  [32munsigned[m [32mchar[m op = *([32munsigned[m [32mchar[m *)rootFn;
+  [33mwhile[m(!is_ret(op)){[32;11Hprintf([31m"is_ret_status: [m[35m%d\n[m[31m"[m, is_ret(op));[33;11H[34m// get length of instr[m[34;11H[32mint[m instr_length = get_op_length(rootFn);[35;11H[34m// print instr_length[m[36;56H49,46[9C27%[30;46H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27m[23m[29m[m[30m[47m[H[2J[1;9HFnInfo * pointer;[2;9H[34m// keep track of size[m[30m[47m[3;9H[32msize_t[m[30m[47m size;[4;9H[34m// current index[m[30m[47m[5;9H[32mint[m[30m[47m index;[6;9H[34m// number of elements used[m[30m[47m[7;9H[32msize_t[m[30m[47m used;
+};
+
+
+[32mstatic[m[30m[47m [32minline[m[30m[47m [32mbool[m[30m[47m is_call([32munsigned[m[30m[47m op) { [33mreturn[m[30m[47m op == CALL_OP; }
+[32mstatic[m[30m[47m [32minline[m[30m[47m [32mbool[m[30m[47m is_ret([32munsigned[m[30m[47m op) {
+  [33mreturn[m[30m[47m
+    op == RET_NEAR_OP || op == RET_NEAR_WITH_POP_OP ||
+    op == RET_FAR_OP || op == RET_FAR_WITH_POP_OP;
+}
+
+
+[34m/** Return pointer to opaque data structure containing collection of
+ *  FnInfo's for functions which are callable directly or indirectly
+ *  from the function whose address is rootFn.
+ */[m[30m[47m
+[32mconst[m[30m[47m FnsData *
+new_fns_data([32mvoid[m[30m[47m *rootFn)
+{
+  [34m//verify assumption used when decoding call address[m[30m[47m
+  assert([33msizeof[m[30m[47m([32mint[m[30m[47m) == [31m4[m[30m[47m);
+  [34m//@[m[30m[47m[30m[43mTODO[m[30m[47m
+  [34m// opcode[m[30m[47m
+  [32munsigned[m[30m[47m [32mchar[m[30m[47m op = *([32munsigned[m[30m[47m [32mchar[m[30m[47m *)rootFn;
+  [33mwhile[m[30m[47m(!is_ret(op)){[32;11Hprintf([31m"is_ret_status: [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, is_ret(op));[33;11H[34m// get length of instr[m[30m[47m[34;11H[32mint[m[30m[47m instr_length = get_op_length(rootFn);[35;11H[34m// print instr_length[m[30m[47m[36;56H49,46[9C27%[30;46H[?25h[?25l[36;46H~@k[30;46H[36;46H   [30;21H[1;35r[35;1H
+[1;36r[35;11Hprintf([31m"length: [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, instr_length);[36;56H[K[36;56H50,21[9C29%[30;21H[?25h[?25l[36;46H~@k[30;21H[36;46H   [29;46H[1;35r[1;1H[2M[1;36r[34;11H[34m//go to next instruction (this is wrong - how do you increment??[35;1H)[m[30m[47m[36;56H[K[36;56H51,39-46      31%[29;46H[?25h[?25l[36;46H~@k[29;46H[36;46H   [30;32H[36;57H2,25-32[30;32H[?25h[?25l[36;46H~@k[30;32H[36;46H   [30;46H[1;35r[35;1H
+[1;36r[35;11HrootFn = rootFn + [31m0x4[m[30m[47m;[36;56H[K[36;56H53,39-46      33%[30;46H[?25h[?25l[36;46H~@k[30;46H[36;46H   [30;31H[1;35r[35;1H
+[1;36r[35;11H[34m// update op[m[30m[47m[36;56H[K[36;56H54,24-31      34%[30;31H[?25h[?25l[36;46H~@k[30;31H[36;46H   [30;46H[1;35r[35;1H
+[1;36r[30;17H[46m([28C)[m[30m[47m[35;11Hop += instr_length;[36;56H[K[36;56H55,39-46      36%[30;46H[?25h[?25l[36;46H~@k[30;46H[36;46H   [29;46H[1;35r[1;1H[2M[1;36r[28;17H([28C)[35;3H}[36;56H[K[36;56H56,39-46      39%[29;46H[?25h[?25l[36;46H~@k[29;46H[36;46H   [30;32H[1;35r[35;1H
+[1;36r[35;3Hprintf([31m"is_ret_status: [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, is_ret(op));[36;56H[K[36;56H57,25-32      40%[30;32H[?25h[?25l[36;46H~@k[30;32H[36;46H   [30;22H[1;35r[35;1H
+[1;36r[35;3H[34m// create data type[m[30m[47m[36;56H[K[36;56H58,15-22      42%[30;22H[?25h[?25l[36;46H~@k[30;22H[36;46H   [30;29H[1;35r[35;1H
+[1;36r[35;3H[34m/*[m[30m[47m[36;56H[K[36;56H59,22-29      43%[30;29H[?25h[?25l[1;35r[1;1H[3L[1;36r[3;1H[32mstatic[m[30m[47m [32minline[m[30m[47m [32mbool[m[30m[47m is_call([32munsigned[m[30m[47m op) { [33mreturn[m[30m[47m op == CALL_OP; }[36;56H[K[36;56H56,39-46      39%[29;46H[?25h[?25l[36;46H~@k[29;46H[36;46H   [30;32H[1;35r[35;1H
+[1;36r[35;3Hprintf([31m"is_ret_status: [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, is_ret(op));[36;56H[K[36;56H57,25-32      40%[30;32H[?25h[?25l[36;46H~@k[30;32H[36;46H   [30;22H[1;35r[35;1H
+[1;36r[35;3H[34m// create data type[m[30m[47m[36;56H[K[36;56H58,15-22      42%[30;22H[?25h[?25l[36;46H~@k[30;22H[36;46H   [30;29H[1;35r[35;1H
+[1;36r[35;3H[34m/*[m[30m[47m[36;56H[K[36;56H59,22-29      43%[30;29H[?25h[?25l[36;46H~@k[30;29H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;1H[34m  unsigned char * pointer = rootFn;[m[30m[47m[36;56H[K[36;56H60,0-1[8C44%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [29;3H[1;35r[1;1H[2M[1;36r[17;21H[46m{[29;3H}[m[30m[47m[34;1H[34m  struct FnsData * new_FnsData = (struct FnsData *)malloc(sizeof(rootFn)))[35;1H;[m[30m[47m[36;56H[K[36;56H61,3[10C47%[29;3H[?25h[?25l[36;46H~@k[29;3H[36;46H   [30;44H[17;21H{[29;3H}[36;57H2,44[30;44H[?25h[?25l[36;46H~@k[30;44H[36;46H   [30;21H[1;35r[35;1H
+[1;36r[35;1H[34m  if(rootFn == NULL){[m[30m[47m[36;56H[K[36;56H63,21[9C48%[30;21H[?25h[?25l[36;46H~@k[30;21H[36;46H   [30;4H[1;35r[35;1H
+[1;36r[35;1H[34m          fprintf(stderr, [m[30m[47m[31m"Error in entering FnInfo"[m[30m[47m[34m);[m[30m[47m[36;56H[K[36;56H64,4[10C50%[30;4H[?25h[?25l[36;46H~@k[30;4H[36;46H   [30;35H[1;35r[35;1H
+[1;36r[35;1H[34m  }[m[30m[47m[36;56H[K[36;56H65,35[9C51%[30;35H[?25h[?25l[36;46H~@k[30;35H[36;46H   [29;46H[1;35r[1;1H[2M[1;36r[34;1H[34m  */[m[30m[47m
+  [33mreturn[m[30m[47m [31mNULL[m[30m[47m;[36;56H[K[36;56H66,46[9C54%[29;46H[?25h[?25l[36;46H~@k[29;46H[36;46H   [30;21H[1;35r[35;1H
+[1;36r[30;21H[34m[46m{[32;3H}[m[30m[47m
+
+
+}[36;56H[K[36;56H67,21[9C55%[30;21H[?25h[?25l[36;46H~@k[30;21H[36;46H   [30;46H[1;35r[35;1H
+[1;36r[29;21H[34m{
+
+  }[m[30m[47m[36;56H[K[36;56H68,39-46      57%[30;46H[?25h[?25l[36;46H~@k[30;46H[36;46H   [30;3H[1;35r[35;1H
+[1;36r[28;21H[34m[46m{[30;3H}[m[30m[47m[36;56H[K[36;56H69,3[10C58%[30;3H[?25h[?25l[36;46H~@k[30;3H[36;46H   [30;4H[1;35r[35;1H
+[1;36r[27;21H[34m{
+
+  }[35;1H/** Free all resources occupied by fnsData. fnsData must have been[m[30m[47m[36;56H[K[36;56H70,4[10C60%[30;4H[?25h[?25l[36;46H~@k[30;4H[36;46H   [30;14H[1;35r[35;1H
+[1;36r[35;1H[34m *  returned by new_fns_data().  It is not ok to use to fnsData after[m[30m[47m[36;56H[K[36;56H71,14[9C61%[30;14H[?25h[?25l[36;46H~@k[30;14H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;1H[34m *  this call.[m[30m[47m[36;56H[K[36;56H72,1[10C62%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;1H[34m */[m[30m[47m[36;56H[K[36;56H73,0-1[8C64%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;1H[32mvoid[m[30m[47m[36;56H[K[36;56H74,0-1[8C65%[30;1H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1Hfree_fns_data(FnsData *fnsData)[36;56H[K[36;56H75,46[9C67%[30;46H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H76,46[9C68%[30;46H[?25h[?25l[36;46H~@k[30;46H[36;46H   [30;14H[1;35r[35;1H
+[1;36r[35;3H[34m//@[m[30m[47m[30m[43mTODO[m[30m[47m[36;56H[K[36;56H77,14[9C70%[30;14H[?25h[?25l[36;46H~@k[30;14H[36;46H   [30;3H[1;35r[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H78,3[10C71%[30;3H[?25h[?25l[36;46H~@k[30;3H[36;46H   [30;4H[1;35r[35;1H
+[1;36r[36;56H[K[36;56H79,4[10C72%[30;4H[?25h[?25l[36;46H~@k[30;4H[36;46H   [30;31H[1;35r[35;1H
+[1;36r[30;14H[46m([16C)[m[30m[47m[35;1H[34m/** Iterate over all FnInfo's in fnsData.  Make initial call with NULL[m[30m[47m[36;56H[K[36;56H80,31[9C74%[30;31H[?25h[?25l[36;46H~@k[30;31H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[29;14H([16C)
+[46m{
+
+}[m[30m[47m
+
+
+[34m *  lastFnInfo.  Keep calling with return value as lastFnInfo, until[m[30m[47m[36;56H[K[36;56H81,1[10C75%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;9H[1;35r[35;1H
+[1;36r[29;1H{
+
+}[35;1H[34m *  next_fn_info() returns NULL.  Values must be returned sorted in[m[30m[47m[36;56H[K[36;56H82,9[10C77%[30;9H[?25h[?25l[36;46H~@k[30;9H[36;46H   [29;1H[46m{
+
+}[m[30m[47m[36;57H1,1[29;1H[?25h[?25l[36;46H~@k[29;1H[36;46H   [28;31H[28;14H[46m([16C)[m[30m[47m
+{
+
+}[36;57H0,31[28;31H[?25h[?25l[36;46H~@k[28;31H[36;46H   [27;4H[28;14H([16C)[36;56H79,4 [27;4H[?25h[?25l[36;46H~@k[27;4H[36;46H   [26;3H[36;57H8,3[26;3H[?25h[?25l[36;46H~@k[26;3H[36;46H   [25;14H[36;57H7,14[25;14H[?25h[?25l[36;46H~@k[25;14H[36;46H   [24;46H[36;57H6,46[24;46H[?25h[?25l[36;46H~@k[24;46H[36;46H   [23;46H[36;57H5[23;46H[?25h[?25l[36;46H~@k[23;46H[36;46H   [22;1H[36;57H4,0-1[22;1H[?25h[?25l[36;46H~@k[22;1H[36;46H   [21;1H[36;57H3[21;1H[?25h[?25l[36;46H~@k[21;1H[36;46H   [20;1H[36;57H2,1  [20;1H[?25h[?25l[36;46H~@k[20;1H[36;46H   [19;14H[36;57H1,14[19;14H[?25h[?25l[36;46H~@k[19;14H[36;46H   [18;4H[36;57H0,4 [18;4H[?25h[?25l[36;46H~@k[18;4H[36;46H   [17;3H[15;21H[34m[46m{[17;3H}[m[30m[47m[36;56H69,3[17;3H[?25h[?25l[36;46H~@k[17;3H[36;46H   [16;46H[15;21H[34m{
+
+  }[m[30m[47m[36;57H8,39-46[16;46H[?25h[?25l[36;46H~@k[16;46H[36;46H   [15;21H[34m[46m{[17;3H}[m[30m[47m[36;57H7,21   [15;21H[?25h[?25l[36;46H~@k[15;21H[36;46H   [13;46H[15;21H[34m{
+
+  }[m[30m[47m[36;57H6,46[13;46H[?25h[?25l[36;46H~@k[13;46H[36;46H   [12;35H[36;57H5,35[12;35H[?25h[?25l[36;46H~@k[12;35H[36;46H   [11;4H[36;57H4,4 [11;4H[?25h[?25l[36;46H~@k[11;4H[36;46H   [10;21H[36;57H3,21[10;21H[?25h[?25l[36;46H~@k[10;21H[36;46H   [9;44H[36;57H2,44[9;44H[?25h[?25l[36;46H~@k[9;44H[36;46H   [8;3H[36;57H1,3 [8;3H[?25h[?25l[36;46H~@k[8;3H[36;46H   [7;1H[36;57H0,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [6;29H[36;56H59,22-29[6;29H[?25h[?25l[36;46H~@k[6;29H[36;46H   [6;22H[1;35r[1;1H[L[1;36r[1;11H[34m// print instr_length[m[30m[47m[36;56H[K[36;56H58,15-22      75%[6;22H[?25h[?25l[36;46H~@k[6;22H[36;46H   [6;32H[1;35r[1;1H[L[1;36r[1;11H[32mint[m[30m[47m instr_length = get_op_length(rootFn);[36;56H[K[36;56H57,25-32      74%[6;32H[?25h[?25l[36;46H~@k[6;32H[36;46H   [6;46H[1;35r[1;1H[2L[1;36r[1;11Hprintf([31m"is_ret_status: [m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, is_ret(op));[2;11H[34m// get length of instr[m[30m[47m[36;56H[K[36;56H56,39-46      71%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;46H[1;35r[1;1H[L[1;36r[1;3H[33mwhile[m[30m[47m(!is_ret(op)){[6;17H[46m([28C)[m[30m[47m[36;56H[K[36;56H55,39-46      70%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;31H[1;35r[1;1H[L[1;36r[1;3H[32munsigned[m[30m[47m [32mchar[m[30m[47m op = *([32munsigned[m[30m[47m [32mchar[m[30m[47m *)rootFn;[7;17H([28C)[36;56H[K[36;56H54,24-31      68%[6;31H[?25h[?25l[36;46H~@k[6;31H[36;46H   [6;46H[1;35r[1;1H[L[1;36r[1;3H[34m// opcode[m[30m[47m[36;56H[K[36;56H53,39-46      67%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;32H[1;35r[1;1H[L[1;36r[1;3H[34m//@[m[30m[47m[30m[43mTODO[m[30m[47m[36;56H[K[36;56H52,25-32      65%[6;32H[?25h[?25l[36;46H~@k[6;32H[36;46H   [6;46H[1;35r[1;1H[L[1;36r[1;3Hassert([33msizeof[m[30m[47m([32mint[m[30m[47m) == [31m4[m[30m[47m);[36;56H[K[36;56H51,39-46      64%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;21H[1;35r[1;1H[L[1;36r[1;3H[34m//verify assumption used when decoding call address[m[30m[47m[6;21H[46m{[18;3H}[m[30m[47m[36;56H[K[36;56H50,21[9C62%[6;21H[?25h[?25l[36;46H~@k[6;21H[36;46H   [6;46H[1;35r[1;1H[L[1;36r[1;1H{[7;21H{[19;3H}[36;56H[K[36;56H49,46[9C61%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;11H[1;35r[1;1H[L[1;36r[1;1Hnew_fns_data([32mvoid[m[30m[47m *rootFn)[36;56H[K[36;56H48,11[9C60%[6;11H[?25h[?25l[36;46H~@k[6;11H[36;46H   [6;9H[1;35r[1;1H[L[1;36r[1;1H[32mconst[m[30m[47m FnsData *[36;56H[K[36;56H47,9[10C58%[6;9H[?25h[?25l[36;46H~@k[6;9H[36;46H   [6;27H[1;35r[1;1H[L[1;36r[1;1H[34m */[m[30m[47m[36;56H[K[36;56H46,27[9C57%[6;27H[?25h[?25l[36;46H~@k[6;27H[36;46H   [6;46H[1;35r[1;1H[L[1;36r[1;1H[34m *  from the function whose address is rootFn.[m[30m[47m[36;56H[K[36;56H45,46[9C55%[6;46H[?25h[?25l[36;46H~@k[6;46H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[34m *  FnInfo's for functions which are callable directly or indirectly[m[30m[47m[36;56H[K[36;56H44,1[10C54%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;26H[1;35r[1;1H[L[1;36r[1;1H[34m/** Return pointer to opaque data structure containing collection of[m[30m[47m[6;13H[46m([12C)[m[30m[47m[36;56H[K[36;56H43,26[9C52%[6;26H[?25h[?25l[1;35r[1;1H[3L[1;36r[1;1H}[36;56H[K[36;56H43,26[9C48%[9;26H[?25h[?25l[36;46H:[9;26H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/prj4-sol$ cd
+amchugh2@remote07:~$ cd i220a_new
+amchugh2@remote07:~/i220a_new$ ls
+grading  submit  testing  work
+amchugh2@remote07:~/i220a_new$ cd ow[K[Kwork
+amchugh2@remote07:~/i220a_new/work$ cd lab13
+amchugh2@remote07:~/i220a_new/work/lab13$ cd file-cp[Kopy
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ vim file-copy.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"file-copy.c" 50L, 1195C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[32mstatic[m [32mvoid[m
+doCopy([32mconst[m [32mchar[m *inName, [32mFILE[m *in, [32mconst[m [32mchar[m *outName, [32mFILE[m *out)
+{
+  [32mint[m c;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) {
+    [33mif[m (fputc(c, out) == [31mEOF[m) {[12;7Hfprintf([31mstderr[m, [31m"error writing to [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errnn[13;1Ho));[14;7Hexit([31m1[m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m SRC_NAME DEST_NAME[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mchar[m *srcName = argv[[31m1[m];
+  [32mconst[m [32mchar[m *destName = argv[[31m2[m];
+  [32mFILE[m *in = fopen(srcName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, srcName, strerror(errno));
+    exit([31m1[m);
+  }[36;56H1,1[11CTop[1;1H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m
+doCopy([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, [32mFILE[m[30m[47m *in, [32mconst[m[30m[47m [32mchar[m[30m[47m *outName, [32mFILE[m[30m[47m *out)
+{
+  [32mint[m[30m[47m c;
+  [33mwhile[m[30m[47m ((c = fgetc(in)) != [31mEOF[m[30m[47m) {
+    [33mif[m[30m[47m (fputc(c, out) == [31mEOF[m[30m[47m) {[12;7Hfprintf([31mstderr[m[30m[47m, [31m"error writing to [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errnn[13;1Ho));[14;7Hexit([31m1[m[30m[47m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m[30m[47m
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m SRC_NAME DEST_NAME[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *srcName = argv[[31m1[m[30m[47m];
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *destName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *in = fopen(srcName, [31m"r"[m[30m[47m);
+  [33mif[m[30m[47m (!in) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, srcName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }[36;56H1,1[11CTop[1;1H[?25h[?25l[36;56H23,1[24;1H[?25h[?25l[36;46H^[[24;1H[36;46H  [24;1H[36;46H^[[24;1H[36;46H  [24;1H[?25h[?25l[36;46H:[24;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ./.fil[K[K[K[Kfile-copy
+usage: ./file-copy SRC_NAME DEST_NAME
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ./[K[Kls -l file-copy.c t
+ls: cannot access 't': No such file or directory
+-rw-r----- 1 amchugh2 amchugh2 1195 Nov 17 16:35 file-copy.c
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ls[K[K./file-copy file-copy .c t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ./file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pls -l file-copy.c t
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+-rw-r----- 1 amchugh2 amchugh2 1195 Nov 17 16:35 file-copy.c
+-rw-r----- 1 amchugh2 amchugh2 1195 Nov 17 16:50 t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ cmp file-copy.c t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ./file-copy Makefile  t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ cmp Makefile t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ chmod a-w t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ .[K./file-copy file-copy .c t
+cannot write t: Permission denied
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ cmp Makefile t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ vim file-copy.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"file-copy.c" 50L, 1195C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[32mstatic[m [32mvoid[m
+doCopy([32mconst[m [32mchar[m *inName, [32mFILE[m *in, [32mconst[m [32mchar[m *outName, [32mFILE[m *out)
+{
+  [32mint[m c;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) {
+    [33mif[m (fputc(c, out) == [31mEOF[m) {[12;7Hfprintf([31mstderr[m, [31m"error writing to [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errnn[13;1Ho));[14;7Hexit([31m1[m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m SRC_NAME DEST_NAME[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mchar[m *srcName = argv[[31m1[m];
+  [32mconst[m [32mchar[m *destName = argv[[31m2[m];
+  [32mFILE[m *in = fopen(srcName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, srcName, strerror(errno));
+    exit([31m1[m);
+  }[36;56H23,1[10CTop[24;1H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m
+doCopy([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, [32mFILE[m[30m[47m *in, [32mconst[m[30m[47m [32mchar[m[30m[47m *outName, [32mFILE[m[30m[47m *out)
+{
+  [32mint[m[30m[47m c;
+  [33mwhile[m[30m[47m ((c = fgetc(in)) != [31mEOF[m[30m[47m) {
+    [33mif[m[30m[47m (fputc(c, out) == [31mEOF[m[30m[47m) {[12;7Hfprintf([31mstderr[m[30m[47m, [31m"error writing to [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errnn[13;1Ho));[14;7Hexit([31m1[m[30m[47m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m[30m[47m
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m SRC_NAME DEST_NAME[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *srcName = argv[[31m1[m[30m[47m];
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *destName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *in = fopen(srcName, [31m"r"[m[30m[47m);
+  [33mif[m[30m[47m (!in) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, srcName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }[36;56H23,1[10CTop[24;1H[?25h[?25l[36;46H~@k[24;1H[36;46H   [23;1H[36;57H2[23;1H[?25h[?25l[36;46H~@k[23;1H[36;46H   [22;1H[36;57H1[22;1H[?25h[?25l[36;46H~@k[22;1H[36;46H   [21;1H[36;57H0[21;1H[?25h[?25l[36;46H~@k[21;1H[36;46H   [20;1H[36;56H19[20;1H[?25h[?25l[36;46H~@k[20;1H[36;46H   [19;1H[36;57H8[19;1H[?25h[?25l[36;46H~@k[19;1H[36;46H   [18;1H[36;57H7,0-1[18;1H[?25h[?25l[36;46H~@k[18;1H[36;46H   [17;1H[8;1H[46m{[17;1H}[m[30m[47m[36;57H6,1  [17;1H[?25h[?25l[36;46H~@k[17;1H[36;46H   [16;1H[8;1H{[17;1H}[36;57H5[16;1H[?25h[?25l[36;46H~@k[16;1H[36;46H   [15;1H[36;57H4[15;1H[?25h[?25l[36;46H~@k[15;1H[36;46H   [14;1H[36;57H3[14;1H[?25h[?25l[36;46H~@k[14;1H[36;46H   [12;1H[36;57H2[12;1H[?25h[?25l[36;46H~@k[12;1H[36;46H   [11;1H[36;57H1[11;1H[?25h[?25l[36;46H~@k[11;1H[36;46H   [10;1H[36;57H0[10;1H[?25h[?25l[36;46H~@k[10;1H[36;46H   [9;1H[36;56H9,1 [9;1H[?25h[?25l[36;46H~@k[9;1H[36;46H   [10;1H[36;56H10,1[10;1H[?25h[?25l[36;46H~@k[10;1H[36;46H   [10;2H[36;59H2[10;2H[?25h[?25l[36;46H~@k[10;2H[36;46H   [10;3H[36;59H3[10;3H[?25h[?25l[36;46H~@k[10;3H[36;46H   [10;4H[36;59H4[10;4H[?25h[?25l[36;46H~@k[10;4H[36;46H   [10;5H[36;59H5[10;5H[?25h[?25l[36;46H~@k[10;5H[36;46H   [10;6H[36;59H6[10;6H[?25h[?25l[36;46H~@k[10;6H[36;46H   [10;7H[36;59H7[10;7H[?25h[?25l[36;46H~@k[10;7H[36;46H   [10;8H[36;59H8[10;8H[?25h[?25l[36;46H~@k[10;8H[36;46H   [10;9H[46m([22C)[m[30m[47m[36;59H9[10;9H[?25h[?25l[36;46H~@k[10;9H[36;46H   [10;10H([46m([13C)[m[30m[47m[7C)[36;59H10[10;10H[?25h[?25l[36;46H~@k[10;10H[36;46H   [10;11H([13C)[36;60H1[10;11H[?25h[?25l[36;46H~@k[10;11H[36;46H   [10;12H[36;60H2[10;12H[?25h[?25l[36;46H~@k[10;12H[36;46H   [10;13H[36;60H3[10;13H[?25h[?25l[36;46H~@k[10;13H[36;46H   [10;14H[36;60H4[10;14H[?25h[?25l[36;46H~@k[10;14H[36;46H   [10;15H[36;60H5[10;15H[?25h[?25l[36;46H~@k[10;15H[36;46H   [10;16H[36;60H6[10;16H[?25h[?25l[36;46H~@k[10;16H[36;46H   [10;17H[36;60H7[10;17H[?25h[?25l[36;46H~@k[10;17H[36;46H   [10;18H[36;60H8[10;18H[?25h[?25l[36;46H~@k[10;18H[36;46H   [10;19H[36;60H9[10;19H[?25h[?25l[36;46H~@k[10;19H[36;46H   [10;20H[46m([m[30m[47min[46m)[m[30m[47m[36;59H20[10;20H[?25h[?25l[36;46H~@k[10;20H[36;46H   [10;21H(in)[36;60H1[10;21H[?25h[?25l[36;46H~@k[10;21H[36;46H   [10;22H[36;60H2[10;22H[?25h[?25l[36;46H~@k[10;22H[36;46H   [10;23H[46m([m[30m[47min[46m)[m[30m[47m[36;60H3[10;23H[?25h[?25l[36;46H~@k[10;23H[36;46H   [10;24H[10;10H[46m([m[30m[47m[9C(in)[46m)[m[30m[47m[36;60H4[10;24H[?25h[?25l[36;46H~@k[10;24H[36;46H   [10;25H[10;10H([13C)[36;60H5[10;25H[?25h[?25l[36;46H~@k[10;25H[36;46H   [10;26H[36;60H6[10;26H[?25h[?25l[36;46H~@k[10;26H[36;46H   [10;27H[36;60H7[10;27H[?25h[?25l[36;46H~@k[10;27H[36;46H   [10;28H[36;60H8[10;28H[?25h[?25l[36;46H~@k[10;28H[36;46H   [10;29H[36;60H9[10;29H[?25h[?25l[36;46H~@k[10;29H[36;46H   [10;30H[36;59H30[10;30H[?25h[?25l[36;46H~@k[10;30H[36;46H   [10;31H[36;60H1[10;31H[?25h[?25l[36;46H~@k[10;31H[36;46H   [10;32H[10;9H[46m([22C)[m[30m[47m[36;60H2[10;32H[?25h[?25l[36;46H~@k[10;32H[36;46H   [10;32H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H10,32[9CTop[10;32H[?25h[?25l[46m [m[30m[47m) { [46m)[m[30m[47m[36;60H3[10;33H[?25h[?25l[46m&[m[30m[47m) {&[46m)[m[30m[47m[36;60H4[10;34H[?25h[?25l[46m&[m[30m[47m) {&[46m)[m[30m[47m[36;60H5[10;35H[?25h[?25l[46m [m[30m[47m) { [46m)[m[30m[47m[36;60H6[10;36H[?25h[?25l[46m![m[30m[47m) {![46m)[m[30m[47m[36;60H7[10;37H[?25h[?25l[46mf[m[30m[47m) {f[46m)[m[30m[47m[36;60H8[10;38H[?25h[?25l[46me[m[30m[47m) {e[46m)[m[30m[47m[36;60H9[10;39H[?25h[?25l[46mr[m[30m[47m) {r[46m)[m[30m[47m[36;59H40[10;40H[?25h[?25l[46mr[m[30m[47m) {r[46m)[m[30m[47m[36;60H1[10;41H[?25h[?25l[46mo[m[30m[47m) {o[46m)[m[30m[47m[36;60H2[10;42H[?25h[?25l[46mr[m[30m[47m) {r[46m)[m[30m[47m[36;60H3[10;43H[?25h[?25l[46m([m[30m[47m) [1m[37m[41m{[11;31H{[15;5H}[m[30m[47m[10;9H([34C[46m)[m[30m[47m[36;60H4[10;44H[?25h[?25l[46mi[m[30m[47m) [1m[37m[41m{[m[30m[47mi[46m)[m[30m[47m[36;60H5[10;45H[?25h[?25l[46mn[m[30m[47m) [1m[37m[41m{[m[30m[47mn[46m)[m[30m[47m[36;60H6[10;46H[?25h[?25l[1C) {[11;31H{[15;5H}[10;9H[46m([m[30m[47m[33C(in)[46m)[m[30m[47m[36;60H7[10;47H[?25h[?25l[10;9H([37C)[11;31H[46m{[15;5H}[m[30m[47m[36;57H1,32[11;32H[?25h[?25l{[15;5H}[36;57H2,47[12;47H[?25h[?25l[36;57H3,15[14;15H[?25h[?25l[11;31H[46m{[15;5H}[m[30m[47m[36;57H4,6 [15;6H[?25h[36;1H[K[15;5H[?25l[36;46H^[[15;5H[36;46H  [15;6H[36;56H14,5[10CTop[15;5H[?25h[?25l[36;46H:[15;5H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"file-copy.c" 50L, 1210C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ rm -f t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ /[K./file--[Kcopy fl[Kile0-co[K[K[K[K-copy .c t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ ./file-copy Makefile  t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ wc -l file-cp[Kopy.c Mak efile
+  50 file-copy.c
+  10 Makefile
+  60 total
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ wc -l t
+10 t
+amchugh2@remote07:~/i220a_new/work/lab13/file-copy$ cd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ ls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ cd[K[Kcd no-buffer-copy
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ vim no-cop[K[K[Kbuffer-co py.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"no-buffer-copy.c" 63L, 1704C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdbool.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[32mstatic[m [32mvoid[m
+doCopy([32mconst[m [32mchar[m *inName, [32mFILE[m *in, [32mconst[m [32mchar[m *outName, [32mFILE[m *out)
+{
+  [32mint[m c;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) {
+    [33mif[m (fputc(c, out) == [31mEOF[m) {[13;7Hfprintf([31mstderr[m, [31m"error writing to [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errnn[14;1Ho));[15;7Hexit([31m1[m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m && argc != [31m4[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m SRC_NAME DEST_NAME [IS_BUFFERED][m[35m\n[m[31m"[m, argv[[[28;1H[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mbool[m isBuffered = argc == [31m4[m && atoi(argv[[31m3[m]) == [31m1[m;
+  [32mconst[m [32mint[m bufMode = (isBuffered) ? [31m_IOFBF[m : [31m_IONBF[m;
+  [32mconst[m [32mchar[m *srcName = argv[[31m1[m];
+  [32mconst[m [32mchar[m *destName = argv[[31m2[m];
+  [32mFILE[m *in = fopen(srcName, [31m"r"[m);[36;56H1,1[11CTop[1;1H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdbool.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m
+doCopy([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, [32mFILE[m[30m[47m *in, [32mconst[m[30m[47m [32mchar[m[30m[47m *outName, [32mFILE[m[30m[47m *out)
+{
+  [32mint[m[30m[47m c;
+  [33mwhile[m[30m[47m ((c = fgetc(in)) != [31mEOF[m[30m[47m) {
+    [33mif[m[30m[47m (fputc(c, out) == [31mEOF[m[30m[47m) {[13;7Hfprintf([31mstderr[m[30m[47m, [31m"error writing to [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errnn[14;1Ho));[15;7Hexit([31m1[m[30m[47m);
+    }
+  }
+}
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m[30m[47m
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m && argc != [31m4[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m SRC_NAME DEST_NAME [IS_BUFFERED][m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[[28;1H[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  [32mconst[m[30m[47m [32mbool[m[30m[47m isBuffered = argc == [31m4[m[30m[47m && atoi(argv[[31m3[m[30m[47m]) == [31m1[m[30m[47m;
+  [32mconst[m[30m[47m [32mint[m[30m[47m bufMode = (isBuffered) ? [31m_IOFBF[m[30m[47m : [31m_IONBF[m[30m[47m;
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *srcName = argv[[31m1[m[30m[47m];
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *destName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *in = fopen(srcName, [31m"r"[m[30m[47m);[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H:[1;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ g[Ktime ./no-buffer -copy w[K'which gcc' /dev/null 2
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ time ./no-buffer-copy 'which gcc' /dev/null 2[K1
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ time ./no-buffer-copy 'which gcc' /dev/null 121[K0
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ c [Kd ,.
+bash: cd: ,.: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ cd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ cd rec-io
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ls
+dyn-array.c  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.h  Makefile		points.dat
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim gen-rand.points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"gen-rand.points.c" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[1m[34m~                                                                        [3;1H~                                                                        [4;1H~                                                                        [5;1H~                                                                        [6;1H~                                                                        [7;1H~                                                                        [8;1H~                                                                        [9;1H~                                                                        [10;1H~                                                                        [11;1H~                                                                        [12;1H~                                                                        [13;1H~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H0,0-1[9CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ls
+dyn-array.c  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.h  Makefile		points.dat
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ge[K[Kvim gen-re[Kand-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"gen-rand-points.c" 54L, 1357C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<math.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<string.h>[m
+
+[35m#include [m[31m"point2.h"[m
+
+[32mstatic[m [32mvoid[m __attribute__(([32mnoreturn[m))
+usage([32mconst[m [32mchar[m *progName)
+{
+  fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m N_POINTS OUT_FILE[m[35m\n[m[31m"[m, progName);
+  exit([31m1[m);
+}
+
+[32mstatic[m [32mint[m
+randCoord([32mvoid[m)
+{
+  [32menum[m { MAX = [31m1000[m }; [34m//exclusive
+[m  [34m//statistically unsound; see
+[m  [34m//<https://stackoverflow.com/questions/[m[31m4195958[m[34m/how-do-i-scale-down-numbb[22;1Hers-from-rand>[m
+  [33mreturn[m rand() % MAX;
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) usage(argv[[31m0[m]);
+  [32mint[m nPoints = atoi(argv[[31m1[m]);
+  [33mif[m (nPoints <= [31m0[m) usage(argv[[31m0[m]);
+  [32mconst[m [32mchar[m *outName = argv[[31m2[m];
+  [32mFILE[m *out = fopen(outName, [31m"w"[m);
+  [33mif[m (!out) {
+    fprintf([31mstderr[m, [31m"cannot write [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<math.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[35m#include [m[30m[47m[31m"point2.h"[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m __attribute__(([32mnoreturn[m[30m[47m))
+usage([32mconst[m[30m[47m [32mchar[m[30m[47m *progName)
+{
+  fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m N_POINTS OUT_FILE[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, progName);
+  exit([31m1[m[30m[47m);
+}
+
+[32mstatic[m[30m[47m [32mint[m[30m[47m
+randCoord([32mvoid[m[30m[47m)
+{
+  [32menum[m[30m[47m { MAX = [31m1000[m[30m[47m }; [34m//exclusive
+[m[30m[47m  [34m//statistically unsound; see
+[m[30m[47m  [34m//<https://stackoverflow.com/questions/[m[30m[47m[31m4195958[m[30m[47m[34m/how-do-i-scale-down-numbb[22;1Hers-from-rand>[m[30m[47m
+  [33mreturn[m[30m[47m rand() % MAX;
+}
+
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mint[m[30m[47m nPoints = atoi(argv[[31m1[m[30m[47m]);
+  [33mif[m[30m[47m (nPoints <= [31m0[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *outName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *out = fopen(outName, [31m"w"[m[30m[47m);
+  [33mif[m[30m[47m (!out) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot write [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errno));[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H^[[1;1H[36;46H  [1;1H[36;46H^[[1;1H[36;46H  [1;1H[?25h[?25l[36;46H:[1;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ./gen-rn[Kand-points 100 po ints.dat
+bash: ./gen-rand-points: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ./gen-rand-points 100 points.dat[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K [K0 po ints.dat
+bash: ./gen-rand-points: No such file or directory
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ make
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc -g -Wall -std=c11   -c -o dyn-array.o dyn-array.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ./[K[Kmake./gen-rand-points 100 points.dat
+average magnitude = 752.156
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ./sta[K[K[K[K[K./stat-points points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ./stat-points points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgen-rand-points 100 points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./gen-rand-points 100 points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pvim gen-rand-points.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"gen-rand-points.c" 54L, 1357C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<math.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<string.h>[m
+
+[35m#include [m[31m"point2.h"[m
+
+[32mstatic[m [32mvoid[m __attribute__(([32mnoreturn[m))
+usage([32mconst[m [32mchar[m *progName)
+{
+  fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m N_POINTS OUT_FILE[m[35m\n[m[31m"[m, progName);
+  exit([31m1[m);
+}
+
+[32mstatic[m [32mint[m
+randCoord([32mvoid[m)
+{
+  [32menum[m { MAX = [31m1000[m }; [34m//exclusive
+[m  [34m//statistically unsound; see
+[m  [34m//<https://stackoverflow.com/questions/[m[31m4195958[m[34m/how-do-i-scale-down-numbb[22;1Hers-from-rand>[m
+  [33mreturn[m rand() % MAX;
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) usage(argv[[31m0[m]);
+  [32mint[m nPoints = atoi(argv[[31m1[m]);
+  [33mif[m (nPoints <= [31m0[m) usage(argv[[31m0[m]);
+  [32mconst[m [32mchar[m *outName = argv[[31m2[m];
+  [32mFILE[m *out = fopen(outName, [31m"w"[m);
+  [33mif[m (!out) {
+    fprintf([31mstderr[m, [31m"cannot write [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<math.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[35m#include [m[30m[47m[31m"point2.h"[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m __attribute__(([32mnoreturn[m[30m[47m))
+usage([32mconst[m[30m[47m [32mchar[m[30m[47m *progName)
+{
+  fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m N_POINTS OUT_FILE[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, progName);
+  exit([31m1[m[30m[47m);
+}
+
+[32mstatic[m[30m[47m [32mint[m[30m[47m
+randCoord([32mvoid[m[30m[47m)
+{
+  [32menum[m[30m[47m { MAX = [31m1000[m[30m[47m }; [34m//exclusive
+[m[30m[47m  [34m//statistically unsound; see
+[m[30m[47m  [34m//<https://stackoverflow.com/questions/[m[30m[47m[31m4195958[m[30m[47m[34m/how-do-i-scale-down-numbb[22;1Hers-from-rand>[m[30m[47m
+  [33mreturn[m[30m[47m rand() % MAX;
+}
+
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mint[m[30m[47m nPoints = atoi(argv[[31m1[m[30m[47m]);
+  [33mif[m[30m[47m (nPoints <= [31m0[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *outName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *out = fopen(outName, [31m"w"[m[30m[47m);
+  [33mif[m[30m[47m (!out) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot write [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errno));[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H~@k[1;1H[36;46H   [1;1H[?25h[?25l[36;46H~@k[1;1H[36;46H   [1;1H[?25h[?25l[36;56H21,36[21;36H[?25h[?25l[36;46H~@k[21;36H[36;46H   [23;22H[36;57H2,22[23;22H[?25h[?25l[36;46H~@k[23;22H[36;46H   [24;1H[18;1H[46m{[24;1H}[m[30m[47m[36;57H3,1 [24;1H[?25h[?25l[36;46H~@k[24;1H[36;46H   [25;1H[18;1H{[24;1H}[36;57H4,0-1[25;1H[?25h[?25l[36;46H~@k[25;1H[36;46H   [26;3H[36;57H5,3  [26;3H[?25h[?25l[36;46H~@k[26;3H[36;46H   [27;34Hmain[46m([28C)[m[30m[47m[36;57H6,34[27;34H[?25h[?25l[36;46H~@k[27;34H[36;46H   [28;1H[27;5H([28C)[36;57H7,1 [28;1H[?25h[?25l[36;46H~@k[28;1H[36;46H   [29;32H[36;57H8,32[29;32H[?25h[?25l[36;46H~@k[29;32H[36;46H   [30;30H[36;57H9,30[30;30H[?25h[?25l[36;46H~@k[30;30H[36;46H   [30;35H[1;35r[35;1H
+[1;36r[35;5Hexit([31m1[m[30m[47m);[36;56H[K[36;56H30,35[10C5%[30;35H[?25h[?25l[36;46H~@k[30;35H[36;46H   [30;32H[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H31,32[9C10%[30;32H[?25h[?25l[36;46H~@k[30;32H[36;46H   [30;34H[1;35r[35;1H
+[1;36r[35;3H[32mdouble[m[30m[47m sum = [31m0.0[m[30m[47m;[36;56H[K[36;56H32,34[9C15%[30;34H[?25h[?25l[36;46H~@k[30;34H[36;46H   [30;13H[1;35r[35;1H
+[1;36r[30;13H[46m{[33;3H}[m[30m[47m
+
+  [33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < nPoints; i++) {[36;56H[K[36;56H33,13[9C20%[30;13H[?25h[?25l[36;46H~@k[30;13H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[29;13H{[32;3H}[35;5HPoint2 point2 = { .x = randCoord(), .y = randCoord(), };[36;56H[K[36;56H34,36[9C25%[30;36H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[33mif[m[30m[47m (fwrite(&point2, [33msizeof[m[30m[47m(Point2), [31m1[m[30m[47m, out) != [31m1[m[30m[47m) {[36;56H[K[36;56H35,12[9C30%[30;12H[?25h[?25l[36;46H~@k[30;12H[36;46H   [30;3H[1;35r[35;1H
+[1;36r[27;13H[46m{[30;3H}[m[30m[47m[35;7Hfprintf([31mstderr[m[30m[47m, [31m"cannot write Point2([m[30m[47m[35m%d[m[30m[47m[31m, [m[30m[47m[35m%d[m[30m[47m[31m) to [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m,[36;56H[K[36;56H36,3[10C35%[30;3H[?25h[?25l[36;46H~@k[30;3H[36;46H   [30;19H[1;35r[35;1H
+[1;36r[26;13H{[29;3H}[35;15Hpoint2.x, point2.y, outName, strerror(errno));[36;56H[K[36;56H37,19[9C40%[30;19H[?25h[?25l[36;46H~@k[30;19H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[35;7Hexit([31m1[m[30m[47m);[36;56H[K[36;56H38,36[9C45%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[35;5H}[36;56H[K[36;56H39,36[9C50%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m mag = magnitudePoint2(&point2);[36;56H[K[36;56H40,36[9C55%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[35;5Hsum += mag;[36;56H[K[36;56H41,36[9C60%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H42,36[9C65%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;14H[1;35r[35;1H
+[1;36r[35;3Hfprintf([31mstderr[m[30m[47m, [31m"average magnitude = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m, sum/nPoints);[36;56H[K[36;56H43,14[9C70%[30;14H[?25h[?25l[36;46H~@k[30;14H[36;46H   [30;5H[1;35r[35;1H
+[1;36r[26;55H[46m{[30;5H}[m[30m[47m[35;3H[33mif[m[30m[47m (fclose(out) != [31m0[m[30m[47m) {[36;56H[K[36;56H44,5[10C75%[30;5H[?25h[?25l[36;46H~@k[30;5H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[25;55H{[29;5H}[35;5Hfprintf([31mstderr[m[30m[47m, [31m"cannot close [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errno));[36;56H[K[36;56H45,36[9C80%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;15H[1;35r[35;1H
+[1;36r[35;5Hexit([31m1[m[30m[47m);[36;56H[K[36;56H46,15[9C85%[30;15H[?25h[?25l[36;46H~@k[30;15H[36;46H   [30;3H[1;35r[35;1H
+[1;36r[21;37H[46m{[30;3H}[m[30m[47m[35;3H}[36;56H[K[36;56H47,3[10C90%[30;3H[?25h[?25l[36;46H~@k[30;3H[36;46H   [30;36H[1;35r[35;1H
+[1;36r[20;37H{[29;3H}[35;3H[33mreturn[m[30m[47m [31m0[m[30m[47m;[36;56H[K[36;56H48,36[9C95%[30;36H[?25h[?25l[36;46H~@k[30;36H[36;46H   [30;25H[1;35r[35;1H
+[1;36r[30;25H[46m{[33;3H}[m[30m[47m
+
+}[36;56H[K[36;56H49,25[9CBot[30;25H[?25h[?25l[36;46H~@k[30;25H[36;46H   [31;36H[30;25H{[33;3H}[36;56H50,36[31;36H[?25h[?25l[36;46H~@k[31;36H[36;46H   [32;12H[36;57H1,12[32;12H[?25h[?25l[36;46H~@k[32;12H[36;46H   [33;3H[30;25H[46m{[33;3H}[m[30m[47m[36;57H2,3 [33;3H[?25h[?25l[36;46H~@k[33;3H[36;46H   [34;11H[30;25H{[33;3H}[36;57H3,11[34;11H[?25h[?25l[36;46H~@k[34;11H[36;46H   [35;1H[8;1H[46m{[35;1H}[m[30m[47m[36;57H4,1 [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [34;11H[8;1H{[35;1H}[36;57H3,11[34;11H[?25h[?25l[36;46H~@k[34;11H[36;46H   [33;3H[30;25H[46m{[33;3H}[m[30m[47m[36;57H2,3 [33;3H[?25h[?25l[36;46H~@k[33;3H[36;46H   [32;12H[30;25H{[33;3H}[36;57H1,12[32;12H[?25h[?25l[36;46H~@k[32;12H[36;46H   [31;36H[36;57H0,36[31;36H[?25h[?25l[36;46H~@k[31;36H[36;46H   [30;25H[46m{[33;3H}[m[30m[47m[36;56H49,25[30;25H[?25h[?25l[36;46H~@k[30;25H[36;46H   [29;36H[30;25H{[33;3H}[36;57H8,36[29;36H[?25h[?25l[36;46H~@k[29;36H[36;46H   [28;3H[19;37H[46m{[28;3H}[m[30m[47m[36;57H7,3 [28;3H[?25h[?25l[36;46H~@k[28;3H[36;46H   [27;15H[19;37H{[28;3H}[36;57H6,15[27;15H[?25h[?25l[36;46H~@k[27;15H[36;46H   [26;36H[36;57H5,36[26;36H[?25h[?25l[36;46H~@k[26;36H[36;46H   [25;5H[21;55H[46m{[25;5H}[m[30m[47m[36;57H4,5 [25;5H[?25h[?25l[36;46H~@k[25;5H[36;46H   [24;14H[21;55H{[25;5H}[36;57H3,14[24;14H[?25h[?25l[36;46H~@k[24;14H[36;46H   [23;36H[36;57H2,36[23;36H[?25h[?25l[36;46H~@k[23;36H[36;46H   [22;36H[36;57H1[22;36H[?25h[?25l[36;46H~@k[22;36H[36;46H   [21;36H[36;57H0[21;36H[?25h[?25l[36;46H~@k[21;36H[36;46H   [20;36H[36;56H39[20;36H[?25h[?25l[36;46H~@k[20;36H[36;46H   [19;36H[36;57H8[19;36H[?25h[?25l[36;46H~@k[19;36H[36;46H   [18;19H[36;57H7,19[18;19H[?25h[?25l[36;46H~@k[18;19H[36;46H   [17;3H[14;13H[46m{[17;3H}[m[30m[47m[36;57H6,3 [17;3H[?25h[?25l[36;46H~@k[17;3H[36;46H   [16;12H[14;13H{[17;3H}[36;57H5,12[16;12H[?25h[?25l[36;46H~@k[16;12H[36;46H   [15;36H[36;57H4,36[15;36H[?25h[?25l[36;46H~@k[15;36H[36;46H   [14;13H[46m{[17;3H}[m[30m[47m[36;57H3,13[14;13H[?25h[?25l[36;46H~@k[14;13H[36;46H   [13;34H[14;13H{[17;3H}[36;57H2,34[13;34H[?25h[?25l[36;46H~@k[13;34H[36;46H   [13;34H[?25h[?25l[36;46H~@k[13;34H[36;46H   [13;33H[13;20H[46m([12C)[m[30m[47m[36;60H3[13;33H[?25h[?25l[36;46H~@k[13;33H[36;46H   [13;32H[13;20H([12C)[36;60H2[13;32H[?25h[?25l[36;46Hb[13;32H[36;46H [13;31H[36;60H1[13;31H[?25h[?25l[36;46H~@k[13;31H[36;46H   [13;31H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H32,31[9CBot[13;31H[?25h[?25l[36;60H2[13;32H[?25h[?25l[31mb"[m[30m[47m);[36;60H3[13;33H[?25h[?25l[14;13H[46m{[17;3H}[m[30m[47m[36;57H3,14[14;14H[?25h[?25l{[17;3H}[36;57H4,33[15;33H[?25h[?25l[36;57H5,1[16;13H[?25h[?25l[14;13H[46m{[17;3H}[m[30m[47m[36;57H6,4 [17;4H[?25h[?25l[14;13H{[17;3H}[36;57H7,20[18;20H[?25h[?25l[36;57H8,33[19;33H[?25h[?25l[36;57H9[20;33H[?25h[?25l[36;56H40[21;33H[?25h[?25l[36;57H1[22;33H[?25h[?25l[36;57H2[23;33H[?25h[?25l[36;57H3,15[24;15H[?25h[?25l[21;55H[46m{[25;5H}[m[30m[47m[36;57H4,6 [25;6H[?25h[?25l[21;55H{[25;5H}[26;33H[46m([7C)[m[30m[47m[36;57H5,33[26;33H[?25h[?25l([7C)[36;57H6,16[27;16H[?25h[36;1H[K[27;15H[?25l[36;46H^[[27;15H[36;46H  [27;16H[36;56H46,15[9CBot[27;15H[?25h[?25l[36;46H:[27;15H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"gen-rand-points.c" 54L, 1358C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ make
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ makevim gen-rand-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"gen-rand-points.c" 54L, 1358C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H{
+  [32menum[m { MAX = [31m1000[m }; [34m//exclusive
+[m  [34m//statistically unsound; see
+[m  [34m//<https://stackoverflow.com/questions/[m[31m4195958[m[34m/how-do-i-scale-down-numbb[5;1Hers-from-rand>[m
+  [33mreturn[m rand() % MAX;
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) usage(argv[[31m0[m]);
+  [32mint[m nPoints = atoi(argv[[31m1[m]);
+  [33mif[m (nPoints <= [31m0[m) usage(argv[[31m0[m]);
+  [32mconst[m [32mchar[m *outName = argv[[31m2[m];
+  [32mFILE[m *out = fopen(outName, [31m"wb"[m);
+  [33mif[m (!out) {
+    fprintf([31mstderr[m, [31m"cannot write [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));
+    exit([31m1[m);
+  }
+  [32mdouble[m sum = [31m0.0[m;
+  [33mfor[m ([32mint[m i = [31m0[m; i < nPoints; i++) {
+    Point2 point2 = { .x = randCoord(), .y = randCoord(), };
+    [33mif[m (fwrite(&point2, [33msizeof[m(Point2), [31m1[m, out) != [31m1[m) {[25;7Hfprintf([31mstderr[m, [31m"cannot write Point2([m[35m%d[m[31m, [m[35m%d[m[31m) to [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m,[26;15Hpoint2.x, point2.y, outName, strerror(errno));[27;7Hexit([31m1[m);
+    }
+    [32mdouble[m mag = magnitudePoint2(&point2);
+    sum += mag;
+  }
+  fprintf([31mstderr[m, [31m"average magnitude = [m[35m%g\n[m[31m"[m, sum/nPoints);
+  [33mif[m (fclose(out) != [31m0[m) {
+    fprintf([31mstderr[m, [31m"cannot close [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));
+    exit([31m1[m);[36;56H46,15[9C85%[30;15H[?25h[?25l[36;46H:[30;15H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[30;15H[27m[23m[29m[m[30m[47m[H[2J[1;1H{
+  [32menum[m[30m[47m { MAX = [31m1000[m[30m[47m }; [34m//exclusive
+[m[30m[47m  [34m//statistically unsound; see
+[m[30m[47m  [34m//<https://stackoverflow.com/questions/[m[30m[47m[31m4195958[m[30m[47m[34m/how-do-i-scale-down-numbb[5;1Hers-from-rand>[m[30m[47m
+  [33mreturn[m[30m[47m rand() % MAX;
+}
+
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m3[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mint[m[30m[47m nPoints = atoi(argv[[31m1[m[30m[47m]);
+  [33mif[m[30m[47m (nPoints <= [31m0[m[30m[47m) usage(argv[[31m0[m[30m[47m]);
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *outName = argv[[31m2[m[30m[47m];
+  [32mFILE[m[30m[47m *out = fopen(outName, [31m"wb"[m[30m[47m);
+  [33mif[m[30m[47m (!out) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot write [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }
+  [32mdouble[m[30m[47m sum = [31m0.0[m[30m[47m;
+  [33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < nPoints; i++) {
+    Point2 point2 = { .x = randCoord(), .y = randCoord(), };
+    [33mif[m[30m[47m (fwrite(&point2, [33msizeof[m[30m[47m(Point2), [31m1[m[30m[47m, out) != [31m1[m[30m[47m) {[25;7Hfprintf([31mstderr[m[30m[47m, [31m"cannot write Point2([m[30m[47m[35m%d[m[30m[47m[31m, [m[30m[47m[35m%d[m[30m[47m[31m) to [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m,[26;15Hpoint2.x, point2.y, outName, strerror(errno));[27;7Hexit([31m1[m[30m[47m);
+    }
+    [32mdouble[m[30m[47m mag = magnitudePoint2(&point2);
+    sum += mag;
+  }
+  fprintf([31mstderr[m[30m[47m, [31m"average magnitude = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m, sum/nPoints);
+  [33mif[m[30m[47m (fclose(out) != [31m0[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot close [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, outName, strerror(errno));
+    exit([31m1[m[30m[47m);[36;56H46,15[9C85%[30;15H[?25h[?25l[36;46H:[30;15H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim gen-rand-points.cmake[K
+make: Nothing to be done for 'all'.
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ makevim gen-rand-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"gen-rand-points.c" 54L, 1358C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H{
+  [32menum[m { MAX = [31m1000[m }; [34m//exclusive
+[m  [34m//statistically unsound; see
+[m  [34m//<https://stackoverflow.com/questions/[m[31m4195958[m[34m/how-do-i-scale-down-numbb[5;1Hers-from-rand>[m
+  [33mreturn[m rand() % MAX;
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m3[m) usage(argv[[31m0[m]);
+  [32mint[m nPoints = atoi(argv[[31m1[m]);
+  [33mif[m (nPoints <= [31m0[m) usage(argv[[31m0[m]);
+  [32mconst[m [32mchar[m *outName = argv[[31m2[m];
+  [32mFILE[m *out = fopen(outName, [31m"wb"[m);
+  [33mif[m (!out) {
+    fprintf([31mstderr[m, [31m"cannot write [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));
+    exit([31m1[m);
+  }
+  [32mdouble[m sum = [31m0.0[m;
+  [33mfor[m ([32mint[m i = [31m0[m; i < nPoints; i++) {
+    Point2 point2 = { .x = randCoord(), .y = randCoord(), };
+    [33mif[m (fwrite(&point2, [33msizeof[m(Point2), [31m1[m, out) != [31m1[m) {[25;7Hfprintf([31mstderr[m, [31m"cannot write Point2([m[35m%d[m[31m, [m[35m%d[m[31m) to [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m,[26;15Hpoint2.x, point2.y, outName, strerror(errno));[27;7Hexit([31m1[m);
+    }
+    [32mdouble[m mag = magnitudePoint2(&point2);
+    sum += mag;
+  }
+  fprintf([31mstderr[m, [31m"average magnitude = [m[35m%g\n[m[31m"[m, sum/nPoints);
+  [33mif[m (fclose(out) != [31m0[m) {
+    fprintf([31mstderr[m, [31m"cannot close [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, outName, strerror(errno));
+    exit([31m1[m);[36;56H46,15[9C85%[30;15H[?25h[?25l[36;46H:[30;15H[36;1H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim[K[K[Kvim stat-choices.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stat-choices.c" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[1m[34m~                                                                        [3;1H~                                                                        [4;1H~                                                                        [5;1H~                                                                        [6;1H~                                                                        [7;1H~                                                                        [8;1H~                                                                        [9;1H~                                                                        [10;1H~                                                                        [11;1H~                                                                        [12;1H~                                                                        [13;1H~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H0,0-1[9CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25h[?25l[36;2H[K[36;2H[?25h [?25l[1;1H[36;56H0,0-1[9CAll[1;1H[?25h[?25l[36;46H:[1;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim stat-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stat-points.c" 76L, 1801C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<assert.h>[m
+[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<math.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<string.h>[m
+
+[35m#include [m[31m"dyn-array.h"[m
+[35m#include [m[31m"point2.h"[m
+
+[32mstatic[m [32mvoid[m
+readPoints([32mconst[m [32mchar[m *inName, DynArray *points)
+{
+  [32mFILE[m *in = fopen(inName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, inName, strerror(errno));
+    exit([31m1[m);
+  }
+  Point2 point2;
+  [33mwhile[m (fread(&point2, [33msizeof[m(Point2), [31m1[m, in) == [31m1[m) {
+    addElementDynArray(points, &point2);
+  }
+  [33mif[m (fclose(in) != [31m0[m) {
+    fprintf([31mstderr[m, [31m"cannot close [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, inName, strerror(errno));
+    exit([31m1[m);
+  }
+}
+
+[32mstatic[m [32mint[m
+comparePoint2([32mconst[m [32mvoid[m *p1, [32mconst[m [32mvoid[m *p2)
+{
+  [33mreturn[m magnitudePoint2(p1) - magnitudePoint2(p2);
+}
+
+[32mstatic[m [32mdouble[m[36;56H1,1[11CTop[1;1H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hm[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[1m[37m[41mE185: Cannot find color scheme 'morming'[m[15C1,1[11CTop[1;1H[?25h[?25l[36;46H:[1;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[1;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<assert.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<math.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[35m#include [m[30m[47m[31m"dyn-array.h"[m[30m[47m
+[35m#include [m[30m[47m[31m"point2.h"[m[30m[47m
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m
+readPoints([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, DynArray *points)
+{
+  [32mFILE[m[30m[47m *in = fopen(inName, [31m"r"[m[30m[47m);
+  [33mif[m[30m[47m (!in) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, inName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }
+  Point2 point2;
+  [33mwhile[m[30m[47m (fread(&point2, [33msizeof[m[30m[47m(Point2), [31m1[m[30m[47m, in) == [31m1[m[30m[47m) {
+    addElementDynArray(points, &point2);
+  }
+  [33mif[m[30m[47m (fclose(in) != [31m0[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot close [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, inName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }
+}
+
+[32mstatic[m[30m[47m [32mint[m[30m[47m
+comparePoint2([32mconst[m[30m[47m [32mvoid[m[30m[47m *p1, [32mconst[m[30m[47m [32mvoid[m[30m[47m *p2)
+{
+  [33mreturn[m[30m[47m magnitudePoint2(p1) - magnitudePoint2(p2);
+}
+
+[32mstatic[m[30m[47m [32mdouble[m[30m[47m[36;56H1,1[11CTop[1;1H[?25h[?25l[36;46H~@k[1;1H[36;46H   [2;1H[36;56H2[2;1H[?25h[?25l[36;46H~@k[2;1H[36;46H   [2;2H[36;58H2[2;2H[?25h[?25l[36;46H~@k[2;2H[36;46H   [3;2H[36;56H3[3;2H[?25h[?25l[36;46H~@k[3;2H[36;46H   [4;2H[36;56H4[4;2H[?25h[?25l[36;46H~@k[4;2H[36;46H   [5;2H[36;56H5[5;2H[?25h[?25l[36;46H~@k[5;2H[36;46H   [6;2H[36;56H6[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [7;1H[36;56H7,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [8;2H[36;56H8,2  [8;2H[?25h[?25l[36;46H~@k[8;2H[36;46H   [7;1H[36;56H7,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [6;2H[36;56H6,2  [6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [5;2H[36;56H5[5;2H[?25h[?25l[36;46H~@k[5;2H[36;46H   [4;2H[36;56H4[4;2H[?25h[?25l[36;46H~@k[4;2H[36;46H   [3;2H[36;56H3[3;2H[?25h[?25l[36;46H~@k[3;2H[36;46H   [2;2H[36;56H2[2;2H[?25h[?25l[36;46H~@k[2;2H[36;46H   [1;2H[36;56H1[1;2H[?25h[?25l[36;46H~@k[1;2H[36;46H   [1;2H[?25h[?25l[36;46H~@k[1;2H[36;46H   [1;2H[?25h[?25l[36;46H~@k[1;2H[36;46H   [2;2H[36;56H2[2;2H[?25h[?25l[36;46H~@k[2;2H[36;46H   [3;2H[36;56H3[3;2H[?25h[?25l[36;46H~@k[3;2H[36;46H   [4;2H[36;56H4[4;2H[?25h[?25l[36;46H~@k[4;2H[36;46H   [5;2H[36;56H5[5;2H[?25h[?25l[36;46H~@k[5;2H[36;46H   [6;2H[36;56H6[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [7;1H[36;56H7,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [8;2H[36;56H8,2  [8;2H[?25h[?25l[36;46H~@k[8;2H[36;46H   [9;2H[36;56H9[9;2H[?25h[?25l[36;46H~@k[9;2H[36;46H   [10;1H[36;56H10,0-1[10;1H[?25h[?25l[36;46H~@k[10;1H[36;46H   [11;2H[36;57H1,2  [11;2H[?25h[?25l[36;46H~@k[11;2H[36;46H   [12;2H[36;57H2[12;2H[?25h[?25l[36;46H~@k[12;2H[36;46H   [13;1H[46m{[27;1H}[m[30m[47m[36;57H3,1[13;1H[?25h[?25l[36;46H~@k[13;1H[36;46H   [14;2H[13;1H{[27;1H}[36;57H4,2[14;2H[?25h[?25l[36;46H~@k[14;2H[36;46H   [15;2H[36;57H5[15;2H[?25h[?25l[36;46H~@k[15;2H[36;46H   [16;2H[36;57H6[16;2H[?25h[?25l[36;46H~@k[16;2H[36;46H   [17;2H[36;57H7[17;2H[?25h[?25l[36;46H~@k[17;2H[36;46H   [18;2H[36;57H8[18;2H[?25h[?25l[36;46H~@k[18;2H[36;46H   [19;2H[36;57H9[19;2H[?25h[?25l[36;46H~@k[19;2H[36;46H   [20;2H[36;56H20[20;2H[?25h[?25l[36;46H~@k[20;2H[36;46H   [21;2H[36;57H1[21;2H[?25h[?25l[36;46H~@k[21;2H[36;46H   [22;2H[36;57H2[22;2H[?25h[?25l[36;46H~@k[22;2H[36;46H   [23;2H[36;57H3[23;2H[?25h[?25l[36;46H~@k[23;2H[36;46H   [24;2H[36;57H4[24;2H[?25h[?25l[36;46H~@k[24;2H[36;46H   [25;2H[36;57H5[25;2H[?25h[?25l[36;46H~@k[25;2H[36;46H   [26;2H[36;57H6[26;2H[?25h[?25l[36;46H~@k[26;2H[36;46H   [27;1H[13;1H[46m{[27;1H}[m[30m[47m[36;57H7,1[27;1H[?25h[?25l[36;46H~@k[27;1H[36;46H   [28;1H[13;1H{[27;1H}[36;57H8,0-1[28;1H[?25h[?25l[36;46H~@k[28;1H[36;46H   [29;2H[36;57H9,2  [29;2H[?25h[?25l[36;46H~@k[29;2H[36;46H   [30;2H[36;56H30[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[30;1H[46m{
+
+}[m[30m[47m
+
+
+averagePoints([32mconst[m[30m[47m DynArray *points)[36;56H[K[36;56H31,1[11C2%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[29;1H{
+
+}[35;1H{[36;56H[K[36;56H32,2[11C4%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[28;1H[46m{
+
+}[m[30m[47m[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H33,1[11C7%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[27;1H{
+
+}[35;3Hassert(n > [31m0[m[30m[47m);[36;56H[K[36;56H34,0-1[9C9%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;3H[32mdouble[m[30m[47m sum = [31m0[m[30m[47m;[36;56H[K[36;56H35,2[10C12%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;3H[33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < n; i++) {[36;56H[K[36;56H36,2[10C14%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[35;5H[32mconst[m[30m[47m Point2 *p = getElementDynArray(points, i);[36;56H[K[36;56H37,1[10C17%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m mag = magnitudePoint2(p);[36;56H[K[36;56H38,2[10C19%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;5Hsum += mag;[36;56H[K[36;56H39,2[10C21%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H40,2[10C24%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;3H[33mreturn[m[30m[47m sum/n;[36;56H[K[36;56H41,2[10C26%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H42,2[10C29%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[36;56H[K[36;56H43,2[10C31%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;1H[32mstatic[m[30m[47m [32mvoid[m[30m[47m[36;56H[K[36;56H44,2[10C34%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;1HstatPoints(DynArray *points, [32mFILE[m[30m[47m *out)[36;56H[K[36;56H45,2[10C36%[30;2H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H46,2[10C39%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[20;1H[46m{[30;1H}[m[30m[47m[35;3HsortDynArray(points, comparePoint2);[36;56H[K[36;56H47,1[10C41%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;1H[1;35r[35;1H
+[1;36r[19;1H{[29;1H}[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H48,0-1[8C43%[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [30;2H[1;35r[35;1H
+[1;36r[35;3H[33mif[m[30m[47m (n > [31m0[m[30m[47m) {[36;56H[K[36;56H49,2[10C46%[30;2H[?25h[?25l[36;46H~@k[30;2H[36;46H   [29;1H[36;57H8,0-1[29;1H[?25h[?25l[36;46H~@k[29;1H[36;46H   [28;1H[18;1H[46m{[28;1H}[m[30m[47m[36;57H7,1  [28;1H[?25h[?25l[36;46H~@k[28;1H[36;46H   [27;2H[18;1H{[28;1H}[36;57H6,2[27;2H[?25h[?25l[36;46H~@k[27;2H[36;46H   [26;2H[36;57H5[26;2H[?25h[?25l[36;46H~@k[26;2H[36;46H   [25;2H[36;57H4[25;2H[?25h[?25l[36;46H~@k[25;2H[36;46H   [24;2H[36;57H3[24;2H[?25h[?25l[36;57H2[23;2H[?25h[?25l[36;46H~@k[23;2H[36;46H   [22;2H[36;57H1[22;2H[?25h[?25l[36;46H~@k[22;2H[36;46H   [21;2H[36;57H0[21;2H[?25h[?25l[36;46H~@k[21;2H[36;46H   [20;2H[36;56H39[20;2H[?25h[?25l[36;46H~@k[20;2H[36;46H   [19;2H[36;57H8[19;2H[?25h[?25l[36;46H~@k[19;2H[36;46H   [18;1H[46m{[28;1H}[m[30m[47m[36;57H7,1[18;1H[?25h[?25l[36;46H~@k[18;1H[36;46H   [17;2H
+{[28;1H}[36;57H6,2[17;2H[?25h[?25l[36;46H~@k[17;2H[36;46H   [16;2H[36;57H5[16;2H[?25h[?25l[36;46H~@k[16;2H[36;46H   [15;1H[36;57H4,0-1[15;1H[?25h[?25l[12;1H[46m{
+
+}[m[30m[47m[36;57H3,1  [14;1H[?25h[?25l[36;46H~@k[14;1H[36;46H   [13;2H[12;1H{
+
+}[36;57H2,2[13;2H[?25h[?25l[36;46H~@k[13;2H[36;46H   [12;1H[46m{
+
+}[m[30m[47m[36;57H1,1[12;1H[?25h[?25l[36;46H~@k[12;1H[36;46H   [11;2H
+{
+
+}[36;57H0,2[11;2H[?25h[?25l[36;46H~@k[11;2H[36;46H   [10;2H[36;56H29[10;2H[?25h[?25l[36;46H~@k[10;2H[36;46H   [9;1H[36;57H8,0-1[9;1H[?25h[?25l[36;46H~@k[9;1H[36;46H   [8;1H[36;57H7,1  [8;1H[?25h[?25l[36;46H~@k[8;1H[36;46H   [7;2H[36;57H6,2[7;2H[?25h[?25l[36;46H~@k[7;2H[36;46H   [6;2H[36;57H5[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;3HPoint2 point2;[36;56H[K[36;56H24,2[10C43%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;3H}[36;56H[K[36;56H23,2[10C41%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;5Hexit([31m1[m[30m[47m);[36;56H[K[36;56H22,2[10C39%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;5Hfprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, inName, strerror(errno));[36;56H[K[36;56H21,2[10C36%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;3H[33mif[m[30m[47m (!in) {[36;56H[K[36;56H20,2[10C34%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;3H[32mFILE[m[30m[47m *in = fopen(inName, [31m"r"[m[30m[47m);[36;56H[K[36;56H19,2[10C31%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H{[36;56H[K[36;56H18,2[10C29%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1HreadPoints([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, DynArray *points)[36;56H[K[36;56H17,2[10C26%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H[32mstatic[m[30m[47m [32mvoid[m[30m[47m[36;56H[K[36;56H16,2[10C24%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[36;56H[K[36;56H15,2[10C21%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"point2.h"[m[30m[47m[36;56H[K[36;56H14,2[10C19%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"dyn-array.h"[m[30m[47m[6;1H[46m{[20;1H}[m[30m[47m[36;56H[K[36;56H13,1[10C17%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[7;1H{[21;1H}[36;56H[K[36;56H12,2[10C14%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<string.h>[m[30m[47m[36;56H[K[36;56H11,2[10C12%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m[36;56H[K[36;56H10,0-1[9C9%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m[36;56H[K[36;56H9,2[12C7%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [6;2H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<math.h>[m[30m[47m[36;56H[K[36;56H8,2[12C4%[6;2H[?25h[?25l[36;46H~@k[6;2H[36;46H   [7;2H[36;56H9[7;2H[?25h[?25l[36;46H~@k[7;2H[36;46H   [8;1H[36;56H10,0-1[8;1H[?25h[?25l[36;46H~@k[8;1H[36;46H   [9;2H[36;57H1,2  [9;2H[?25h[?25l[36;46H~@k[9;2H[36;46H   [10;2H[36;57H2[10;2H[?25h[?25l[36;46H~@k[10;2H[36;46H   [11;1H[46m{[25;1H}[m[30m[47m[36;57H3,1[11;1H[?25h[?25l[36;46H~@k[11;1H[36;46H   [12;2H[11;1H{[25;1H}[36;57H4,2[12;2H[?25h[?25l[36;46H~@k[12;2H[36;46H   [12;3H[36;59H3[12;3H[?25h[?25l[36;46H~@k[12;3H[36;46H   [12;4H[36;59H4[12;4H[?25h[?25l[36;46H~@k[12;4H[36;46H   [12;5H[36;59H5[12;5H[?25h[?25l[36;46H~@k[12;5H[36;46H   [12;6H[36;59H6[12;6H[?25h[?25l[36;46H~@k[12;6H[36;46H   [12;7H[36;59H7[12;7H[?25h[?25l[36;46H~@k[12;7H[36;46H   [12;8H[36;59H8[12;8H[?25h[?25l[36;46H~@k[12;8H[36;46H   [12;9H[36;59H9[12;9H[?25h[?25l[36;46H~@k[12;9H[36;46H   [12;10H[36;59H10[12;10H[?25h[?25l[36;46H~@k[12;10H[36;46H   [12;11H[36;60H1[12;11H[?25h[?25l[36;46H~@k[12;11H[36;46H   [12;12H[36;60H2[12;12H[?25h[?25l[36;46H~@k[12;12H[36;46H   [12;13H[36;60H3[12;13H[?25h[?25l[36;46H~@k[12;13H[36;46H   [12;14H[36;60H4[12;14H[?25h[?25l[36;46H~@k[12;14H[36;46H   [12;15H[36;60H5[12;15H[?25h[?25l[36;46H~@k[12;15H[36;46H   [12;16H[36;60H6[12;16H[?25h[?25l[36;46H~@k[12;16H[36;46H   [12;17H[36;60H7[12;17H[?25h[?25l[36;46H~@k[12;17H[36;46H   [12;18H[36;60H8[12;18H[?25h[?25l[36;46H~@k[12;18H[36;46H   [12;19H[46m([11C)[m[30m[47m[36;60H9[12;19H[?25h[?25l[36;46H~@k[12;19H[36;46H   [12;20H([11C)[36;59H20[12;20H[?25h[?25l[36;46H~@k[12;20H[36;46H   [12;21H[36;60H1[12;21H[?25h[?25l[36;46H~@k[12;21H[36;46H   [12;22H[36;60H2[12;22H[?25h[?25l[36;46H~@k[12;22H[36;46H   [12;23H[36;60H3[12;23H[?25h[?25l[36;46H~@k[12;23H[36;46H   [12;24H[36;60H4[12;24H[?25h[?25l[36;46H~@k[12;24H[36;46H   [12;25H[36;60H5[12;25H[?25h[?25l[36;46H~@k[12;25H[36;46H   [12;26H[36;60H6[12;26H[?25h[?25l[36;46H~@k[12;26H[36;46H   [12;27H[36;60H7[12;27H[?25h[?25l[36;46H~@k[12;27H[36;46H   [12;28H[36;60H8[12;28H[?25h[?25l[36;46H~@k[12;28H[36;46H   [12;29H[36;60H9[12;29H[?25h[?25l[36;46H~@k[12;29H[36;46H   [12;30H[36;59H30[12;30H[?25h[?25l[36;46H~@k[12;30H[36;46H   [12;30H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H14,30[10C4%[12;30H[?25h[?25l[31m"[m[30m[47m);[12;32H[K[36;59H29[12;29H[?25h[?25l[31mw"[m[30m[47m);[36;59H30[12;30H[?25h[?25l[31mb"[m[30m[47m);[36;60H1[12;31H[?25h[?25l[13;12H[46m{[16;3H}[m[30m[47m[36;57H5,13[13;13H[?25h[?25l{[16;3H}[36;57H6,31[14;31H[?25h[?25l[36;57H7,13[15;13H[?25h[?25l[13;12H[46m{[16;3H}[m[30m[47m[36;57H8,4 [16;4H[?25h[?25l[13;12H{[16;3H}[36;57H9,17[17;17H[?25h[?25l[18;31H[46m([m[30m[47mPoint2[46m)[m[30m[47m[36;56H20,31[18;31H[?25h[?25l(Point2)[36;57H1[19;31H[?25h[?25l[18;54H[46m{
+
+[m[30m[47m  [46m}[m[30m[47m[36;57H2,4 [20;4H[?25h[?25l[18;54H{
+
+  }[21;24H[46m{[24;3H}[m[30m[47m[36;57H3,25[21;25H[?25h[?25l{[24;3H}[36;57H4,31[22;31H[?25h[?25l[36;57H5,13[23;13H[?25h[?25l[21;24H[46m{[24;3H}[m[30m[47m[36;57H6,4 [24;4H[?25h[?25l[11;1H[46m{[m[30m[47m[21;24H{[24;3H}
+[46m}[m[30m[47m[36;57H7,2[25;2H[?25h[?25l[11;1H{[25;1H}[36;57H8,1[26;1H[?25h[?25l[36;57H9,11[27;11H[?25h[?25l[36;56H30,3[28;31H[?25h[?25l
+[46m{
+
+}[m[30m[47m[36;57H1,2 [29;2H[?25h[?25l{
+
+}[36;57H2,31[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H33,2[11C7%[28;1H[46m{
+
+}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;3Hassert(n > [31m0[m[30m[47m);[36;56H[K[36;56H34,1[11C9%[27;1H{
+
+}
+[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[32mdouble[m[30m[47m sum = [31m0[m[30m[47m;[36;56H[K[36;56H35,14[9C12%[30;14H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < n; i++) {[36;56H[K[36;56H36,31[9C14%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mconst[m[30m[47m Point2 *p = getElementDynArray(points, i);[36;56H[K[36;56H37,2[10C17%[30;2H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m mag = magnitudePoint2(p);[36;56H[K[36;56H38,31[9C19%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5Hsum += mag;[36;56H[K[36;56H39,17[9C21%[30;17H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H40,18[9C24%[30;18H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mreturn[m[30m[47m sum/n;[36;56H[K[36;56H41,31[9C26%[30;31H[46m{[34;3H}[30;31H[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H42,31[9C29%[29;31H{[33;3H}[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[36;56H[K[36;56H43,31[9C31%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H[32mstatic[m[30m[47m [32mvoid[m[30m[47m[36;56H[K[36;56H44,16[9C34%[30;16H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1HstatPoints(DynArray *points, [32mFILE[m[30m[47m *out)[36;56H[K[36;56H45,4[10C36%[26;31H[46m{[30;3H}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H46,16[9C39%[25;31H{[29;3H}[30;16H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3HsortDynArray(points, comparePoint2);[36;56H[K[36;56H47,2[10C41%[20;1H[46m{[30;1H}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H48,1[10C43%[19;1H{[29;1H}
+[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mif[m[30m[47m (n > [31m0[m[30m[47m) {[36;56H[K[36;56H49,12[9C46%[30;12H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m min = magnitudePoint2(getElementDynArray(points, [31m0[m[30m[47m));[36;56H[K[36;56H50,31[9C48%[30;31H[?25h[?25l[1;35r[1;1H[2M[1;36r[34;5H[32mdouble[m[30m[47m max = magnitudePoint2(getElementDynArray(points, n - [31m1[m[30m[47m));
+    [32mdouble[m[30m[47m average = averagePoints(points);[36;56H[K[36;56H52,31[9C53%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m median = magnitudePoint2(getElementDynArray(points, n/[31m2[m[30m[47m));[36;56H[K[36;56H53,31[9C56%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5Hfprintf(out, [31m"min = [m[30m[47m[35m%g\n[m[30m[47m[31maverage = [m[30m[47m[35m%g\n[m[30m[47m[31mmedian = [m[30m[47m[35m%g\n[m[30m[47m[31mmax = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m,[36;56H[K[36;56H54,15[9C58%[30;15H[?25h[?25l[1;35r[35;1H
+[1;36r[35;13Hmin, average, median, max);[36;56H[K[36;56H55,31[9C60%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H56,31[9C63%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H57,31[9C65%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[36;56H[K[36;56H58,31[9C68%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H[32mint[m[30m[47m[36;56H[K[36;56H59,31[9C70%[30;31H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1Hmain([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])[36;56H[K[36;56H60,31[9C73%[30;31H[?25h[36;1H[K[30;30H[?25l[36;46H^[[30;30H[36;46H  [30;31H[36;56H60,30[9C73%[30;30H[?25h[?25l[36;46H:[30;30H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"stat-points.c" 76L, 1802C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ c [Kd[K[Kd[Kcd ,,[K[K..
+amchugh2@remote07:~/i220a_new/work/lab13$ ls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ cd file-cop[K[Kar[K[Khar-count
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ vim c[Kfile-char-c ount.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"file-char-count.c" 27L, 566C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+[46m{[m
+  [33mif[m (argc != [31m2[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m FILE_NAME[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mchar[m *fName = argv[[31m1[m];
+  [32mFILE[m *in = fopen(fName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, fName, strerror(errno));
+    exit([31m1[m);
+  }
+  [32mint[m c;
+  [32mint[m count = [31m0[m;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) count++;
+  printf([31m"[m[35m%d\n[m[31m"[m, count);
+  [33mreturn[m [31m0[m;
+[46m}[m
+[1m[34m~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H27,1[10CAll[27;1H[?25h[?25l[36;46H:[27;1H[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27;1H[27m[23m[29m[m[30m[47m[H[2J[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m
+[35m#include [m[30m[47m[31m<string.h>[m[30m[47m
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m[30m[47m
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+[46m{[m[30m[47m
+  [33mif[m[30m[47m (argc != [31m2[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m FILE_NAME[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  [32mconst[m[30m[47m [32mchar[m[30m[47m *fName = argv[[31m1[m[30m[47m];
+  [32mFILE[m[30m[47m *in = fopen(fName, [31m"r"[m[30m[47m);
+  [33mif[m[30m[47m (!in) {
+    fprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, fName, strerror(errno));
+    exit([31m1[m[30m[47m);
+  }
+  [32mint[m[30m[47m c;
+  [32mint[m[30m[47m count = [31m0[m[30m[47m;
+  [33mwhile[m[30m[47m ((c = fgetc(in)) != [31mEOF[m[30m[47m) count++;
+  printf([31m"[m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, count);
+  [33mreturn[m[30m[47m [31m0[m[30m[47m;
+[46m}[m[30m[47m
+[1m[34m~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[30m[47m[36;56H27,1[10CAll[27;1H[?25h[?25l[36;46H~@k[27;1H[36;46H   [26;1H[11;1H{[27;1H}[36;57H6[26;1H[?25h[?25l[36;46H~@k[26;1H[36;46H   [25;1H[36;57H5[25;1H[?25h[?25l[36;46H~@k[25;1H[36;46H   [26;1H[36;57H6[26;1H[?25h[?25l[36;46H~@k[26;1H[36;46H   [25;1H[36;57H5[25;1H[?25h[?25l[36;46H~@k[25;1H[36;46H   [24;1H[36;57H4[24;1H[?25h[?25l[36;46H~@k[24;1H[36;46H   [23;1H[36;57H3[23;1H[?25h[?25l[36;46H~@k[23;1H[36;46H   [22;1H[36;57H2[22;1H[?25h[?25l[36;46H~@k[22;1H[36;46H   [21;1H[36;57H1[21;1H[?25h[?25l[36;46H~@k[21;1H[36;46H   [20;1H[36;57H0[20;1H[?25h[?25l[36;46H~@k[20;1H[36;46H   [19;1H[36;56H19[19;1H[?25h[?25l[36;46H~@k[19;1H[36;46H   [18;1H[36;57H8[18;1H[?25h[?25l[36;46H~@k[18;1H[36;46H   [17;1H[36;57H7[17;1H[?25h[?25l[36;46H~@k[17;1H[36;46H   [16;1H[36;57H6[16;1H[?25h[?25l[36;46H~@k[16;1H[36;46H   [17;1H[36;57H7[17;1H[?25h[?25l[36;46H~@k[17;1H[36;46H   [18;1H[36;57H8[18;1H[?25h[?25l[36;46H~@k[18;1H[36;46H   [19;1H[36;57H9[19;1H[?25h[?25l[36;46H~@k[19;1H[36;46H   [20;1H[36;56H20[20;1H[?25h[?25l[36;46H~@k[20;1H[36;46H   [21;1H[36;57H1[21;1H[?25h[?25l[36;46H~@k[21;1H[36;46H   [22;1H[36;57H2[22;1H[?25h[?25l[36;46H~@k[22;1H[36;46H   [23;1H[36;57H3[23;1H[?25h[?25l[36;46H~@k[23;1H[36;46H   [24;1H[36;57H4[24;1H[?25h[?25l[36;57H5,24[25;24H[?25h[?25l[36;46H~@k[25;24H[36;46H   [25;24H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H25,24[9CAll[25;24H[?25h[?25l[36;60H5[25;25H[?25h[?25l\[36;60H6[25;26H[?25h[?25lf[36;60H7[25;27H[?25h[?25l[25;26H[K[36;60H6[25;26H[?25h[?25l[25;25H[K[36;60H5[25;25H[?25h[?25l[26;35r[26;1H[L[1;36r[36;56H[K[36;56H26,3[10CAll[26;3H[?25h[?25lf[36;59H4[26;4H[?25h[?25lr[36;59H5[26;5H[?25h[?25le[36;59H6[26;6H[?25h[?25le[36;59H7[26;7H[?25h[?25l([36;59H8[26;8H[?25h[?25li[36;59H9[26;9H[?25h[?25ln[36;59H10[26;10H[?25h[?25l)[46m([m[30m[47min[46m)[m[30m[47m[36;60H1[26;11H[?25h[?25l;(in)[36;60H2[26;12H[?25h[?25l[27;35r[27;1H[L[1;36r[36;56H[K[36;56H27,3[10CAll[27;3H[?25h[?25lf[36;59H4[27;4H[?25h[?25lc[36;59H5[27;5H[?25h[?25ll[36;59H6[27;6H[?25h[?25lo[36;59H7[27;7H[?25h[?25ls[36;59H8[27;8H[?25h[?25le[36;59H9[27;9H[?25h[?25l([36;59H10[27;10H[?25h[?25li[36;60H1[27;11H[?25h[?25ln[36;60H2[27;12H[?25h[?25l)[46m([m[30m[47min[46m)[m[30m[47m[36;60H3[27;13H[?25h[?25l;(in)[36;60H4[27;14H[?25h[36;1H[K[27;13H[?25l[36;46H^[[27;13H[36;46H  [27;14H[36;56H27,13[9CAll[27;13H[?25h[?25l[36;46H:[27;13H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[36;2H[K[36;2H[?25h [?25l[27;13H[36;56H27,13[9CAll[27;13H[?25h[?25l[36;57H5,21[25;21H[?25h[?25l[36;46H~@k[25;21H[36;46H   [26;11H[36;57H6,1[26;11H[?25h[?25l[36;46H~@k[26;11H[36;46H   [26;10H[46m([m[30m[47min[46m)[m[30m[47m[36;60H0[26;10H[?25h[?25l[36;46H~@k[26;10H[36;46H   [26;10H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H26,10[9CAll[26;10H[?25h[?25l[1;35r[1;1H[23M[1;36r[13;1H[1m[34m~                                                                        [14;1H~                                                                        [15;1H~                                                                        [16;1H~                                                                        [17;1H~                                                                        [18;1H~                                                                        [19;1H~                                                                        [20;1H~                                                                        [21;1H~                                                                        [22;1H~                                                                        [23;1H~                                                                        [24;1H~                                                                        [25;1H~                                                                        [26;1H~                                                                        [27;1H~                                                                        [28;1H~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[30m[47m[36;56H[K[36;56H29,1[10CBot[3;7H(in)
+
+
+[?25h[?25l[36;59H2[6;2H[?25h[?25l[6;1H[K[36;59H1[6;1H[?25h[?25l[1;35r[1;1H[L[1;36r[1;3H[32mint[m[30m[47m count = [31m0[m[30m[47m;[7;1H[1m[34m~                                                                        [m[30m[47m[36;56H[K[36;56H28,12[9CBot[6;12H[?25h[?25l[6;11H[K[36;60H1[6;11H[?25h[?25l;[36;60H2[6;12H[?25h[?25l[1;35r[1;1H[L[1;36r[1;3H[32mint[m[30m[47m c;[36;56H[K[36;56H27,12[9CBot[6;9H[46m([m[30m[47min[46m)[?25h[?25l[1;35r[m[30m[47m[1;1H[L[1;36r[1;3H}[36;56H[K[36;56H26,12[9CBot[7;9H(in)[6;12H[?25h[?25l[6;11H[K[6;7H[46m([m[30m[47min[46m)[m[30m[47m[36;60H1[6;11H[?25h[?25l[6;10H[K[6;7H([36;60H0[6;10H[?25h[?25l[6;9H[K[36;59H9 [6;9H[?25h[?25l[6;8H[K[36;59H8[6;8H[?25h[?25l[6;7H[K[36;59H7[6;7H[?25h[?25l[6;6H[K[36;59H6[6;6H[?25h[?25l[6;5H[K[36;59H5[6;5H[?25h[?25l[6;4H[K[36;59H4[6;4H[?25h[?25l[6;3H[K[36;59H3[6;3H[?25h[?25l[36;59H2[6;2H[?25h[?25l[36;59H1[6;1H[?25h[?25l[1;35r[1;1H[L[1;36r[1;5Hexit([31m1[m[30m[47m);[6;35r[35;1H
+[1;36r[6;3Hprintf([31m"[m[30m[47m[35m%d\n[m[30m[47m[31m"[m[30m[47m, count);[35;1H[1m[34m~                                                                        [m[30m[47m[36;56H[K[36;56H25,25[9CBot[6;25H[?25h[?25l:[36;60H6[6;26H[?25h[?25lx[36;60H7[6;27H[?25h[?25l[6;26H[K[36;60H6[6;26H[?25h[?25l[6;25H[K[36;60H5[6;25H[?25h[36;1H[K[6;24H[?25l[36;46H^[[6;24H[36;46H  [6;25H[36;56H25,24[9CBot[6;24H[?25h[?25l[36;46H:[6;24H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"file-char-count.c" 27L, 578C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+[01m[Kfile-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kfile-char-count.c:27:3:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+   [01;31m[Kreturn[m[K 0;
+   [01;31m[K^~~~~~[m[K
+make: *** [<builtin>: file-char-count] Error 1
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ makevim file-char-count.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"file-char-count.c" 27L, 578C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#include [m[31m<errno.h>[m
+[35m#include [m[31m<stdio.h>[m
+[35m#include [m[31m<stdlib.h>[m
+[35m#include [m[31m<string.h>[m
+
+[34m/** Output number of chars in file specified by single command-line
+ *  argument.
+ */[m
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m2[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m FILE_NAME[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  [32mconst[m [32mchar[m *fName = argv[[31m1[m];
+  [32mFILE[m *in = fopen(fName, [31m"r"[m);
+  [33mif[m (!in) {
+    fprintf([31mstderr[m, [31m"cannot read [m[35m%s[m[31m: [m[35m%s\n[m[31m"[m, fName, strerror(errno));
+    exit([31m1[m);
+  }
+  [32mint[m c;
+  [32mint[m count = [31m0[m;
+  [33mwhile[m ((c = fgetc(in)) != [31mEOF[m) count++;
+  printf([31m"[m[35m%d\n[m[31m"[m, count);
+  fclose(in);
+  [33mreturn[m [31m0[m;
+[1m[34m~                                                                        [29;1H~                                                                        [30;1H~                                                                        [31;1H~                                                                        [32;1H~                                                                        [33;1H~                                                                        [34;1H~                                                                        [35;1H~                                                                        [m[36;56H25,24[9CAll[25;24H[?25h[?25l[36;46H~@k[25;24H[36;46H   [24;24H[24;10H[46m([13C)[m[36;57H4[24;24H[?25h[?25l[36;46H~@k[24;24H[36;46H   [24;24H[36;1H[1m-- INSERT --[m[36;13H[K[36;56H24,24[9CAll[24;24H[?25h[?25l[24;10H([13C)[25;9H[46m([13C)[m[36;57H5[25;24H[?25h[?25l[25;9H([13C)[36;57H6,1[26;14H[?25h[?25l[36;57H7,12[27;12H[?25h[?25l
+  [28;3H[K[36;57H8,3 [28;3H[?25h[?25l}[11;1H[46m{[28;1H}[m[36;59H2[28;2H[?25h[36;1H[K[28;1H[?25l[36;46H^[[28;1H[36;46H  [28;2H[36;56H28,1[10CAll[28;1H[?25h[?25l[36;46H:[28;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"file-char-count.c" 28L, 580C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+amchugh2@remote07:~/i220a_new/work/lab13/file-char-count$ cd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ ls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ cd s[Kno-buffer-copy
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ ls
+Makefile  no-buffer-copy.c
+amchugh2@remote07:~/i220a_new/work/lab13/no-buffer-copy$ cd ..
+amchugh2@remote07:~/i220a_new/work/lab13$ cd
+amchugh2@remote07:~$ ls
+amchugh2.circ  cs220	       good	  lab2	     Music	 Videos
+Arduino        Desktop	       i220a	  lab2final  Pictures
+cs120	       Documents       i220a.bak  lab2good   Public
+cs120lab4      Downloads       i220a_new  lab3	     Templates
+cs120lab6      git-repos       i220X	  lab5	     tmp
+cs120lab7      git-repos_copy  lab	  lab8	     toneMelody
+amchugh2@remote07:~$ cd i220a_new
+amchugh2@remote07:~/i220a_new$ ls
+grading  submit  testing  work
+amchugh2@remote07:~/i220a_new$ cd work
+amchugh2@remote07:~/i220a_new/work$ ls
+files  homework3  hw3  lab11  lab13  lab2  lab9  prj4-sol
+amchugh2@remote07:~/i220a_new/work$ cd l[Kprj4-sol
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ ls
+do-fn-trace  fn-trace.h  main.o    x86-64_lde.c
+fn-trace     fn-trace.o  Makefile  x86-64_lde.h
+fn-trace.c   main.c	 README    x86-64_lde.o
+amchugh2@remote07:~/i220a_new/work/prj4-sol$ cd vim[K[K[Kdo[K[Kfn-trace[K[K[K[K[K[K[K[K[K[K[Kcd ..
+amchugh2@remote07:~/i220a_new/work$ ls
+files  homework3  hw3  lab11  lab13  lab2  lab9  prj4-sol
+amchugh2@remote07:~/i220a_new/work$ cd lab12[K3
+amchugh2@remote07:~/i220a_new/work/lab13$ ls
+file-char-count  log13.log	 rec-io
+file-copy	 no-buffer-copy  stdin-char-count
+amchugh2@remote07:~/i220a_new/work/lab13$ cd[K[Kcd no[K[K[K[K[Kvim[K[K[Kcd[K[Kvim fi[K[K[K[K[K[Kvim[K[K[Kcd rec-io
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ ls
+dyn-array.c  gen-rand-points	Makefile    stat-points
+dyn-array.h  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.o  gen-rand-points.o	points.dat  stat-points.o
+amchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim statp[K-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stat-points.c" 76L, 1802C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;5H[32mconst[m Point2 *p = getElementDynArray(points, i);
+    [32mdouble[m mag = magnitudePoint2(p);
+    sum += mag;
+  }
+  [33mreturn[m sum/n;
+}
+
+[32mstatic[m [32mvoid[m
+statPoints(DynArray *points, [32mFILE[m *out)
+{
+  sortDynArray(points, comparePoint2);
+  [32mconst[m [32mint[m n = nElementsDynArray(points);
+  [33mif[m (n > [31m0[m) {
+    [32mdouble[m min = magnitudePoint2(getElementDynArray(points, [31m0[m));
+    [32mdouble[m max = magnitudePoint2(getElementDynArray(points, n - [31m1[m));
+    [32mdouble[m average = averagePoints(points);
+    [32mdouble[m median = magnitudePoint2(getElementDynArray(points, n/[31m2[m));
+    fprintf(out, [31m"min = [m[35m%g\n[m[31maverage = [m[35m%g\n[m[31mmedian = [m[35m%g\n[m[31mmax = [m[35m%g\n[m[31m"[m,[19;13Hmin, average, median, max);
+  }
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m2[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m BINARY_POINTS_FILE[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  DynArray *points = newDynArray([33msizeof[m(Point2));
+  readPoints(argv[[31m1[m], points);
+  statPoints(points, [31mstdout[m);
+  freeDynArray(points);
+  [33mreturn[m [31m0[m;
+}[36;56H60,30[9CBot[19;30H[?25h[?25l[36;1H[K[36;1H:[?2004h[?25hc[?25l[?25ho[?25l[?25hl[?25l[?25ho[?25l[?25h[?25l [?25hm[?25l[?25ho[?25l[?25hr[?25l[?25hn[?25l[?25hi[?25l[?25hn[?25l[?25hg[?25l[?25h[?25l[30m[47m[27m[23m[29m[m[30m[47m[H[2J[1;5H[32mconst[m[30m[47m Point2 *p = getElementDynArray(points, i);
+    [32mdouble[m[30m[47m mag = magnitudePoint2(p);
+    sum += mag;
+  }
+  [33mreturn[m[30m[47m sum/n;
+}
+
+[32mstatic[m[30m[47m [32mvoid[m[30m[47m
+statPoints(DynArray *points, [32mFILE[m[30m[47m *out)
+{
+  sortDynArray(points, comparePoint2);
+  [32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);
+  [33mif[m[30m[47m (n > [31m0[m[30m[47m) {
+    [32mdouble[m[30m[47m min = magnitudePoint2(getElementDynArray(points, [31m0[m[30m[47m));
+    [32mdouble[m[30m[47m max = magnitudePoint2(getElementDynArray(points, n - [31m1[m[30m[47m));
+    [32mdouble[m[30m[47m average = averagePoints(points);
+    [32mdouble[m[30m[47m median = magnitudePoint2(getElementDynArray(points, n/[31m2[m[30m[47m));
+    fprintf(out, [31m"min = [m[30m[47m[35m%g\n[m[30m[47m[31maverage = [m[30m[47m[35m%g\n[m[30m[47m[31mmedian = [m[30m[47m[35m%g\n[m[30m[47m[31mmax = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m,[19;13Hmin, average, median, max);
+  }
+}
+
+[32mint[m[30m[47m
+main([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])
+{
+  [33mif[m[30m[47m (argc != [31m2[m[30m[47m) {
+    fprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m BINARY_POINTS_FILE[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);
+    exit([31m1[m[30m[47m);
+  }
+  DynArray *points = newDynArray([33msizeof[m[30m[47m(Point2));
+  readPoints(argv[[31m1[m[30m[47m], points);
+  statPoints(points, [31mstdout[m[30m[47m);
+  freeDynArray(points);
+  [33mreturn[m[30m[47m [31m0[m[30m[47m;
+}[36;56H60,30[9CBot[19;30H[?25h[?25l[36;46H~@k[19;30H[36;46H   [18;30H[36;56H59[18;30H[?25h[?25l[36;46H~@k[18;30H[36;46H   [17;30H[36;57H8[17;30H[?25h[?25l[36;46H~@k[17;30H[36;46H   [16;30H[36;57H7[16;30H[?25h[?25l[36;46H~@k[16;30H[36;46H   [15;30H[36;57H6[15;30H[?25h[?25l[36;46H~@k[15;30H[36;46H   [14;30H[36;57H5[14;30H[?25h[?25l[36;46H~@k[14;30H[36;46H   [13;14H[46m{[20;3H}[m[30m[47m[36;57H4,14[13;14H[?25h[?25l[36;46H~@k[13;14H[36;46H   [12;30H[13;14H{[20;3H}[36;57H3,30[12;30H[?25h[?25l[36;46H~@k[12;30H[36;46H   [11;30H[36;57H2[11;30H[?25h[?25l[36;46H~@k[11;30H[36;46H   [10;1H[46m{[21;1H}[m[30m[47m[36;57H1,1 [10;1H[?25h[?25l[36;46H~@k[10;1H[36;46H   [9;30H
+{[21;1H}[36;57H0,30[9;30H[?25h[?25l[36;46H~@k[9;30H[36;46H   [8;11H[36;56H49,11[8;11H[?25h[?25l[36;46H~@k[8;11H[36;46H   [7;1H[36;57H8,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [6;1H[36;57H7,1  [6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;15H[1;35r[1;1H[L[1;36r[1;3H[33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < n; i++) {[36;56H[K[36;56H46,15[9C97%[6;15H[?25h[?25l[36;46H~@k[6;15H[36;46H   [6;3H[1;35r[1;1H[L[1;36r[1;3H[32mdouble[m[30m[47m sum = [31m0[m[30m[47m;[2;31H[46m{[6;3H}[m[30m[47m[36;56H[K[36;56H45,3[10C95%[6;3H[?25h[?25l[36;46H~@k[6;3H[36;46H   [6;15H[1;35r[1;1H[L[1;36r[1;3Hassert(n > [31m0[m[30m[47m);[3;31H{[7;3H}[36;56H[K[36;56H44,15[9C92%[6;15H[?25h[?25l[36;46H~@k[6;15H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H43,30[9C90%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1H{[36;56H[K[36;56H42,30[9C87%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1HaveragePoints([32mconst[m[30m[47m DynArray *points)[36;56H[K[36;56H41,30[9C85%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;17H[1;35r[1;1H[L[1;36r[1;1H[32mstatic[m[30m[47m [32mdouble[m[30m[47m[36;56H[K[36;56H40,17[9C82%[6;17H[?25h[?25l[1;35r[1;1H[L[1;36r[36;56H[K[36;56H39,16[9C80%[6;16H[?25h[?25l[36;46H~@k[6;16H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1H}[36;56H[K[36;56H38,30[9C78%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;3H[33mreturn[m[30m[47m magnitudePoint2(p1) - magnitudePoint2(p2);[6;1H[46m{[16;1H}[m[30m[47m[36;56H[K[36;56H37,1[10C75%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1H{[7;1H{[17;1H}[36;56H[K[36;56H36,30[9C73%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;13H[1;35r[1;1H[L[1;36r[1;1HcomparePoint2([32mconst[m[30m[47m [32mvoid[m[30m[47m *p1, [32mconst[m[30m[47m [32mvoid[m[30m[47m *p2)[36;56H[K[36;56H35,13[9C70%[6;13H[?25h[?25l[36;46H~@k[6;13H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[32mstatic[m[30m[47m [32mint[m[30m[47m[36;56H[K[36;56H34,0-1[8C68%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[4;1H[46m{
+
+}[m[30m[47m[36;56H[K[36;56H33,1[10C65%[6;1H[?25h[?25l[1;35r[1;1H[L[1;36r[1;1H}[5;1H{
+
+}[36;56H[K[36;56H32,30[9C63%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;3H}[6;1H[46m{
+
+}[m[30m[47m[36;56H[K[36;56H31,1[10C60%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;5Hexit([31m1[m[30m[47m);[7;1H{
+
+}[36;56H[K[36;56H30,30[9C58%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;10H[1;35r[1;1H[L[1;36r[1;5Hfprintf([31mstderr[m[30m[47m, [31m"cannot close [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, inName, strerror(errno));[36;56H[K[36;56H29,10[9C56%[6;10H[?25h[?25l[36;46H~@k[6;10H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;3H[33mif[m[30m[47m (fclose(in) != [31m0[m[30m[47m) {[36;56H[K[36;56H28,0-1[8C53%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;3H}[36;56H[K[36;56H27,1[10C51%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;3H[1;35r[1;1H[L[1;36r[1;5HaddElementDynArray(points, &point2);[3;24H[46m{[6;3H}[m[30m[47m[36;56H[K[36;56H26,3[10C48%[6;3H[?25h[?25l[36;46H~@k[6;3H[36;46H   [6;12H[1;35r[1;1H[L[1;36r[1;3H[33mwhile[m[30m[47m (fread(&point2, [33msizeof[m[30m[47m(Point2), [31m1[m[30m[47m, in) == [31m1[m[30m[47m) {[4;24H{[7;3H}[36;56H[K[36;56H25,12[9C46%[6;12H[?25h[?25l[36;46H~@k[6;12H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;3HPoint2 point2;[36;56H[K[36;56H24,30[9C43%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;24H[1;35r[1;1H[L[1;36r[1;3H}[6;24H[46m{[9;3H}[m[30m[47m[36;56H[K[36;56H23,24[9C41%[6;24H[?25h[?25l[36;46H~@k[6;24H[36;46H   [6;3H[1;35r[1;1H[L[1;36r[1;5Hexit([31m1[m[30m[47m);[4;54H[46m{
+
+[m[30m[47m  [46m}[m[30m[47m[7;24H{[10;3H}[36;56H[K[36;56H22,3[10C39%[6;3H[?25h[?25l[1;35r[1;1H[L[1;36r[1;5Hfprintf([31mstderr[m[30m[47m, [31m"cannot read [m[30m[47m[35m%s[m[30m[47m[31m: [m[30m[47m[35m%s\n[m[30m[47m[31m"[m[30m[47m, inName, strerror(errno));[5;54H{
+
+  }[36;56H[K[36;56H21,30[9C36%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;3H[33mif[m[30m[47m (!in) {[36;56H[K[36;56H20,30[9C34%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;16H[1;35r[1;1H[L[1;36r[1;3H[32mFILE[m[30m[47m *in = fopen(inName, [31m"wb"[m[30m[47m);[36;56H[K[36;56H19,16[9C31%[6;16H[?25h[?25l[36;46H~@k[6;16H[36;46H   [6;3H[1;35r[1;1H[L[1;36r[1;1H{[3;12H[46m{[6;3H}[m[30m[47m[36;56H[K[36;56H18,3[10C29%[6;3H[?25h[?25l[36;46H~@k[6;3H[36;46H   [6;12H[1;35r[1;1H[L[1;36r[1;1HreadPoints([32mconst[m[30m[47m [32mchar[m[30m[47m *inName, DynArray *points)[4;12H{[7;3H}[36;56H[K[36;56H17,12[9C26%[6;12H[?25h[?25l[36;46H~@k[6;12H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1H[32mstatic[m[30m[47m [32mvoid[m[30m[47m[36;56H[K[36;56H16,30[9C24%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;12H[1;35r[1;1H[L[1;36r[6;12H[46m{[9;3H}[m[30m[47m[36;56H[K[36;56H15,12[9C21%[6;12H[?25h[?25l[36;46H~@k[6;12H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"point2.h"[m[30m[47m[7;12H{[10;3H}[36;56H[K[36;56H14,30[9C19%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m"dyn-array.h"[m[30m[47m[6;1H[46m{[20;1H}[m[30m[47m[36;56H[K[36;56H13,1[10C17%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;30H[1;35r[1;1H[L[1;36r[7;1H{[21;1H}[36;56H[K[36;56H12,30[9C14%[6;30H[?25h[?25l[36;46H~@k[6;30H[36;46H   [6;11H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<string.h>[m[30m[47m[36;56H[K[36;56H11,11[9C12%[6;11H[?25h[?25l[36;46H~@k[6;11H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<stdio.h>[m[30m[47m[36;56H[K[36;56H10,0-1[9C9%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;19H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<stdlib.h>[m[30m[47m[36;56H[K[36;56H9,19[11C7%[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [6;22H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<math.h>[m[30m[47m[36;56H[K[36;56H8,22[11C4%[6;22H[?25h[?25l[36;46H~@k[6;22H[36;46H   [6;1H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<errno.h>[m[30m[47m[36;56H[K[36;56H7,0-1[10C2%[6;1H[?25h[?25l[36;46H~@k[6;1H[36;46H   [6;19H[1;35r[1;1H[L[1;36r[1;1H[35m#include [m[30m[47m[31m<assert.h>[m[30m[47m[36;56H[K[36;56H6,19[10CTop[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [5;18H[36;56H5,18[5;18H[?25h[?25l[36;46H~@k[5;18H[36;46H   [4;19H[36;56H4,19[4;19H[?25h[?25l[36;46H~@k[4;19H[36;46H   [3;17H[36;56H3,17[3;17H[?25h[?25l[36;46H~@k[3;17H[36;46H   [2;18H[36;56H2,18[2;18H[?25h[?25l[36;46H~@k[2;18H[36;46H   [1;19H[36;56H1,19[1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [1;19H[?25h[?25l[36;46H~@k[1;19H[36;46H   [2;18H[36;56H2,18[2;18H[?25h[?25l[36;46H~@k[2;18H[36;46H   [3;17H[36;56H3,17[3;17H[?25h[?25l[36;46H~@k[3;17H[36;46H   [4;19H[36;56H4,19[4;19H[?25h[?25l[36;46H~@k[4;19H[36;46H   [5;18H[36;56H5,18[5;18H[?25h[?25l[36;46H~@k[5;18H[36;46H   [6;19H[36;56H6,19[6;19H[?25h[?25l[36;46H~@k[6;19H[36;46H   [7;1H[36;56H7,0-1[7;1H[?25h[?25l[36;46H~@k[7;1H[36;46H   [8;22H[36;56H8,22 [8;22H[?25h[?25l[36;46H~@k[8;22H[36;46H   [9;19H[36;56H9,19[9;19H[?25h[?25l[36;46H~@k[9;19H[36;46H   [10;1H[36;56H10,0-1[10;1H[?25h[?25l[36;46H~@k[10;1H[36;46H   [11;11H[36;57H1,11 [11;11H[?25h[?25l[36;46H~@k[11;11H[36;46H   [12;30H[36;57H2,30[12;30H[?25h[?25l[36;46H~@k[12;30H[36;46H   [13;1H[46m{[27;1H}[m[30m[47m[36;57H3,1 [13;1H[?25h[?25l[36;46H~@k[13;1H[36;46H   [14;30H[13;1H{[27;1H}[36;57H4,30[14;30H[?25h[?25l[36;46H~@k[14;30H[36;46H   [15;12H[46m{[18;3H}[m[30m[47m[36;57H5,12[15;12H[?25h[?25l[36;46H~@k[15;12H[36;46H   [16;30H[15;12H{[18;3H}[36;57H6,30[16;30H[?25h[?25l[36;46H~@k[16;30H[36;46H   [17;12H[36;57H7,12[17;12H[?25h[?25l[36;46H~@k[17;12H[36;46H   [18;3H[15;12H[46m{[18;3H}[m[30m[47m[36;57H8,3 [18;3H[?25h[?25l[36;46H~@k[18;3H[36;46H   [19;16H[15;12H{[18;3H}[36;57H9,16[19;16H[?25h[?25l[36;46H~@k[19;16H[36;46H   [18;3H[15;12H[46m{[18;3H}[m[30m[47m[36;57H8,3 [18;3H[?25h[?25l[36;46H~@k[18;3H[36;46H   [17;12H[15;12H{[18;3H}[36;57H7,12[17;12H[?25h[?25l[36;46H~@k[17;12H[36;46H   [16;30H[36;57H6,30[16;30H[?25h[?25l[36;46H~@k[16;30H[36;46H   [15;12H[46m{[18;3H}[m[30m[47m[36;57H5,12[15;12H[?25h[?25l[36;46H~@k[15;12H[36;46H   [14;30H[15;12H{[18;3H}[36;57H4,30[14;30H[?25h[?25l[36;46H~@k[14;30H[36;46H   [14;31H[36;60H1[14;31H[?25h[?25l[36;46H~@k[14;31H[36;46H   [14;30H[36;60H0[14;30H[?25h[?25l[36;46H~@k[14;30H[36;46H   [14;29H[36;59H29[14;29H[?25h[?25l[36;46H~@k[14;29H[36;46H   [14;30H[36;59H30[14;30H[?25h[?25l[36;46H~@k[14;30H[36;46H   [14;31H[36;60H1[14;31H[?25h[?25l[36;46H~@k[14;31H[36;46H   [14;31H[36;1H[1m-- INSERT --[m[30m[47m[36;56H[K[36;56H14,31[9CTop[14;31H[?25h[?25l[31m"[m[30m[47m);[14;33H[K[36;60H0[14;30H[?25h[?25l[31m"[m[30m[47m);[14;32H[K[36;59H29[14;29H[?25h[?25l[31mr"[m[30m[47m);[36;59H30[14;30H[?25h[?25l[15;12H[46m{[18;3H}[m[30m[47m[36;57H5,13[15;13H[?25h[?25l{[18;3H}[36;57H6,30[16;30H[?25h[?25l[36;57H7,13[17;13H[?25h[?25l[15;12H[46m{[18;3H}[m[30m[47m[36;57H8,4 [18;4H[?25h[?25l[15;12H{[18;3H}[36;57H9,17[19;17H[?25h[?25l[36;56H20,30[20;30H[?25h[?25l[36;57H1[21;30H[?25h[?25l[20;54H[46m{
+
+[m[30m[47m  [46m}[m[30m[47m[36;57H2,4 [22;4H[?25h[?25l[20;54H{
+
+  }[23;24H[46m{[26;3H}[m[30m[47m[36;57H3,25[23;25H[?25h[?25l{[26;3H}[36;57H4,30[24;30H[?25h[?25l[36;57H5,13[25;13H[?25h[?25l[23;24H[46m{[26;3H}[m[30m[47m[36;57H6,4 [26;4H[?25h[?25l[13;1H[46m{[m[30m[47m[23;24H{[26;3H}
+[46m}[m[30m[47m[36;57H7,2[27;2H[?25h[?25l[13;1H{[27;1H}[36;57H8,1[28;1H[?25h[?25l[36;57H9,11[29;11H[?25h[?25l[36;56H30,30[30;30H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1HaveragePoints([32mconst[m[30m[47m DynArray *points)[36;56H[K[36;56H31,2[11C2%[30;1H[46m{
+
+}[30;2H[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H32,30[10C4%[29;1H{
+
+}[30;30H[?25h[?25l[21;24H[46m{[24;3H}[m[30m[47m[36;56H26,4 [24;4H[?25h[?25l[11;1H[46m{[m[30m[47m[21;24H{[24;3H}
+[46m}[m[30m[47m[36;57H7,2[25;2H[?25h[?25l[11;1H{[25;1H}[36;57H8,1[26;1H[?25h[?25l[36;57H9,11[27;11H[?25h[?25l[36;56H30,29[28;29H[?25h[?25l
+[46m{
+
+}[m[30m[47m[36;57H1,2 [29;2H[?25h[?25l{[30;25H[46m([m[30m[47mp1[46m)[m[30m[47m
+}[36;57H2,29[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H33,2[11C7%[28;1H[46m{[m[30m[47m[29;25H(p1)
+[46m}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;3Hassert(n > [31m0[m[30m[47m);[36;56H[K[36;56H34,1[11C9%[27;1H{
+
+}
+[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[32mdouble[m[30m[47m sum = [31m0[m[30m[47m;[36;56H[K[36;56H35,14[9C12%[30;14H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mfor[m[30m[47m ([32mint[m[30m[47m i = [31m0[m[30m[47m; i < n; i++) {[36;56H[K[36;56H36,29[9C14%[30;29H[?25h[?25l[1;35r[1;1H[2M[1;36r[34;5H[32mconst[m[30m[47m Point2 *p = getElementDynArray(points, i);
+    [32mdouble[m[30m[47m mag = magnitudePoint2(p);[36;56H[K[36;56H38,29[9C19%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5Hsum += mag;[36;56H[K[36;56H39,17[9C21%[30;17H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H40,18[9C24%[30;18H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mreturn[m[30m[47m sum/n;[36;56H[K[36;56H41,29[9C26%[30;7H[46m([21C)[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H42,29[9C29%[29;7H([21C)[30;29H[?25h[?25l[29;7H[46m([21C)[m[30m[47m[36;57H1[29;29H[?25h[?25l[29;7H([21C)[36;57H2[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[36;56H[K[36;56H43,29[9C31%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H[32mstatic[m[30m[47m [32mvoid[m[30m[47m[36;56H[K[36;56H44,16[9C34%[30;16H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1HstatPoints(DynArray *points, [32mFILE[m[30m[47m *out)[36;56H[K[36;56H45,4[10C36%[26;31H[46m{[30;3H}[?25h[?25l[1;35r[m[30m[47m[1;1H[2M[1;36r[34;1H{
+  sortDynArray(points, comparePoint2);[36;56H[K[36;56H47,2[10C41%[20;1H[46m{[m[30m[47m[24;31H{[28;3H}
+
+[46m}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;3H[32mconst[m[30m[47m [32mint[m[30m[47m n = nElementsDynArray(points);[36;56H[K[36;56H48,1[10C43%[19;1H{[29;1H}
+[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H[33mif[m[30m[47m (n > [31m0[m[30m[47m) {[36;56H[K[36;56H49,12[9C46%[30;12H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m min = magnitudePoint2(getElementDynArray(points, [31m0[m[30m[47m));[36;56H[K[36;56H50,29[9C48%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m max = magnitudePoint2(getElementDynArray(points, n - [31m1[m[30m[47m));[36;56H[K[36;56H51,2[10C51%[30;2H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m average = averagePoints(points);[36;56H[K[36;56H52,29[9C53%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5H[32mdouble[m[30m[47m median = magnitudePoint2(getElementDynArray(points, n/[31m2[m[30m[47m));[36;56H[K[36;56H53,29[9C56%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;5Hfprintf(out, [31m"min = [m[30m[47m[35m%g\n[m[30m[47m[31maverage = [m[30m[47m[35m%g\n[m[30m[47m[31mmedian = [m[30m[47m[35m%g\n[m[30m[47m[31mmax = [m[30m[47m[35m%g\n[m[30m[47m[31m"[m[30m[47m,[36;56H[K[36;56H54,15[9C58%[30;15H[?25h[?25l[1;35r[35;1H
+[1;36r[35;13Hmin, average, median, max);[36;56H[K[36;56H55,29[9C60%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;3H}[36;56H[K[36;56H56,29[9C63%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H}[36;56H[K[36;56H57,29[9C65%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[36;56H[K[36;56H58,29[9C68%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H[32mint[m[30m[47m[36;56H[K[36;56H59,29[9C70%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1Hmain([32mint[m[30m[47m argc, [32mconst[m[30m[47m [32mchar[m[30m[47m *argv[])[36;56H[K[36;56H60,29[9C73%[30;29H[?25h[?25l[1;35r[35;1H
+[1;36r[35;1H{[36;56H[K[36;56H61,4[10C75%[23;14H[46m{[30;3H}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;3H[33mif[m[30m[47m (argc != [31m2[m[30m[47m) {[36;56H[K[36;56H62,2[10C78%[19;1H[46m{[m[30m[47m[22;14H{[29;3H}
+[46m}[?25h[?25l[1;35r[m[30m[47m[35;1H
+[1;36r[35;5Hfprintf([31mstderr[m[30m[47m, [31m"usage: [m[30m[47m[35m%s[m[30m[47m[31m BINARY_POINTS_FILE[m[30m[47m[35m\n[m[30m[47m[31m"[m[30m[47m, argv[[31m0[m[30m[47m]);[36;56H[K[36;56H63,1[10C80%[18;1H{[29;1H}
+[?25h[36;1H[K[30;1H[?25l[36;46H^[[30;1H[36;46H  [30;1H[36;56H63,0-1[8C80%[30;1H[?25h[?25l[36;46H:[30;1H[36;46H[K[36;1H:[?2004h[?25hx[?25l[?25h[?25l[?1000l[?2004l"stat-points.c" 76L, 1801C written[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[39;49m[?2004l[?1l>[?25h[?1049l[23;0;0tamchugh2@remote07:~/i220a_new/work/lab13/rec-io$ vim stat-points.c
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[36;1H"stat-points.c" 76L, 1801C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;5H[32mconst[m Point2 *p = getElementDynArray(points, i);
+    [32mdouble[m mag = magnitudePoint2(p);
+    sum += mag;
+  }
+  [33mreturn[m sum/n;
+}
+
+[32mstatic[m [32mvoid[m
+statPoints(DynArray *points, [32mFILE[m *out)
+{
+  sortDynArray(points, comparePoint2);
+  [32mconst[m [32mint[m n = nElementsDynArray(points);
+  [33mif[m (n > [31m0[m) {
+    [32mdouble[m min = magnitudePoint2(getElementDynArray(points, [31m0[m));
+    [32mdouble[m max = magnitudePoint2(getElementDynArray(points, n - [31m1[m));
+    [32mdouble[m average = averagePoints(points);
+    [32mdouble[m median = magnitudePoint2(getElementDynArray(points, n/[31m2[m));
+    fprintf(out, [31m"min = [m[35m%g\n[m[31maverage = [m[35m%g\n[m[31mmedian = [m[35m%g\n[m[31mmax = [m[35m%g\n[m[31m"[m,[19;13Hmin, average, median, max);
+  }
+}
+
+[32mint[m
+main([32mint[m argc, [32mconst[m [32mchar[m *argv[])
+{
+  [33mif[m (argc != [31m2[m) {
+    fprintf([31mstderr[m, [31m"usage: [m[35m%s[m[31m BINARY_POINTS_FILE[m[35m\n[m[31m"[m, argv[[31m0[m]);
+    exit([31m1[m);
+  }
+  DynArray *points = newDynArray([33msizeof[m(Point2));
+  readPoints(argv[[31m1[m], points);
+  statPoints(points, [31mstdout[m);
+  freeDynArray(points);
+  [33mreturn[m [31m0[m;
+}[36;56H63,0-1[8CBot[22;1H[?25h[?25l[36;46H~@k[22;1H[36;46H   [23;1H[36;57H4,1  [23;1H[?25h[?25l[36;46H~@k[23;1H[36;46H   [24;1H[36;57H5[24;1H[?25h[?25l[36;46H~@k[24;1H[36;46H   [25;1H[46m{[35;1H}[m[36;57H6[25;1H[?25h[?25l[36;46H~@k[25;1H[36;46H   [26;1H[25;1H{[35;1H}[36;57H7[26;1H[?25h[?25l[36;46H~@k[26;1H[36;46H   [27;1H[36;57H8[27;1H[?25h[?25l[36;46H~@k[27;1H[36;46H   [28;1H[36;57H9[28;1H[?25h[?25l[36;46H~@k[28;1H[36;46H   [29;1H[36;56H70[29;1H[?25h[?25l[36;46H~@k[29;1H[36;46H   [30;1H[36;57H1[30;1H[?25h[?25l[36;46H~@k[30;1H[36;46H   [31;1H[36;57H2[31;1H[?25h[?25l[36;46H~@k[31;1H[36;46H   [32;1H[36;57H3[32;1H[?25h[?25l[36;46H~@k[32;1H[36;46H   [33;1H[36;57H4[33;1H[?25h[?25l[36;46H~@k[33;1H[36;46H   [34;1H[36;57H5[34;1H[?25h[?25l[36;46H~@k[34;1H[36;46H   [35;1H[25;1H[46m{[35;1H}[m[36;57H6[35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [35;1H[?25h[?25l[36;46H~@k[35;1H[36;46H   [34;1H[25;1H{[35;1H}[36;57H5[34;1H[?25h[?25l[36;46H~@k[34;1H[36;46H   [34;1H
+
+[1m-- INSERT --[m[36;13H[K[36;56H75,1[10CBot[34;1H[?25h[?25l[36;57H4[33;1H[?25h[?25l[36;57H3[32;1H[?25h[?25l[36;57H2[31;1H[?25h[?25l[36;57H1[30;1H[?25h[?25l[36;57H0[29;1H[?25h[?25l[36;56H69[28;1H[?25h[?25l[36;57H8[27;1H[?25h[?25l[36;57H7[26;1H[?25h[?25l[36;59H2[26;2H[?25h[?25l[36;59H3[26;3H[?25h[?25l[36;59H4[26;4H[?25h[?25l[36;59H5[26;5H[?25h[?25l [46m([9C)[m[36;59H6[26;6H[?25h[?25l[36;59H7[26;7H[?25h[?25l([9C)[36;59H8[26;8H[?25h[?25l[36;59H9[26;9H[?25h[?25l[36;59H10[26;10H[?25h[?25l[36;60H1[26;11H[?25h[?25l[36;60H2[26;12H[?25h[?25l[36;60H3[26;13H[?25h[?25l[36;60H4[26;14H[?25h[?25l[36;60H5[26;15H[?25h[?25l[26;6H[46m([9C)[m[36;60H6[26;16H[?25h[?25l)[46m [m{[26;18H[K[26;15H[46m)[m [36;60H5[26;15H[?25h[?25l[31m[46m3[m) {[31m3[m[46m)[m[36;60H6[26;16H[?25h[?25l[26;6H([9C)[36;57H8[27;16H[?25h[?25l[36;57H9,13[28;13H[?25h[?25l[26;18H[46m{[29;3H}[m[36;56H70,4 [29;4H[?25h[?25l[26;18H{[29;3H}[36;57H1,16[30;16H[?25h[?25l[36;57H2[31;16H[?25h[?25l[36;57H3[32;16H[?25h[?25l[33;15H[46m([mpoints[46m)[m[36;57H4[33;16H[?25h[?25l(points)[36;60H7[33;17H[?25h[?25l[36;60H8[33;18H[?25h[?25l[36;60H9[33;19H[?25h[?25l[36;59H20[33;20H[?25h[?25l[36;60H1[33;21H[?25h[?25l[46m([mpoints[46m)[m[36;60H2[33;22H[?25h[?25l[36;60H3[33;23H[?25h[?25l[33;15H(points)[36;60H4[33;24H[?25h[?25l[1;35r[35;1H
+[1;36r[33;35r[33;1H[L[1;36r[36;56H[K[36;56H75,3[10CBot[33;3H[?25h[?25lD[36;59H4[33;4H[?25h[?25ly[36;59H5[33;5H[?25h[?25ln[36;59H6[33;6H[?25h[?25lA[36;59H7[33;7H[?25h[?25lr[36;59H8[33;8H[?25h[?25lr[36;59H9[33;9H[?25h[?25la[36;59H10[33;10H[?25h[?25ly[36;60H1[33;11H[?25h[?25l[36;60H2[33;12H[?25h[?25l*[36;60H3[33;13H[?25h[?25lp[36;60H4[33;14H[?25h[?25lo[36;60H5[33;15H[?25h[?25li[36;60H6[33;16H[?25h[?25ln[36;60H7[33;17H[?25h[?25l[33;16H[K[36;60H6[33;16H[?25h[?25l[33;15H[K[36;60H5[33;15H[?25h[?25l[33;14H[K[36;60H4[33;14H[?25h[?25l[33;13H[K[36;60H3[33;13H[?25h[?25ln[36;60H4[33;14H[?25h[?25le[36;60H5[33;15H[?25h[?25lw[36;60H6[33;16H[?25h[?25lP[36;60H7[33;17H[?25h[?25lo[36;60H8[33;18H[?25h[?25li[36;60H9[33;19H[?25h[?25ln[36;59H20[33;20H[?25h[?25lt[36;60H1[33;21H[?25h[?25ls[36;60H2[33;22H[?25h[?25l[33;21H[K[36;60H1[33;21H[?25h[?25le[36;60H2[33;22H[?25h[?25lr[36;60H3[33;23H[?25h[?25l[36;60H4[33;24H[?25h[?25l=[36;60H5[33;25H[?25h[?25l[36;60H6[33;26H[?25h[?25ln[36;60H7[33;27H[?25h[?25le[36;60H8[33;28H[?25h[?25lw[36;60H9[33;29H[?25h[?25lD[36;59H30[33;30H[?25h[?25ly[36;60H1[33;31H[?25h[?25ln[36;60H2[33;32H[?25h[?25lA[36;60H3[33;33H[?25h[?25lr[36;60H4[33;34H[?25h[?25lr[36;60H5[33;35H[?25h[?25la[36;60H6[33;36H[?25h[?25ly[36;60H7[33;37H[?25h[?25l([36;60H8[33;38H[?25h[?25ls[36;60H9[33;39H[?25h[?25li[36;59H40[33;40H[?25h[?25lz[36;60H1[33;41H[?25h[?25le[36;60H2[33;42H[?25h[?25lo[36;60H3[33;43H[?25h[?25l[33msizeof[m[36;60H4[33;44H[?25h[?25l([36;60H5[33;45H[?25h[?25lP[36;60H6[33;46H[?25h[?25lo[36;60H7[33;47H[?25h[?25li[36;60H8[33;48H[?25h[?25ln[36;60H9[33;49H[?25h[?25lt[36;59H50[33;50H[?25h[?25l2[36;60H1[33;51H[?25h[?25l)[33;44H[46m([mPoint2[46m)[m[36;60H2[33;52H[?25h[?25l)[33;37H[46m([m[6C(Point2)[46m)[m[36;60H3[33;53H[?25h[?25l;[33;37H([14C)[36;60H4[33;54H[?25h[?25l[1;35r
