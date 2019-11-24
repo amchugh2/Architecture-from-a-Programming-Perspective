@@ -1,2 +1,0 @@
-#!/bin/sh
-LD_LIBRARY_PATH=$HOME/cs220/lib ./fn-trace "$@"
