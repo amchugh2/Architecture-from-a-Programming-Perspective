@@ -53,25 +53,25 @@ new_cache_sim(const CacheParams *params)
     //unsigned s = cache-> params.nSetBits;
     //unsigned E = cache-> params.nLinesPerSet;
 
-    cache->numSets = (1 << cache->nSetBits));
+    cache->numSets = (1 << cache->nSetBits);
 
     //malloc size of CachSimImpl struct
     cache->sets = malloc((cache->numSets)* (sizeof(*cache->sets)));
-    for(int j = 0; j < cache->numSets; ++i){
-	cache->sets[i].lines = malloc(cache->nLinesPerSet* (sizeof(*cache->sets->lines)));
+    for(int j = 0; j < cache->numSets; ++j){
+	cache->sets[j].lines = malloc(cache->nLinesPerSet* (sizeof(*cache->sets->lines)));
 
     for (int i = 0; i < cache->numSets; ++i)
     {
+
         for (int j = 0; j < cache->nLinesPerSet; ++j)
         {
+	    printf("%d\n", j);
             cache->sets[i].lines[j].valid = 0;
         }
 
     }
-
-
-
-  return cache;
+	}
+ return cache;
 }
 
 /** Free all resources used by cache-simulation structure *cache */
@@ -186,12 +186,7 @@ cache_sim_result(CacheSim *cache, MemAddr addr)
             result.replaceAddr = addr;
             //break;
 
-        }
-
+       }
     }
-
-
-
-
-  return result;
-}
+	return (CacheResult) { .status = CACHE_N_STATUS, .replaceAddr = 0x0 };
+    }
