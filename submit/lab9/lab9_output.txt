@@ -1,0 +1,25 @@
+Lab9 Output
+
+Exercize 2:
+The mask is 0x7fffff
+
+The mask returns the last 6 bytes of the arg (except the most significant bit of the most significant byte).
+
+Mask was found using
+objdump -d mystery.o > mystery.objdump
+
+Mask was found in the line
+
+and	$0x7fffff, %eax
+
+Which is the only bitwise operation in the file, so it must be the mask.
+
+
+Exercize 4:
+Used command
+p *(const char ***)($rbp - 16)
+
+to print out
+$16 = (const char **) 0x7fffffffeab5
+
+value of who (hello arg)
