@@ -14,13 +14,13 @@ typedef struct CacheLine{
 	int valid;
 	// Track
 	int LRU_val;
-}CacheLine;
+} CacheLine;
 
 typedef struct CacheSet{
 	CacheLine *lines;
 	int numLines;
 	unsigned mruHolder;
-}CacheSet;
+} CacheSet;
 
 struct CacheSimImpl{
 	CacheSet *sets;
@@ -30,7 +30,7 @@ struct CacheSimImpl{
 	unsigned nLineBits;
 	unsigned nAddrBits;
 	Replacement replacement;
-}CacheSimImpl;
+} CacheSimImpl;
 
 /** Create and return a new cache-simulation structure for a
  *  cache for main memory withe the specified cache parameters params.
@@ -43,6 +43,7 @@ new_cache_sim(const CacheParams *params)
   // Create cache
   CacheSim *cache;
   cache = malloc(sizeof(*cache));
+
   cache->nSetBits = params->nSetBits;
   cache->nLinesPerSet = params->nLinesPerSet;
   cache->nLineBits = params->nLineBits;
@@ -51,9 +52,11 @@ new_cache_sim(const CacheParams *params)
 
   cache->numSets = ( 1 << cache->nSetBits);
 
-  //memory allocation
-  for(int j = 0; j < cache->numSets; ++j){
-	cache->sets[j].lines = malloc(cache->nLinesPerSet* (sizeof(*cache->sets->lines)));
+  // memory allocation
+  cache->sets = malloc((cache->numSets) * sizeof(*cache->sets));
+
+  for(int j = 0; j < cache->numSets; j++){
+	  cache->sets[j].lines = malloc(cache->nLinesPerSet * sizeof(*cache->sets->lines));
   }
 
   for(int i = 0; i < cache->nLinesPerSet; ++i){
@@ -153,6 +156,6 @@ cache_sim_result(CacheSim *cache, MemAddr addr)
 			  result.replaceAddr = addr;
 		  }
 	  }
+  }
 	 return (CacheResult) { .status = CACHE_N_STATUS, .replaceAddr = 0x0 };
  }
-}
