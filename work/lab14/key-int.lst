@@ -1,0 +1,215 @@
+GAS LISTING key-int.s 			page 1
+
+
+   1              			#dos starts all .com programs at this offset
+   2 0000 00000000 			.org	0x100
+   2      00000000 
+   2      00000000 
+   2      00000000 
+   2      00000000 
+   3              	
+   4              		        .code16
+   5              	
+   6              	#Define constants
+   7              	DOS_INT		=       0x21  #use INT 0x21 to generate s/w interrupt to DOS
+   8              	KEY_INT 	= 	0x9   #interrupt vector # for keyboard interrupt
+   9              	CHK_INT 	= 	0x16  #
+  10              	COUNT  		=         50
+  11              	QUIT   		= 	'q'
+  12              	DELAY_LO 	=	0x0
+  13              	DELAY_HI 	=	0x2
+  14              	
+  15              	#Entered at program startup.
+  16 0100 EB0A     			jmp	main
+  17              	
+  18              	
+  19              	#data area	
+  20 0102 00       	inChar:		.byte	0
+  21 0103 00       	hasKey:	        .byte   0
+  22 0104 00000000 	intAddr:	.word   0, 0
+  23 0108 00000000 	chkAddr:	.word   0, 0
+  24              	
+  25              	main:
+  26 010c E82B00   		        call    setupHandler
+  27              	main1:	
+  28 010f E88A00   			call    getchar         #read input char into inChar
+  29 0112 A00201   			mov	inChar, %al	#al set to char read
+  30 0115 3C71     			cmp	$QUIT, %al	#is it a QUIT character?
+  31 0117 741B     			jz	main3		#quit if got QUIT character
+  32 0119 A00301   			mov	hasKey, %al
+  33 011c B93200   			mov     $COUNT, %cx     #set output counter
+  34              	main2:
+  35 011f A00301   			mov	hasKey, %al	#put checkKey result into al
+  36 0122 84C0     			test	%al, %al	#non-zero if keyboard has char
+  37              			#mov	hasKey, %al	
+  38 0124 7403     		        jz	main4           #no key press
+  39 0126 E87300   			call	getchar
+  40              	main4:	
+  41 0129 E87F00   		        call    putchar         #output inChar to console
+  42 012c E88D00   			call    delay           #delay for time proportional to DELAY
+  43              			#mov 	hasKey, %al
+  44 012f 49       	                dec	%cx             #decrement loop counter
+  45 0130 75ED     			jnz     main2           #loop if output counter nonzero
+  46 0132 EBDB     			jmp     main1           #back to read next char
+  47              	main3:
+  48 0134 E83100   			call    resetHandler
+  49 0137 E87C00   			call	exit
+  50              	
+  51              	#Save address of current interrupt handler for keyboard interrupt in intAddr
+  52              	#and address of bios interrupt handler in chkAddr.
+  53              	#Point keyboard interrupt to intHandler	
+GAS LISTING key-int.s 			page 2
+
+
+  54              	setupHandler:
+  55 013a 50       			push	%ax
+  56 013b 53       			push	%bx
+  57 013c 52       			push	%dx
+  58 013d 06       			push	%es
+  59              	
+  60              		        #save address of handler for CHK_INT in chkAddr
+  61 013e B016     			mov	$CHK_INT, %al   #int vec for checking keyboard buf
+  62 0140 B435     			mov	$0x35, %ah      #specify fn to read current int vector
+  63 0142 CD21     			int	$DOS_INT	#interrupt vector addr in es:bx
+  64 0144 891E0801 			mov     %bx, chkAddr    #save old int vector 
+  65 0148 8C060A01 			mov     %es, chkAddr+2  #in mem
+  66              	
+  67              		        #save address of handler for KEY_INT in intAddr
+  68 014c B009     			mov	$KEY_INT, %al   #int vec for reading keyboard
+  69 014e B435     			mov	$0x35, %ah      #specify fn to read current int vector
+  70 0150 CD21     			int	$DOS_INT	#interrupt vector addr in es:bx
+  71 0152 891E0401 			mov     %bx, intAddr    #save old int vector
+  72 0156 8C060601 			mov     %es, intAddr+2  #in mem
+  73              	
+  74              		        #set address of keyboard interrupt handler to intHandler
+  75 015a B009     			mov	$KEY_INT, %al   #replace int vec for reading keyboard
+  76 015c B425     			mov	$0x25, %ah      #specify fn to write int vec from dx
+  77 015e BA7E01   			mov     $intHandler, %dx#point dx to new int handler
+  78 0161 CD21     			int     $DOS_INT        #set int address to ds:dx
+  79 0163 07       			pop	%es
+  80 0164 5A       			pop	%dx
+  81 0165 5B       			pop	%bx
+  82 0166 58       			pop	%ax
+  83 0167 C3       			ret
+  84              	
+  85              	#Cleanup keyboard interrupt handler: restore to original value saved
+  86              	#in intAddr.
+  87              	resetHandler:
+  88 0168 50       			push	%ax
+  89 0169 52       			push	%dx
+  90 016a 1E       			push	%ds
+  91 016b B009     			mov	$KEY_INT, %al
+  92 016d B425     			mov	$0x25, %ah
+  93 016f 8B160401 			mov	intAddr, %dx
+  94 0173 A10601   			mov	intAddr + 2, %ax
+  95 0176 8ED8     			mov	%ax, %ds
+  96 0178 CD21     			int     $DOS_INT        #set int address to ds:dx
+  97 017a 1F       			pop	%ds
+  98 017b 5A       			pop	%dx
+  99 017c 58       			pop	%ax
+ 100 017d C3       			ret
+ 101              		
+ 102              	#Interrupt handler for keyboard
+ 103              	#stack contains ret addr + flags
+ 104              	intHandler:
+ 105 017e 1E       			push    %ds
+ 106 017f 50       			push    %ax
+ 107 0180 8CC8     			mov     %cs, %ax	#ensure ds register same as
+ 108 0182 8ED8     			mov	%ax, %ds	#cs register
+ 109 0184 9C       			pushf                   #save flags
+ 110 0185 FF1E0401 			lcall   *intAddr	#call original keyboard handler
+GAS LISTING key-int.s 			page 3
+
+
+ 111 0189 B401     			mov 	$0x01, %ah	#setup for keyboard status bios call
+ 112 018b 9C       			pushf
+ 113 018c FF1E0801 			lcall	*chkAddr	#call bios interrupt handler
+ 114 0190 FA       			cli			#disable interrupts
+ 115 0191 7405     		        jz      intHandler1     #no key available
+ 116 0193 B001     			mov	$0x1, %al
+ 117 0195 A20301   		        mov     %al, hasKey     #signal we have a key
+ 118 0198 FB       	intHandler1:	sti			#renable interrupts
+ 119              			#stack contains flags
+ 120 0199 58       			pop 	%ax
+ 121 019a 1F       			pop	%ds
+ 122 019b CF       			iret                    #special return from interrupt handler
+ 123              	
+ 124              	#Read next char from stdin into inChar.  Quit if ^C
+ 125              	getchar:
+ 126 019c 50       			push	%ax
+ 127 019d B408     			mov     $0x08, %ah      #setup input function
+ 128 019f CD21     			int     $DOS_INT        #read stdin into %al
+ 129 01a1 A20201   			mov     %al, inChar     #mov char read to inChar
+ 130 01a4 30C0     		        xor	%al, %al
+ 131 01a6 A20301   			mov	%al, hasKey     #reset hasKey flag
+ 132 01a9 58       			pop	%ax
+ 133 01aa C3       			ret
+ 134              	
+ 135              	#Write inChar to console	
+ 136              	putchar:
+ 137 01ab 50       			push	%ax
+ 138 01ac B402     			movb    $02,%ah         #setup output call
+ 139 01ae 8A160201 			movb    inChar,%dl      #char to output
+ 140 01b2 CD21     			int     $DOS_INT        #output inChar
+ 141 01b4 58       			pop	%ax
+ 142 01b5 C3       			ret
+ 143              	
+ 144              	exit:
+ 145 01b6 B44C     			mov	$0x4c,%ah      	#setup program exit
+ 146 01b8 B000     			mov	$0x0,%al        #setup exit status
+ 147 01ba CD21     			int	$DOS_INT        #exit program
+ 148              		
+ 149              		
+ 150              	
+ 151              	#delay loop for time proportional to value in DELAY_HI_DELAY_LO
+ 152 01bc 50       	delay:		push	%ax
+ 153 01bd 53       			push	%bx
+ 154 01be 51       			push	%cx
+ 155 01bf BB0200   			mov	$DELAY_HI, %bx
+ 156 01c2 B90000   	delay1:		mov     $DELAY_LO, %cx
+ 157 01c5 B8A0F0   	delay2:		mov     $0x0f0a0, %ax
+ 158 01c8 F6E9     		        imul    %cl
+ 159 01ca 49       		        dec     %cx
+ 160 01cb 75F8     		        jnz     delay2
+ 161 01cd 4B       		        dec     %bx
+ 162 01ce 75F2     		        jnz	delay1
+ 163 01d0 59       		        pop	%cx
+ 164 01d1 5B       			pop	%bx
+ 165 01d2 58       			pop	%ax
+ 166 01d3 C3       			ret
+ 167              	
+GAS LISTING key-int.s 			page 4
+
+
+GAS LISTING key-int.s 			page 5
+
+
+DEFINED SYMBOLS
+           key-int.s:7      *ABS*:0000000000000021 DOS_INT
+           key-int.s:8      *ABS*:0000000000000009 KEY_INT
+           key-int.s:9      *ABS*:0000000000000016 CHK_INT
+           key-int.s:10     *ABS*:0000000000000032 COUNT
+           key-int.s:11     *ABS*:0000000000000071 QUIT
+           key-int.s:12     *ABS*:0000000000000000 DELAY_LO
+           key-int.s:13     *ABS*:0000000000000002 DELAY_HI
+           key-int.s:25     .text:000000000000010c main
+           key-int.s:20     .text:0000000000000102 inChar
+           key-int.s:21     .text:0000000000000103 hasKey
+           key-int.s:22     .text:0000000000000104 intAddr
+           key-int.s:23     .text:0000000000000108 chkAddr
+           key-int.s:54     .text:000000000000013a setupHandler
+           key-int.s:27     .text:000000000000010f main1
+           key-int.s:125    .text:000000000000019c getchar
+           key-int.s:47     .text:0000000000000134 main3
+           key-int.s:34     .text:000000000000011f main2
+           key-int.s:40     .text:0000000000000129 main4
+           key-int.s:136    .text:00000000000001ab putchar
+           key-int.s:152    .text:00000000000001bc delay
+           key-int.s:87     .text:0000000000000168 resetHandler
+           key-int.s:144    .text:00000000000001b6 exit
+           key-int.s:104    .text:000000000000017e intHandler
+           key-int.s:118    .text:0000000000000198 intHandler1
+           key-int.s:156    .text:00000000000001c2 delay1
+           key-int.s:157    .text:00000000000001c5 delay2
+
+NO UNDEFINED SYMBOLS
